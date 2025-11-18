@@ -6,6 +6,17 @@
 #   pdf: "https://arxiv.org/abs/0000.00000"
 #   code: "https://github.com/your-org/attenp"
 
+# - year: 2024
+#   title: "MegIS: High-Performance, Energy-Efficient, and Low-Cost Metagenomic Analysis with In-Storage Processing"
+#   authors: "Nika Mansouri Ghiasi, Mohammad Sadrosadati, Harun Mustafa, ..."
+#   venue: "ISCA 2024"
+#   pdf: "https://hybol1993.github.io/assets/pdf/megis.pdf"
+#   slides: "https://example.com/megis-slides.pdf"
+#   poster: "https://example.com/megis-poster.pdf"
+#   video: "https://youtu.be/..."
+#   code: "https://github.com/something/megis"
+#   doi: "10.1145/XXXXXXX.YYYYYYY"
+
 - year: 2025
   title: "REIS: A High-Performance and Energy-Efficient Retrieval System with In-Storage Processing"
   authors: "Kangqi Chen, Rakesh Nadig, Andreas Kosmas Kakolyris, Manos Frouzakis, Nika Mansouri Ghiasi, Yu Liang, Haiyu Mao, Jisung Park, Mohammad Sadrosadati, and Onur Mutlu"
@@ -23,6 +34,7 @@
   authors: "Yintao He, Haiyu Mao, Christina Giannoula, Mohammad Sadrosadati, Juan Gomez-Luna, Huawei Li, Xiaowei Li, Ying Wang, and Onur Mutlu"
   venue: "ASPLOS 2025"
   pdf: "https://hybol1993.github.io/assets/pdf/papi.pdf"
+  slides: "/assets/slides/PAPI_asplos25-talk.pptx"
 
 - year: 2025
   title: "CIPHERMATCH: Accelerating Homomorphic Encryption based String Matching via Memory-Efficient Data Packing and In-Flash Processing"

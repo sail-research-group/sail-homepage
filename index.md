@@ -3,9 +3,15 @@ layout: default
 title: Home
 ---
 
-# Welcome to **SAIL Research Group** @ King's College London
+<h1>
+  Welcome to
+  <span class="sail-word sail-logo sail-heading">
+    <span class="sail-letter sail-s">S</span><span class="sail-letter sail-a">A</span><span class="sail-letter sail-i">I</span><span class="sail-letter sail-l">L</span>
+  </span>
+  Research Group @ King's College London
+</h1>
 
-<p>
+<p class="sail-explainer">
   <span class="sail-word sail-logo">
     <span class="sail-letter sail-s">S</span><span class="sail-letter sail-a">A</span><span class="sail-letter sail-i">I</span><span class="sail-letter sail-l">L</span>
   </span>

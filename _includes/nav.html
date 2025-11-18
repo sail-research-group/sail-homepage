@@ -1,6 +1,13 @@
 <nav class="nav">
   <div class="nav-inner">
-    <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    <a class="brand" href="{{ '/' | relative_url }}">
+      <img
+        class="brand-logo"
+        src="{{ site.logo | relative_url }}"
+        alt="SAIL logo"
+      >
+      <span class="brand-text">{{ site.title }}</span>
+    </a>
     <ul class="menu">
     {% for item in site.nav %}
       <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
