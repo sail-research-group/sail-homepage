@@ -59,10 +59,10 @@ img { max-width: 100%; height: auto; }
 }
 
 /* Colors */
-.sail-s { color: #1d4ed8; } /* S – deep blue */
-.sail-a { color: #0ea5e9; } /* A – cyan */
-.sail-i { color: #22c55e; } /* I – fresh green */
-.sail-l { color: #f97316; } /* L – muted orange */
+.sail-s { color: #4285F4; } /* S – Google blue */
+.sail-a { color: #EA4335; } /* A – Google red */
+.sail-i { color: #FBBC05; } /* I – Google yellow */
+.sail-l { color: #34A853; } /* L – Google green */
 
 /* Make the SAIL in the heading a bit bigger */
 .sail-heading .sail-letter {
