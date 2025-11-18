@@ -59,10 +59,10 @@ img { max-width: 100%; height: auto; }
 }
 
 /* Colors */
-.sail-s { color: #2f35e6; }  
-.sail-a { color: #e56809; }  
-.sail-i { color: #9809e0; } 
-.sail-l { color: #61c64d; }  
+.sail-s { color: #1d4ed8; } /* S – deep blue */
+.sail-a { color: #0ea5e9; } /* A – cyan */
+.sail-i { color: #22c55e; } /* I – fresh green */
+.sail-l { color: #f97316; } /* L – muted orange */
 
 /* Make the SAIL in the heading a bit bigger */
 .sail-heading .sail-letter {
