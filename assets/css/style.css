@@ -69,10 +69,26 @@ img { max-width: 100%; height: auto; }
   font-size: 1em;   /* bigger letters inside the H1 */
 }
 
+h1 {
+  font-size: 1.6rem;  /* default is often ~2–2.5rem; tweak down */
+}
+
 /* Make the "SAIL stands for ..." line larger overall */
 .sail-explainer {
   font-size: 1.5rem;  /* tweak up/down as you like */
   margin-top: 0.75rem;
+}
+
+.kings-brand {
+  display: inline-block;
+  background: #D2232A;      /* King's red */
+  color: #ffffff;           /* white text */
+  padding: 0.05em 0.35em;
+  border-radius: 0.2em;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase; /* optional – closer to logo feel */
+  font-size: 0.8em;         /* slightly smaller than H1 text */
 }
 
 

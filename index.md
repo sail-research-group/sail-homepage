@@ -8,7 +8,8 @@ title: Home
   <span class="sail-word sail-logo sail-heading">
     <span class="sail-letter sail-s">S</span><span class="sail-letter sail-a">A</span><span class="sail-letter sail-i">I</span><span class="sail-letter sail-l">L</span>
   </span>
-  Research Group @ King's College London
+  Research Group @ 
+  <span class="kings-brand">King's College London</span>
 </h1>
 
 <p class="sail-explainer">
