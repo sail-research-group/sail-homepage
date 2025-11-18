@@ -1,0 +1,66 @@
+:root {
+  --bg: #ffffff;
+  --fg: #111111;
+  --muted: #666666;
+  --accent: #0a66c2;
+  --border: #eaeaea;
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif; color: var(--fg); background: var(--bg); }
+.container { max-width: 980px; margin: 2rem auto; padding: 0 1rem; }
+.nav { border-bottom: 1px solid var(--border); background: #fafafa; }
+.nav-inner { display: flex; align-items: center; justify-content: space-between; max-width: 980px; margin: 0 auto; padding: .75rem 1rem; }
+.nav .brand { font-weight: 700; color: var(--fg); text-decoration: none; }
+.nav .menu { list-style: none; margin: 0; padding: 0; display: flex; gap: 1rem; }
+.nav .menu a { text-decoration: none; color: var(--fg); }
+.nav .menu a:hover { color: var(--accent); }
+footer { border-top: 1px solid var(--border); }
+.footer-inner { max-width: 980px; margin: 0 auto; padding: 1.5rem 1rem; color: var(--muted); font-size: .9rem; }
+h1, h2, h3 { line-height: 1.2; }
+.post .meta { color: var(--muted); }
+.card-grid {
+  display: grid;
+  gap: 1rem;
+  /* each column is at least 220px, but we center the cards and cap their width */
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  justify-items: center;   /* center cards inside their grid cells */
+}
+.card-grid .photo {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto 0.75rem;
+}
+.card {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem;
+  background: white;
+  width: 100%;        /* take available column width… */
+  max-width: 260px;   /* …but never grow beyond this */
+}
+table { border-collapse: collapse; width: 100%; }
+th, td { border: 1px solid var(--border); padding: .5rem .6rem; text-align: left; }
+th { background: #fafafa; }
+img { max-width: 100%; height: auto; }
+.badge { display: inline-block; padding: .15rem .5rem; border: 1px solid var(--border); border-radius: 999px; font-size: 1.0rem; color: var(--muted); }
+.sail-word {
+  white-space: nowrap;
+}
+
+.sail-letter {
+  font-weight: bold;
+  text-decoration: underline;  /* default: underline */
+}
+
+/* Remove underline only for the acronym SAIL */
+.sail-logo .sail-letter {
+  text-decoration: none;
+}
+
+/* Colors */
+.sail-s { color: #e74c3c; }  /* red   */
+.sail-a { color: #3498db; }  /* blue  */
+.sail-i { color: #27ae60; }  /* green */
+.sail-l { color: #f39c12; }  /* orange */
+

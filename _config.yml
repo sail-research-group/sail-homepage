@@ -1,0 +1,59 @@
+title: "SAIL Research Group"
+description: "Research in computer architecture, systems, AI acceleration, and health-related applications."
+url: ""        # e.g., https://your-username.github.io
+baseurl: ""    # e.g., /your-repo-name for project pages
+author: "Haiyu Mao"
+timezone: "London"
+
+# Whitelisted plugins for GitHub Pages via github-pages gem
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Navigation (edit in one place)
+nav:
+  - title: Home
+    url: /
+  - title: People
+    url: /people/
+  - title: Publications
+    url: /publications/
+  - title: Projects
+    url: /projects/
+  - title: Blog
+    url: /blog/
+
+# Collections (if you later want custom content types)
+collections:
+  posts:
+    output: true
+
+# Markdown & theme bits
+markdown: kramdown
+kramdown:
+  input: GFM
+
+# Data-driven pages
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+      permalink: /blog/:year/:month/:day/:title/
+
+# Build settings
+exclude:
+  - README.md
+  - LICENSE
+  - node_modules
+  - vendor
+  - .github
+
+# Social (optional)
+social:
+  github: your-github
+  twitter: your-twitter
+
+# Google Analytics (optional)
+google_analytics: ""

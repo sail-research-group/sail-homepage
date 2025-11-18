@@ -1,0 +1,86 @@
+---
+layout: default
+title: People
+permalink: /people/
+---
+
+# Group Leader
+
+<div class="card-grid">
+{% for m in site.data.leader %}
+  <div class="card">
+    {% if m.photo %}<img src="{{ m.photo | relative_url }}" alt="{{ m.name }} photo">{% endif %}
+    <h3>{{ m.name }}</h3>
+    <p class="badge">{{ m.role }}</p>
+    {% if m.email %}<p>Email: <a href="mailto:{{ m.email }}">{{ m.email }}</a></p>{% endif %}
+    {% if m.web %}<p>Homepage: <a href="{{ m.web }}" target="_blank" rel="noopener">Personal</a></p>{% endif %}
+    <!-- {% if m.topics %}<p><strong>Interests:</strong> {{ m.topics | join: ", " }}</p>{% endif %} -->
+  </div>
+{% endfor %}
+</div>
+
+# Group Members
+
+
+## PhD Students
+
+<div class="card-grid">
+{% for m in site.data.phds %}
+  <div class="card">
+    {% if m.photo %}<img src="{{ m.photo | relative_url }}" alt="{{ m.name }} photo">{% endif %}
+    <h3>{{ m.name }}</h3>
+    <p class="badge">{{ m.role }}</p>
+    {% if m.email %}<p>Email: <a href="mailto:{{ m.email }}">{{ m.email }}</a></p>{% endif %}
+    {% if m.web %}<p><a href="{{ m.web }}" target="_blank" rel="noopener">Personal Homepage</a></p>{% endif %}
+    {% if m.topics %}<p><strong>Interests:</strong> {{ m.topics | join: ", " }}</p>{% endif %}
+    {% if m.master %}<p><strong>Master:</strong>  {{ m.master}}</p>{% endif %}
+    {% if m.bachelor %}<p><strong>Bachelor:</strong> {{ m.bachelor}}</p>{% endif %}
+  </div>
+{% endfor %}
+</div>
+
+## Visiting Students
+
+<div class="card-grid">
+{% for m in site.data.visitings %}
+  <div class="card">
+    {% if m.photo %}<img src="{{ m.photo | relative_url }}" alt="{{ m.name }} photo">{% endif %}
+    <h3>{{ m.name }}</h3>
+    <p class="badge">{{ m.role }}</p>
+    {% if m.email %}<p>Email: <a href="mailto:{{ m.email }}">{{ m.email }}</a></p>{% endif %}
+    {% if m.web %}<p><a href="{{ m.web }}" target="_blank" rel="noopener">Personal Homepage</a></p>{% endif %}
+    {% if m.topics %}<p><strong>Interests:</strong> {{ m.topics | join: ", " }}</p>{% endif %}
+  </div>
+{% endfor %}
+</div>
+
+
+## Master Students
+
+<div class="card-grid">
+{% for m in site.data.masters %}
+  <div class="card">
+    {% if m.photo %}<img src="{{ m.photo | relative_url }}" alt="{{ m.name }} photo">{% endif %}
+    <h3>{{ m.name }}</h3>
+    <p class="badge">{{ m.role }}</p>
+    {% if m.email %}<p>Email: <a href="mailto:{{ m.email }}">{{ m.email }}</a></p>{% endif %}
+    {% if m.web %}<p><a href="{{ m.web }}" target="_blank" rel="noopener">Personal Homepage</a></p>{% endif %}
+    {% if m.topics %}<p><strong>Interests:</strong> {{ m.topics | join: ", " }}</p>{% endif %}
+  </div>
+{% endfor %}
+</div>
+
+## Interns
+
+<div class="card-grid">
+{% for m in site.data.interns %}
+  <div class="card">
+    {% if m.photo %}<img src="{{ m.photo | relative_url }}" alt="{{ m.name }} photo">{% endif %}
+    <h3>{{ m.name }}</h3>
+    <p class="badge">{{ m.role }}</p>
+    {% if m.email %}<p>Email: <a href="mailto:{{ m.email }}">{{ m.email }}</a></p>{% endif %}
+    {% if m.web %}<p><a href="{{ m.web }}" target="_blank" rel="noopener">Personal Homepage</a></p>{% endif %}
+    {% if m.topics %}<p><strong>Interests:</strong> {{ m.topics | join: ", " }}</p>{% endif %}
+  </div>
+{% endfor %}
+</div>

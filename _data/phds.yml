@@ -1,0 +1,16 @@
+
+- name: Zihao Pu
+  role: PhD Student
+  email: zihao.pu@kcl.ac.uk
+  topics: [PIM, LLMs]
+  photo: /assets/img/zihao.png
+  master: NTU and TUM
+  bachelor: UBC
+
+- name: Ali Alsarraf
+  role: PhD Student
+  email: ali.alsarraf@kcl.ac.uk
+  topics: [PIM, LLMs]
+  photo: /assets/img/ali.png
+  master: KCL
+  bachelor: KCL

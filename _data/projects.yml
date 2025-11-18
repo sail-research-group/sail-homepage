@@ -1,0 +1,12 @@
+# - title: PIM for LLM Inference on Mobile
+#   status: Active
+#   summary: Co-design bit-serial kernels and memory layouts for KV-cache heavy workloads.
+#   links:
+#     - label: Paper
+#       url: https://example.com/paper.pdf
+#     - label: Code
+#       url: https://github.com/your-org/mobile-pim-llm
+
+# - title: Fast Epistasis on AI Hardware
+#   status: Planned
+#   summary: Transformer-assisted exhaustive high-order searches on modern accelerators.
