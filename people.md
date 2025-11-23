@@ -22,7 +22,7 @@ permalink: /people/
 # Group Members
 
 
-## PhD Students
+<!-- ## PhD Students -->
 
 <div class="card-grid">
 {% for m in site.data.phds %}
@@ -39,7 +39,7 @@ permalink: /people/
 {% endfor %}
 </div>
 
-## Visiting Students
+<!-- ## Visiting Students
 
 <div class="card-grid">
 {% for m in site.data.visitings %}
@@ -83,4 +83,4 @@ permalink: /people/
     {% if m.topics %}<p><strong>Interests:</strong> {{ m.topics | join: ", " }}</p>{% endif %}
   </div>
 {% endfor %}
-</div>
+</div> -->

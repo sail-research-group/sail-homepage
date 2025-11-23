@@ -79,7 +79,7 @@ We are part of the **[Department of Engineering](https://www.kcl.ac.uk/engineeri
 
 **Our mission:** We co-design software and hardware to power data-intensive applications for a healthier, simpler everyday life.
 
-Our Key Research Directions:
+**Our Key Research Directions:**
 - Computer Architecture and System
 - Software and Hardware Co-Design
 - Data-centric Architectures: Processing In Memory (PIM), In-Storage Processing (ISP), …
@@ -87,3 +87,31 @@ Our Key Research Directions:
 - Emerging Memory and Storage Technologies 
 - Reliable Architecture and System
 
+
+<!-- News block -->
+<h2>News</h2>
+
+<div class="news-list">
+  {% assign news = site.data.news | sort: 'date' | reverse %}
+  {% for item in news limit:5 %}
+    <article class="news-item">
+      <div class="news-date">
+        {{ item.date | date: "%Y-%m-%d" }}
+      </div>
+      <div class="news-title">
+        {% if item.url %}
+          <a href="{{ item.url }}" target="_blank" rel="noopener">
+            {{ item.title }}
+          </a>
+        {% else %}
+          {{ item.title }}
+        {% endif %}
+      </div>
+      {% if item.summary %}
+        <div class="news-summary">
+          {{ item.summary }}
+        </div>
+      {% endif %}
+    </article>
+  {% endfor %}
+</div>

@@ -10,3 +10,16 @@
 # - title: Fast Epistasis on AI Hardware
 #   status: Planned
 #   summary: Transformer-assisted exhaustive high-order searches on modern accelerators.
+
+
+- title: Large Language Model Inference on Mobile Phones - Solve the Resource Shortage via Processing-in-Memory
+  status: Active
+  summary: Large language models (LLMs) on mobile phones are a promising area in industry and academia. LLMs on-device enhance data privacy and security, and sensitive data never leaves the device. Running LLMs locally means they can deliver real-time responses more quickly with lower latency, which will improve performance and give users a better experience. However, LLMs require enormous memory and power resources, making them difficult to implement on mobile devices. In this proposal, Processing in memory (PIM) techniques are used to cut down the energy cost and improve processing speed by reducing the computing and storage resources of LLMs. 
+  #image: "/assets/img/projects/rawhash.png"
+  # links:
+  #   - label: Paper
+  #     url: https://example.com/isca-paper
+
+- title: Processing-in-Memory for Genome Analysis on Portable Devices
+  status: Active
+  summary: Portable genome analysis enables rapid diagnostics in clinics and low-resource settings, but current pipelines strain device budgets for power, memory, and bandwidth. Many steps in the genome analysis are dominated by data movement, random accesses to large reference databases, streaming signals, and heavy state (e.g., hash tables, DP matrices). On portable devices, thermal limits and memory bandwidth throttle throughput and drain batteries. This project explores Processing-in-Memory (PIM) to co-locate compute with data, reducing processing time and energy. We will co-design PIM-friendly kernels, compress references and intermediates in memory, and build an efficient runtime that meets accuracy, latency, energy, and reliability targets. 

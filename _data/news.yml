@@ -1,0 +1,15 @@
+- date: 2026-11-23
+  title: "Two papers accepted to HPCA 2026"
+  url: "https://example.com/isca-paper"
+  summary: "New works on data-centric architectures for genome analysis."
+
+- date: 2025-11-12
+  title: "Invited talk at Thames Summit 2025"
+  url: ""
+  summary: "Talk on data-centric architectures for real-world AI applications."
+
+- date: 2025-10-01
+  title: "SAIL welcomes new PhD student"
+  url: "/people/"
+  summary: "Zihao and Ali join the group to work on PIM for LLM."
+
