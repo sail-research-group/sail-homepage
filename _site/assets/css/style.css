@@ -206,3 +206,62 @@ h1 {
   line-height: 1.2;
   color: #3498db;
 }
+
+/* SAIL Picture Gallery Styles */
+
+.sail-gallery {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0;
+  align-items: stretch;
+}
+
+/* Left column: 1/4 width */
+.sail-gallery-static {
+  flex: 1;
+}
+
+/* Right column: 3/4 width */
+.sail-gallery-rotating {
+  flex: 3;
+}
+
+/* Make images fill their box nicely */
+.sail-gallery-static img,
+.sail-gallery-rotating img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 0.75rem;
+}
+
+/* Give the gallery a fixed height on desktop */
+.sail-gallery-static,
+.sail-gallery-rotating {
+  height: 350px; /* tweak this height as you like */
+}
+
+/* Responsive: stack vertically on small screens */
+@media (max-width: 768px) {
+  .sail-gallery {
+    flex-direction: column;
+  }
+
+  .sail-gallery-static,
+  .sail-gallery-rotating {
+    height: 220px;
+  }
+}
+
+
+/* Light blue links in main content */
+.page-content a {
+  color: #3498db;                         /* light blue */
+  text-decoration: none; /* no underline */
+}
+
+.page-content a:hover {
+  color: #1c4292;                         /* slightly darker on hover */
+  text-decoration: none; /* no underline */
+}

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Home | Research Group</title>
+<title>Home | SAIL Research Group</title>
 <meta name="generator" content="Jekyll v3.10.0" />
 <meta property="og:title" content="Home" />
 <meta name="author" content="Haiyu Mao" />
@@ -12,12 +12,12 @@
 <meta property="og:description" content="Research in computer architecture, systems, AI acceleration, and health-related applications." />
 <link rel="canonical" href="http://localhost:4000/sail-homepage/" />
 <meta property="og:url" content="http://localhost:4000/sail-homepage/" />
-<meta property="og:site_name" content="Research Group" />
+<meta property="og:site_name" content="SAIL Research Group" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Home" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","author":{"@type":"Person","name":"Haiyu Mao"},"description":"Research in computer architecture, systems, AI acceleration, and health-related applications.","headline":"Home","name":"Research Group","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/sail-homepage/assets/img/sail-logo.png"},"name":"Haiyu Mao"},"url":"http://localhost:4000/sail-homepage/"}</script>
+{"@context":"https://schema.org","@type":"WebSite","author":{"@type":"Person","name":"Haiyu Mao"},"description":"Research in computer architecture, systems, AI acceleration, and health-related applications.","headline":"Home","name":"SAIL Research Group","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/sail-homepage/assets/img/sail-logo.png"},"name":"Haiyu Mao"},"url":"http://localhost:4000/sail-homepage/"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/sail-homepage/assets/css/style.css">
   </head>
@@ -30,7 +30,7 @@
         src="/sail-homepage/assets/img/sail-logo.png"
         alt="SAIL logo"
       >
-      <span class="brand-text">Research Group</span>
+      <span class="brand-text">SAIL Research Group</span>
     </a>
     <ul class="menu">
     
@@ -57,6 +57,39 @@
   <span class="kings-brand">King's College London</span>
 </h1>
 
+<!-- PICTURE GALLERY -->
+
+<div class="sail-gallery">
+  <div class="sail-gallery-static">
+    <img src="/sail-homepage/assets/img/gallery/static.jpg" alt="SAIL research static image" />
+  </div>
+
+  <div class="sail-gallery-rotating">
+    <img id="sail-rotating-image" src="/sail-homepage/assets/img/gallery/slide1.png" alt="SAIL research gallery" />
+  </div>
+</div>
+
+<script>
+  (function() {
+    // List of rotating images (add/remove as you like)
+    const images = [
+      "/sail-homepage/assets/img/gallery/slide1.png",
+      "/sail-homepage/assets/img/gallery/slide2.jpg"
+    ];
+
+    const imgEl = document.getElementById('sail-rotating-image');
+    let index = 0;
+
+    function showNextImage() {
+      index = (index + 1) % images.length;
+      imgEl.src = images[index];
+    }
+
+    // Change image every 2000 ms (2 seconds)
+    setInterval(showNextImage, 2000);
+  })();
+</script>
+
 <p class="sail-explainer">
   <span class="sail-word sail-logo">
     <span class="sail-letter sail-s">S</span><span class="sail-letter sail-a">A</span><span class="sail-letter sail-i">I</span><span class="sail-letter sail-l">L</span>
@@ -78,9 +111,11 @@
   </span>.
 </p>
 
-<p>SAIL Research Group is led by <a href="https://hybol1993.github.io/">Haiyu Mao</a>.  We are part of the <a href="https://www.kcl.ac.uk/engineering">Department of Engineering</a> at <a href="https://www.kcl.ac.uk/">King’s College London</a>.</p>
+<p>SAIL Research Group is led by <strong><a href="https://hybol1993.github.io/">Haiyu Mao</a></strong>.</p>
 
-<p>Our Mission: We co-design software (algorithms) and hardware (architectures) to power data-intensive AI and bioinformatics for healthier, simpler everyday life.</p>
+<p>We are part of the <strong><a href="https://www.kcl.ac.uk/engineering">Department of Engineering</a></strong> at <strong><a href="https://www.kcl.ac.uk/">King’s College London</a></strong>.</p>
+
+<p><strong>Our mission:</strong> We co-design software and hardware to power data-intensive applications for a healthier, simpler everyday life.</p>
 
 <p>Our Key Research Directions:</p>
 <ul>
