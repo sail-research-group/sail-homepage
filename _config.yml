@@ -1,7 +1,7 @@
 title: "Research Group"
 description: "Research in computer architecture, systems, AI acceleration, and health-related applications."
-url: "https://sail-research-group.github.io"        # e.g., https://your-username.github.io
-baseurl: "/sail-homepage"    # e.g., /your-repo-name for project pages
+url: "https://sail.kcl.ac.uk"        # e.g., https://your-username.github.io
+baseurl: ""    # e.g., /your-repo-name for project pages
 author: "Haiyu Mao"
 timezone: "London"
 logo: "/assets/img/sail-logo.png"
