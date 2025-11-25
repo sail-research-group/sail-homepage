@@ -13,6 +13,7 @@ title: SAIL
 </h1>
 
 <!-- PICTURE GALLERY -->
+<!-- name the pic as YEARMONTHDATE, e.g., 20251125, put in the ./assets/img/gallery/ -->
 
 {% assign gallery_files = site.static_files
      | where_exp: "file", "file.path contains '/assets/img/gallery/'"
