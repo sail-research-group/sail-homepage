@@ -14,6 +14,12 @@ title: SAIL
 
 <!-- PICTURE GALLERY -->
 
+{% assign gallery_files = site.static_files
+     | where_exp: "file", "file.path contains '/assets/img/gallery/'"
+     | where_exp: "file", "file.name != 'static.jpg'"
+     | sort: "name"
+     | reverse %}
+
 <div class="sail-gallery">
   <div class="sail-gallery-static">
     <img
@@ -25,7 +31,11 @@ title: SAIL
   <div class="sail-gallery-rotating">
     <img
       id="sail-rotating-image"
-      src="{{ '/assets/img/gallery/slide1.png' | relative_url }}"
+      src="{% if gallery_files.size > 0 %}
+             {{ gallery_files[0].path | relative_url }}
+           {% else %}
+             {{ '/assets/img/gallery/static.jpg' | relative_url }}
+           {% endif %}"
       alt="SAIL research gallery"
     >
   </div>
@@ -33,24 +43,28 @@ title: SAIL
 
 <script>
   (function() {
-    // List of rotating images (add/remove as you like)
     const images = [
-      "{{ '/assets/img/gallery/slide1.png' | relative_url }}",
-      "{{ '/assets/img/gallery/slide2.jpg' | relative_url }}"
+      {% for f in gallery_files %}
+        "{{ f.path | relative_url }}"{% unless forloop.last %},{% endunless %}
+      {% endfor %}
     ];
 
     const imgEl = document.getElementById('sail-rotating-image');
     let index = 0;
 
     function showNextImage() {
+      if (images.length === 0) return;
       index = (index + 1) % images.length;
       imgEl.src = images[index];
     }
 
-    // Change image every 2000 ms (2 seconds)
-    setInterval(showNextImage, 2000);
+    if (images.length > 0) {
+      // already showing images[0] (newest) via the HTML src
+      setInterval(showNextImage, 2000);
+    }
   })();
 </script>
+
 
 <p class="sail-explainer">
   <span class="sail-word sail-logo">

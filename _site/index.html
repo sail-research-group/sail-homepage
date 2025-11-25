@@ -67,28 +67,37 @@
   </div>
 
   <div class="sail-gallery-rotating">
-    <img id="sail-rotating-image" src="/assets/img/gallery/slide1.png" alt="SAIL research gallery" />
+    <img id="sail-rotating-image" src="
+             /assets/img/gallery/20251125.png
+           " alt="SAIL research gallery" />
   </div>
 </div>
 
 <script>
   (function() {
-    // List of rotating images (add/remove as you like)
     const images = [
-      "/assets/img/gallery/slide1.png",
-      "/assets/img/gallery/slide2.jpg"
+      
+        "/assets/img/gallery/20251125.png",
+      
+        "/assets/img/gallery/20251124.png",
+      
+        "/assets/img/gallery/20251123.png"
+      
     ];
 
     const imgEl = document.getElementById('sail-rotating-image');
     let index = 0;
 
     function showNextImage() {
+      if (images.length === 0) return;
       index = (index + 1) % images.length;
       imgEl.src = images[index];
     }
 
-    // Change image every 2000 ms (2 seconds)
-    setInterval(showNextImage, 2000);
+    if (images.length > 0) {
+      // already showing images[0] (newest) via the HTML src
+      setInterval(showNextImage, 2000);
+    }
   })();
 </script>
 
