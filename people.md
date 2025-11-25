@@ -39,6 +39,23 @@ permalink: /people/
 {% endfor %}
 </div>
 
+## Interns
+
+<ul class="intern-list">
+  {% for m in site.data.interns %}
+    <li>
+      <strong>{{ m.name }}</strong>
+      {% if m.degree %} — {{ m.degree }}{% endif %}
+      {% if m.affiliation %}, {{ m.affiliation }}{% endif %}
+      {% if m.period %} ({{ m.period }}){% endif %}
+      {% if m.note %}
+        <br><span class="intern-note">{{ m.note }}</span>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
+
+
 <!-- ## Visiting Students
 
 <div class="card-grid">
