@@ -25,10 +25,12 @@ h1, h2, h3 { line-height: 1.2; }
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   justify-items: center;   /* center cards inside their grid cells */
 }
-.card-grid .photo {
-  width: 200px;
-  height: auto;
+.card img {
+  width: 100%;
+  height: 320px;        /* same height for everyone; adjust as you like */
+  object-fit: cover;    /* auto-trim edges, no stretching */
   display: block;
+  border-radius: 0.5rem;
   margin: 0 auto 0.75rem;
 }
 .card {
@@ -37,7 +39,7 @@ h1, h2, h3 { line-height: 1.2; }
   padding: 1rem;
   background: white;
   width: 100%;        /* take available column width… */
-  max-width: 260px;   /* …but never grow beyond this */
+  max-width: 320px;   /* …but never grow beyond this */
 }
 table { border-collapse: collapse; width: 100%; }
 th, td { border: 1px solid var(--border); padding: .5rem .6rem; text-align: left; }

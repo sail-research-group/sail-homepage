@@ -4,13 +4,22 @@
   email: zihao.pu@kcl.ac.uk
   topics: [PIM, LLMs]
   photo: /assets/img/zihao.png
-  master: NTU and TUM
-  bachelor: UBC
+  master: Nanyang Technological University (NTU) and Technical University of Munich (TUM)
+  bachelor: The University of British Columbia (UBC)
 
 - name: Ali Alsarraf
   role: PhD Student
   email: ali.alsarraf@kcl.ac.uk
   topics: [PIM, LLMs]
   photo: /assets/img/ali.png
-  master: KCL
-  bachelor: KCL
+  master: King's College London
+  bachelor: King's College London
+
+- name: Mengyun Zhang
+  role: Cooperator
+  comment: PhD Student at Tsinghua University
+  email: zhangmen24@mails.tsinghua.edu.cn
+  topics: [3D memory, Embodied AI, Robotics]
+  photo: /assets/img/mengyun.png
+  work: Qualcomm, 2014-2024
+  master: Georgia Institute of Technology, 2021; University of Southern California, 2014

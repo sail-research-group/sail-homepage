@@ -30,9 +30,11 @@ permalink: /people/
     {% if m.photo %}<img src="{{ m.photo | relative_url }}" alt="{{ m.name }} photo">{% endif %}
     <h3>{{ m.name }}</h3>
     <p class="badge">{{ m.role }}</p>
+    {% if m.comment %}<p>{{ m.comment }}</p>{% endif %}
     {% if m.email %}<p>Email: <a href="mailto:{{ m.email }}">{{ m.email }}</a></p>{% endif %}
     {% if m.web %}<p><a href="{{ m.web }}" target="_blank" rel="noopener">Personal Homepage</a></p>{% endif %}
     {% if m.topics %}<p><strong>Interests:</strong> {{ m.topics | join: ", " }}</p>{% endif %}
+    {% if m.work %}<p><strong>Work:</strong> {{ m.work }}</p>{% endif %}
     {% if m.master %}<p><strong>Master:</strong>  {{ m.master}}</p>{% endif %}
     {% if m.bachelor %}<p><strong>Bachelor:</strong> {{ m.bachelor}}</p>{% endif %}
   </div>
