@@ -34,11 +34,15 @@ bundle exec jekyll serve
 - `_data/` YAML files for structured content
 - `assets/img/` for photos and logos
 - `_config.yml` for site name, social links, Google Analytics ID, etc.
+- `namelist.txt` contains the names of the collaborated research people with their associated urls
 
 ## Collaboration workflow
 - Give students **Write** (or use forks/PRs).
 - Protect `main` (Settings → Branches): require PR + 1 review.
 - Students edit Markdown/YAML and open PRs; you review/merge.
+
+## Publication workflow
+- run nameupdate.py to automatically update all the hyperlinks associated with the names
 
 ## License
 MIT (see `LICENSE`).
