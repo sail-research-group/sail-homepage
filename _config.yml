@@ -19,12 +19,12 @@ nav:
     url: /people/
   - title: Publications
     url: /publications/
+  - title: Talks
+    url: /talks/
   - title: Projects
     url: /projects/
   - title: Posisitons
     url: /positions/
-  - title: Blog
-    url: /blog/
 
 # Collections (if you later want custom content types)
 collections:

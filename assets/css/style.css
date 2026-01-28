@@ -142,6 +142,18 @@ h1 {
   margin-bottom: 0.4rem;
 }
 
+.sail-link {
+  color: #007bff; /* blue for SAIL members */
+}
+
+.external-link {
+  color: #add8e6; /* light blue for external links */
+}
+
+.external-author {
+  color: #808080; /* grey for unlinkable external authors */
+}
+
 .pub-links {
   font-size: 0.9rem;
   color: #444;
@@ -186,6 +198,126 @@ h1 {
   background: #d4d4d8;
 }
 
+
+
+/* Talk styles */
+.talks {
+  margin-top: 2rem;
+}
+
+.talk-year {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.08);
+  padding-bottom: 0.25rem;
+}
+
+.talk-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.talk-item {
+  padding: 1rem 1.25rem;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  background: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+}
+
+.talk-venue {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+  color: #666;
+  margin-bottom: 0.25rem;
+}
+
+.talk-title {
+  font-size: 1.05rem;
+  margin: 0.1rem 0 0.4rem;
+}
+
+.talk-description {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 0.4rem;
+  font-style: italic;
+}
+
+.talk-description-inline {
+  font-size: 0.85rem;
+  color: #666;
+  font-style: italic;
+  margin-left: 0.4rem;
+}
+
+.talk-presenter {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 0.4rem;
+}
+
+.talk-date {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 0.4rem;
+}
+
+.talk-location {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 0.4rem;
+}
+
+.talk-links {
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.talk-links a {
+  text-decoration: none;
+  border-bottom: 1px dotted transparent;
+}
+
+.talk-links a:hover {
+  border-bottom-color: currentColor;
+}
+
+.talk-links {
+  margin-top: 0.4rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem; /* space between buttons */
+  align-items: center; /* align description with button text */
+}
+
+.talk-btn {
+  display: inline-block;
+  padding: 0.25rem 0.7rem;
+  border-radius: 4px;          /* rectangle shape */
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  font-size: 0.85rem;
+  text-decoration: none;
+  background: #f7f7f9;
+  color: #333;
+  transition: background 0.15s ease, border-color 0.15s ease, transform 0.1s ease;
+}
+
+.talk-btn:hover {
+  background: #e5e7eb;           /* slightly darker on hover */
+  border-color: rgba(0, 0, 0, 0.2);
+  transform: translateY(-1px);
+}
+
+.talk-btn:active {
+  transform: translateY(0);
+  background: #d4d4d8;
+}
 
 /* Logo on the nav bar */
 .nav .brand {

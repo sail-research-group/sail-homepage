@@ -21,7 +21,16 @@ permalink: /publications/
             {{ p.title }}
           </h3>
           <div class="pub-authors">
-            {{ p.authors }}
+            {%- assign authors = p.authors | split: ", " -%}
+            {%- for author in authors -%}
+              {%- assign person = site.data.leader | concat: site.data.phds | concat: site.data.interns | where: "name", author | first -%}
+              {%- if person -%}
+                <a href="/people/#{{ author | slugify }}" class="sail-link">{{ author }}</a>
+              {%- else -%}
+                <span class="external-author">{{ author }}</span>
+              {%- endif -%}
+              {%- unless forloop.last -%}, {% endunless -%}
+            {%- endfor -%}
           </div>
           <div class="pub-links">
             {%- if p.pdf -%}

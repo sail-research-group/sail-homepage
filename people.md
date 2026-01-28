@@ -9,7 +9,7 @@ permalink: /people/
 <div class="card-grid">
 {% for m in site.data.leader %}
   <div class="card">
-    {% if m.photo %}<img src="{{ m.photo | relative_url }}" alt="{{ m.name }} photo">{% endif %}
+    {% if m.photo %}<img id="{{ m.name | slugify }}" src="{{ m.photo | relative_url }}" alt="{{ m.name }} photo">{% endif %}
     <h3>{{ m.name }}</h3>
     <p class="badge">{{ m.role }}</p>
     {% if m.email %}<p>Email: <a href="mailto:{{ m.email }}">{{ m.email }}</a></p>{% endif %}
@@ -27,7 +27,7 @@ permalink: /people/
 <div class="card-grid">
 {% for m in site.data.phds %}
   <div class="card">
-    {% if m.photo %}<img src="{{ m.photo | relative_url }}" alt="{{ m.name }} photo">{% endif %}
+    {% if m.photo %}<img id="{{ m.name | slugify }}" src="{{ m.photo | relative_url }}" alt="{{ m.name }} photo">{% endif %}
     <h3>{{ m.name }}</h3>
     <p class="badge">{{ m.role }}</p>
     {% if m.comment %}<p>{{ m.comment }}</p>{% endif %}
@@ -45,7 +45,7 @@ permalink: /people/
 
 <ul class="intern-list">
   {% for m in site.data.interns %}
-    <li>
+    <li id="{{ m.name | slugify }}">
       <strong>{{ m.name }}</strong>
       {% if m.degree %} — {{ m.degree }}{% endif %}
       {% if m.affiliation %}, {{ m.affiliation }}{% endif %}
