@@ -88,6 +88,8 @@ title: SAIL
   </span>.
 </p>
 
+**Why we are called SAIL**: Doing research is like **sail**ing to a new continent through many fog-shrouded waters. You cannot know what lies ahead until you explore it. As the captain, you decide when to push forward through uncertainty, when to change course, and when to turn back. And each time you reach new land, the brief joy quickly becomes the next motivation to explore further and push forward.
+
 SAIL Research Group is led by **[Haiyu Mao](https://hybol1993.github.io/)**.
 
 We are part of the **[Department of Engineering](https://www.kcl.ac.uk/engineering)** at **[King's College London](https://www.kcl.ac.uk/)**.
