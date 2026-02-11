@@ -37,13 +37,13 @@ We regularly recruit **PhD students** in the broad areas of:
 ### How to apply
 
 1. Check the **official PhD application instructions** on the  
-   [KCL postgraduate pages](https://www.kcl.ac.uk/study/postgraduate).
+   [KCL postgraduate pages](https://www.kcl.ac.uk/study/postgraduate-research/areas/engineering-phd).
 2. Prepare:
    - CV (with GPA, publications if any, and projects)
    - Brief research statement (1–2 pages)
    - Transcripts (and English test scores if required)
 3. **Before applying**, you are welcome to email  
-   **haiyu.mao [at] kcl.ac.uk** with:
+   **haiyu.mao@kcl.ac.uk** with:
    - Your CV
    - A short paragraph about your research interests
    - Any relevant publications / project links
@@ -51,25 +51,30 @@ We regularly recruit **PhD students** in the broad areas of:
 Please use the email subject line:  
 **[PhD Application] Your Name – SAIL Research Group**
 
+<p><a href="{{ '/phd-application/' | relative_url }}" class="apply-button">Apply Here</a></p>
+
 ---
-## 2. MSc / BSc Thesis Projects & Internships (KCL Students)
+## 2. Home-Fee PhD Studentship (Safe AI, Software-Hardware Co-Design)
 
-We offer **MSc and BSc thesis projects** and research internships for KCL students on topics such as:
+A **home-fee PhD studentship** is currently available in **software-hardware co-designed safe AI** (shared by Haiyu Mao and collaborators at King's College London).
 
-- Implementing simplified **PIM-friendly kernels** (e.g., GEMV, KV caches)
-- Building **prototypes and tools** for memory/storage profiling
-- Small-scale **AI/bioinformatics accelerators** using CPU/GPU/FPGA
+This opportunity is part of King's **Prize Doctoral Programme in Safe, Trusted & Responsible AI (STaR-AI)** and connects to the wider Safe and Trusted AI doctoral training environment.
 
-If you are a current **KCL student**:
+### Highlights
 
-- Check the official project allocation system (when available).
-- Or send an email with:
-  - Your programme and year
-  - Transcript or list of relevant modules
-  - A short description of what you’d like to work on
+- **Four fully-funded studentships** available for **October 2026** start
+- Applicants must qualify for **home fees**
+- Research areas include:
+  - Safe and trustworthy AI methods
+  - Human and social impacts of AI
+  - Legal, ethical and regulatory frameworks
+- **Application deadline: 2 March 2026**
 
-Email subject line:  
-**[Student Project] Your Name – MSc/BSc at KCL**
+How to apply and full eligibility details are provided on the programme page below.
+
+If you have questions, please email **haiyu.mao@kcl.ac.uk**.
+
+<p><a href="https://lnkd.in/eqa7Sssn" class="apply-button">Find Out More & Apply</a></p>
 
 ---
 
@@ -82,13 +87,15 @@ Typical duration: **3–12 months**.
 If you are interested in visiting SAIL:
 
 - Make sure you have a **clear funding source** (scholarship, home institution, etc.).
-- Email **haiyu.mao [at] kcl.ac.uk** with:
+- Email **haiyu.mao@kcl.ac.uk** with:
   - CV
   - Short research statement (1–2 pages)
   - Proposed visit dates and funding source
 
 Please use the email subject line:  
 **[Visit Inquiry] Your Name – SAIL Research Group**
+
+<p><a href="{{ '/internship-application/' | relative_url }}" class="apply-button">Apply Here</a></p>
 
 
 <!-- ## 2. Postdoctoral Positions (Research Fellows)
@@ -105,7 +112,7 @@ We do not have a permanently open postdoc position, but we are **very happy to d
 - Joint fellowship applications (e.g., UK or EU fellowships)
 - Co-supervised projects with collaborators
 
-If you are interested, please email **haiyu.mao [at] kcl.ac.uk** with:
+If you are interested, please email **haiyu.mao@kcl.ac.uk** with:
 
 - CV
 - 1–2 page research summary / proposal
@@ -143,7 +150,7 @@ Typical duration: **3–12 months**.
 If you are interested in visiting SAIL:
 
 - Make sure you have a **clear funding source** (scholarship, home institution, etc.).
-- Email **haiyu.mao [at] kcl.ac.uk** with:
+- Email **haiyu.mao@kcl.ac.uk** with:
   - CV
   - Short research statement (1–2 pages)
   - Proposed visit dates and funding source

@@ -2,7 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="/assets/img/sail-logo-no-text.png"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Talks | Research Group</title>
 <meta name="generator" content="Jekyll v3.10.0" />
 <meta property="og:title" content="Talks" />
@@ -10,14 +11,14 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Research in computer architecture, systems, AI acceleration, and health-related applications." />
 <meta property="og:description" content="Research in computer architecture, systems, AI acceleration, and health-related applications." />
-<link rel="canonical" href="http://localhost:4000/talks/" />
-<meta property="og:url" content="http://localhost:4000/talks/" />
+<link rel="canonical" href="https://sail.kcl.ac.uk/talks/" />
+<meta property="og:url" content="https://sail.kcl.ac.uk/talks/" />
 <meta property="og:site_name" content="Research Group" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Talks" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Haiyu Mao"},"description":"Research in computer architecture, systems, AI acceleration, and health-related applications.","headline":"Talks","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/sail-logo.png"},"name":"Haiyu Mao"},"url":"http://localhost:4000/talks/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Haiyu Mao"},"description":"Research in computer architecture, systems, AI acceleration, and health-related applications.","headline":"Talks","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://sail.kcl.ac.uk/assets/img/sail-logo.png"},"name":"Haiyu Mao"},"url":"https://sail.kcl.ac.uk/talks/"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/css/style.css">
   </head>
@@ -32,6 +33,11 @@
       >
       <span class="brand-text">Research Group</span>
     </a>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
     <ul class="menu">
     
       <li><a href="/">Home</a></li>
@@ -44,11 +50,38 @@
     
       <li><a href="/projects/">Projects</a></li>
     
-      <li><a href="/positions/">Posisitons</a></li>
+      <li><a href="/positions/">Positions</a></li>
     
     </ul>
   </div>
 </nav>
+
+<script>
+  // Hamburger menu toggle
+  (function() {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.nav .menu');
+    
+    if (menuToggle && menu) {
+      menuToggle.addEventListener('click', function() {
+        const isExpanded = this.getAttribute('aria-expanded') === 'true';
+        this.setAttribute('aria-expanded', !isExpanded);
+        menu.classList.toggle('menu-open');
+        this.classList.toggle('menu-toggle-active');
+      });
+      
+      // Close menu when clicking on a link
+      const menuLinks = menu.querySelectorAll('a');
+      menuLinks.forEach(link => {
+        link.addEventListener('click', function() {
+          menuToggle.setAttribute('aria-expanded', 'false');
+          menu.classList.remove('menu-open');
+          menuToggle.classList.remove('menu-toggle-active');
+        });
+      });
+    }
+  })();
+</script>
     <main class="container">
       
 <h2 id="research-talks">Research Talks</h2>
