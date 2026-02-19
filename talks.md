@@ -17,29 +17,21 @@ permalink: /talks/
     <div class="talk-list">
       {%- for p in year_group.items -%}
         <article class="talk-item">
-          <div class="talk-venue">
-            {{ p.venue }}
-          </div>
-          <h3 class="talk-title">
-            {{ p.title }}
-          </h3>
-          <div class="talk-presenter">
-            {%- assign person = site.data.leader | concat: site.data.phds | concat: site.data.interns | where: "name", p.presenter | first -%}
-            {%- if person -%}
-              <a href="/people/#{{ p.presenter | slugify }}" class="sail-link">{{ p.presenter }}</a>
-            {%- elsif p.presenter_link -%}
-              <a href="{{ p.presenter_link }}" target="_blank" rel="noopener" class="external-link">{{ p.presenter }}</a>
-            {%- else -%}
-              {{ p.presenter }}
-            {%- endif -%}
-          </div>
-          <div class="talk-date">
-            {{ p.date }}
-          </div>
-          <div class="talk-location">
-            {{ p.location }}
-          </div>
-          <div class="talk-links">
+          <div class="talk-venue">{{ p.venue }}</div>
+          <h3 class="talk-title">{{ p.title }}</h3>
+          <div class="talk-meta">
+            <div class="talk-presenter">
+              {%- assign person = site.data.leader | concat: site.data.phds | concat: site.data.interns | where: "name", p.presenter | first -%}
+              {%- if person -%}
+                <a href="/people/#{{ p.presenter | slugify }}" class="sail-link">{{ p.presenter }}</a>
+              {%- elsif p.presenter_link -%}
+                <a href="{{ p.presenter_link }}" target="_blank" rel="noopener" class="external-link">{{ p.presenter }}</a>
+              {%- else -%}
+                {{ p.presenter }}
+              {%- endif -%}
+            </div>
+            <span class="talk-date">{{ p.date }}</span>
+            <span class="talk-location">{{ p.location }}</span>
             {%- if p.video -%}
               <a class="talk-btn" href="{{ p.video }}" target="_blank" rel="noopener">Video</a>
             {%- endif -%}
@@ -63,29 +55,21 @@ permalink: /talks/
     <div class="talk-list">
       {%- for p in year_group.items -%}
         <article class="talk-item">
-          <div class="talk-venue">
-            {{ p.venue }}
-          </div>
-          <h3 class="talk-title">
-            {{ p.title }}
-          </h3>
-          <div class="talk-presenter">
-            {%- assign person = site.data.leader | concat: site.data.phds | concat: site.data.interns | where: "name", p.presenter | first -%}
-            {%- if person -%}
-              <a href="/people/#{{ p.presenter | slugify }}" class="sail-link">{{ p.presenter }}</a>
-            {%- elsif p.presenter_link -%}
-              <a href="{{ p.presenter_link }}" target="_blank" rel="noopener" class="external-link">{{ p.presenter }}</a>
-            {%- else -%}
-              {{ p.presenter }}
-            {%- endif -%}
-          </div>
-          <div class="talk-date">
-            {{ p.date }}
-          </div>
-          <div class="talk-location">
-            {{ p.location }}
-          </div>
-          <div class="talk-links">
+          <div class="talk-venue">{{ p.venue }}</div>
+          <h3 class="talk-title">{{ p.title }}</h3>
+          <div class="talk-meta">
+            <div class="talk-presenter">
+              {%- assign person = site.data.leader | concat: site.data.phds | concat: site.data.interns | where: "name", p.presenter | first -%}
+              {%- if person -%}
+                <a href="/people/#{{ p.presenter | slugify }}" class="sail-link">{{ p.presenter }}</a>
+              {%- elsif p.presenter_link -%}
+                <a href="{{ p.presenter_link }}" target="_blank" rel="noopener" class="external-link">{{ p.presenter }}</a>
+              {%- else -%}
+                {{ p.presenter }}
+              {%- endif -%}
+            </div>
+            <span class="talk-date">{{ p.date }}</span>
+            <span class="talk-location">{{ p.location }}</span>
             {%- if p.video -%}
               <a class="talk-btn" href="{{ p.video }}" target="_blank" rel="noopener">Video</a>
             {%- endif -%}
