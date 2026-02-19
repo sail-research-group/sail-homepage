@@ -8,3 +8,13 @@
   year: 2025
   description: "Haiyu's part starts at 4:01:54."
   type: "research"
+
+- title: "Introduction to FPGA and 4-bit Adder on Basys3 FPGA Board"
+  date: "February 5, 2026"
+  location: "London, United Kingdom"
+  venue: "6CCE3HAD Labs"
+  presenter: "Zihao Pu"
+  presenter_link: "/people/#zihao-pu"
+  video: "https://youtu.be/4a6D7fwtctE"
+  year: 2026
+  type: "teaching"
