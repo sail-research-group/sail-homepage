@@ -1,48 +1,42 @@
 ---
 layout: default
-title: PhD Application
+title: PhD Enquiry Form
 permalink: /phd-application/
 ---
 
-# PhD Application
+{% assign kcl_phd_url = "https://www.kcl.ac.uk/study/postgraduate-research/areas/engineering-phd" %}
 
-Thank you for your interest in applying for a **PhD position** with the SAIL Research Group at King's College London.
+# PhD Enquiry Form
 
-## About the Position
+{% include info-banner.html kind="warning" text="This form is for enquiries only. Formal PhD applications must be submitted via KCL." %}
 
-We regularly recruit **PhD students** in the broad areas of:
+<p class="inline-actions">
+  {% include cta-button.html url=kcl_phd_url label="Apply" variant="primary" external=true %}
+  {% include cta-button.html url="/positions/" label="Back to Join SAIL" variant="ghost" %}
+</p>
 
-- **Data-centric computer architecture & systems**
-- **Processing-in-Memory (PIM)** and **In-Storage Processing (ISP)**
-- **Software–hardware co-design** for AI and bioinformatics
-- **Reliable and secure memory/storage systems**
+Use this form to introduce your background and research interests before submitting a formal university application.
 
-### Example topics
+## What to include in your enquiry
 
-- **PIM/near-data accelerators** for large language models or retrieval-augmented generation  
-- **Architectures and runtimes** for real-time genome analysis on edge/portable devices  
-- **Reliability and security** of emerging memory and storage technologies  
+- CV with degree details, grades, and relevant publications/projects
+- A short statement of research interests and why SAIL is a good fit
+- Links to code, papers, thesis, or technical portfolio (if available)
 
-### What we are looking for
+## Research areas at SAIL
 
-- Strong background in **computer architecture, systems, or related fields**
-- Solid programming skills in **C/C++ and/or Python**
-- Interest in **research** and **writing** (papers, artifacts, open-source code)
-- Ability to work both **independently** and **collaboratively** in a team
+- Data-centric computer architecture and systems
+- Processing-in-Memory (PIM) and In-Storage Processing (ISP)
+- Software-hardware co-design for AI and bioinformatics
+- Reliable and secure memory/storage systems
 
-### Application Process
+## PhD enquiry form
 
-1. Check the **official PhD application instructions** on the  
-   [KCL postgraduate pages](https://www.kcl.ac.uk/study/postgraduate-research/areas/engineering-phd).
-2. Prepare:
-   - CV (with GPA, publications if any, and projects)
-   - Brief research statement (1–2 pages)
-   - Transcripts (and English test scores if required)
-3. Fill out the application form below
+{% include info-banner.html kind="info" text="Submitting this form does not submit a KCL application. Use the KCL portal for the official application." %}
 
----
-
-## Application Form
+<p>
+  {% include cta-button.html url=kcl_phd_url label="Apply" variant="secondary" external=true %}
+</p>
 
 <iframe data-tally-src="https://tally.so/embed/0Q6D0N?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="1328" frameborder="0" marginheight="0" marginwidth="0" title="PhD Application Form"></iframe>
 <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
@@ -50,7 +44,7 @@ We regularly recruit **PhD students** in the broad areas of:
 ---
 
 <div class="form-note">
-  <p><strong>Note:</strong> We review applications on a rolling basis and will contact qualified candidates for further discussion.</p>
-  <p>For general inquiries, please email <a href="mailto:haiyu.mao@kcl.ac.uk">haiyu.mao@kcl.ac.uk</a>.</p>
+  <p><strong>Response time:</strong> Enquiries are reviewed on a rolling basis.</p>
+  <p>For general enquiries, email <a href="mailto:haiyu.mao@kcl.ac.uk">haiyu.mao@kcl.ac.uk</a>.</p>
   <p><a href="{{ '/positions/' | relative_url }}">← Back to Positions</a></p>
 </div>

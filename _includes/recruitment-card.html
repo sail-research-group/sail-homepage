@@ -1,0 +1,38 @@
+<article class="recruit-card">
+  <h3>{{ include.title }}</h3>
+  {%- if include.body -%}
+  <p>{{ include.body }}</p>
+  {%- endif -%}
+  {%- assign card_points = include.points | default: "" -%}
+  {%- if card_points != "" and card_points contains "|" -%}
+    {%- assign card_points = card_points | split: "|" -%}
+  {%- endif -%}
+  {%- if card_points != "" -%}
+  <ul class="compact-list">
+    {%- if card_points.first -%}
+      {%- for point in card_points -%}
+      <li>{{ point }}</li>
+      {%- endfor -%}
+    {%- else -%}
+      <li>{{ card_points }}</li>
+    {%- endif -%}
+  </ul>
+  {%- endif -%}
+  <div class="recruit-card-actions">
+    {%- if include.enquiry_url -%}
+      {% include cta-button.html
+        url=include.enquiry_url
+        label=include.enquiry_label
+        variant="secondary"
+      %}
+    {%- endif -%}
+    {%- if include.apply_url -%}
+      {% include cta-button.html
+        url=include.apply_url
+        label=include.apply_label
+        variant="primary"
+        external=true
+      %}
+    {%- endif -%}
+  </div>
+</article>

@@ -1,0 +1,4 @@
+{%- assign banner_kind = include.kind | default: "info" -%}
+<aside class="info-banner info-banner-{{ banner_kind }}" role="note">
+  <p>{{ include.text }}</p>
+</aside>
