@@ -21,11 +21,13 @@
   title: "SAGe: A Lightweight Algorithm-Architecture Co-Design for Mitigating the Data Preparation Bottleneck in Large-Scale Genome Sequence Analysis"
   authors: "Nika Mansouri Ghiasi, Talu Güloglu, Harun Mustafa, Can Firtina, Konstantina Koliogeorgi, Konstantinos Kanellopoulos, <a href='https://hybol1993.github.io/'><u>Haiyu Mao</u></a>, Rakesh Nadig, Mohammad Sadrosadati, Jisung Park, and <a href='https://people.inf.ethz.ch/omutlu/'><u>Onur Mutlu</u></a>"
   venue: "HPCA 2026"
+  pdf: "https://hybol1993.github.io/assets/pdf/sage.pdf"
 
 - year: 2026
   title: "GenPairX: A Hardware-Algorithm Co-Designed Accelerator for Paired-End Read Mapping"
   authors: "Julien Eudine, Chu Li, Zhuo Cheng, Renzo Andri, Can Firtina, Mohammad Sadrosadati, Nika Mansouri Ghiasi, Konstantina Koliogeorgi, Anirban Nag, Arash Tavakkol, <a href='https://hybol1993.github.io/'><u>Haiyu Mao</u></a>, and <a href='https://people.inf.ethz.ch/omutlu/'><u>Onur Mutlu</u></a>, Shai Bergman, and Ji Zhang"
   venue: "HPCA 2026"
+  pdf: "https://hybol1993.github.io/assets/pdf/genpairx.pdf"
 
 - year: 2025
   title: "REIS: A High-Performance and Energy-Efficient Retrieval System with In-Storage Processing"
