@@ -1,167 +1,139 @@
 ---
 layout: default
-title: Positions
+title: Join SAIL
 permalink: /positions/
 ---
 
-# Open Positions
+{% assign kcl_phd_url = "https://www.kcl.ac.uk/study/postgraduate-research/areas/engineering-phd" %}
+{% assign star_ai_url = "https://www.kcl.ac.uk/research/star-ai" %}
 
-We are always looking for **curious, motivated, and kind** people to join the **SAIL (System and Architecture for Intelligent Living) Research Group** at the [Department of Engineering](https://www.kcl.ac.uk/engineering), [King's College London](https://www.kcl.ac.uk/).
+<section class="recruit-hero">
+  <p class="eyebrow">SAIL Recruitment</p>
+  <h1>Join SAIL</h1>
+  <p class="lead">We welcome enquiries from researchers and students who are excited about computer architecture and systems for AI and data-intensive applications.</p>
+  <p class="lead">SAIL enquiries help us assess fit. Formal applications are submitted through King's College London.</p>
+  <div class="hero-actions">
+    {% include cta-button.html url="#paths-to-join" label="Make an enquiry" variant="primary" %}
+    {% include cta-button.html url=kcl_phd_url label="Apply" variant="secondary" external=true %}
+  </div>
+</section>
 
-If you are excited about **computer architecture, systems, and data-intensive applications** (AI, bioinformatics, etc.), we would be very happy to hear from you.
+{% include info-banner.html kind="warning" text="Important: Submitting the SAIL form is not a university application." %}
 
----
+<section class="recruit-section">
+  <h2>How joining works</h2>
+  <div class="steps-grid">
+    <article class="step-card">
+      <p class="step-number">Step 1</p>
+      <h3>Enquire via SAIL form</h3>
+      <p>Share your background, interests, and evidence of research fit.</p>
+    </article>
+    <article class="step-card">
+      <p class="step-number">Step 2</p>
+      <h3>We reply if there is a match</h3>
+      <p>We review enquiries on a rolling basis and follow up when supervision fit is strong.</p>
+    </article>
+    <article class="step-card">
+      <p class="step-number">Step 3</p>
+      <h3>Submit the formal KCL application</h3>
+      <p>If invited to proceed, apply through the official KCL route.</p>
+    </article>
+  </div>
+</section>
 
-## 1. PhD Positions
+<section id="paths-to-join" class="recruit-section">
+  <h2>Paths to join SAIL</h2>
+  <div class="recruit-grid">
+    {% include recruitment-card.html
+      title="PhD"
+      body="Enquire first so we can check research alignment and supervision capacity."
+      points="Data-centric architecture, PIM/ISP, AI systems, memory/storage reliability"
+      enquiry_url="/phd-application/"
+      enquiry_label="Enquire (SAIL form)"
+      apply_url=kcl_phd_url
+      apply_label="Apply"
+    %}
 
-We regularly recruit **PhD students** in the broad areas of:
+    {% include recruitment-card.html
+      title="Funded studentships"
+      body="Occasional funded calls open during the year."
+      points="Availability changes by scheme and cycle"
+      apply_url=star_ai_url
+      apply_label="More info"
+    %}
 
-- **Data-centric computer architecture & systems**
-- **Processing-in-Memory (PIM)** and **In-Storage Processing (ISP)**
-- **Software–hardware co-design** for AI and bioinformatics
-- **Reliable and secure memory/storage systems**
+    {% include recruitment-card.html
+      title="Postdocs and fellowships"
+      body="We welcome strong fellowship ideas aligned with SAIL priorities."
+      points="Share a concise proposal, timeline, and potential funding scheme"
+      enquiry_url="/internship-application/"
+      enquiry_label="Enquire (SAIL form)"
+    %}
 
-### Example topics
+    {% include recruitment-card.html
+      title="KCL MSc/BSc projects"
+      body="For current KCL students seeking research projects or dissertation supervision."
+      points="Include modules taken, coding experience, and preferred topic"
+      enquiry_url="/internship-application/"
+      enquiry_label="Enquire (SAIL form)"
+    %}
 
-- **PIM/near-data accelerators** for large language models or retrieval-augmented generation  
-- **Architectures and runtimes** for real-time genome analysis on edge/portable devices  
-- **Reliability and security** of emerging memory and storage technologies  
+    {% include recruitment-card.html
+      title="Visiting students and scholars"
+      body="We can host short-term visits where there is clear research fit and confirmed funding."
+      points="Typical duration 3 to 12 months"
+      enquiry_url="/internship-application/"
+      enquiry_label="Enquire (SAIL form)"
+    %}
+  </div>
+</section>
 
-### What we are looking for
+<section class="recruit-section">
+  <h2>Research focus and candidate fit</h2>
+  <div class="bullet-columns">
+    <article class="bullet-panel">
+      <h3>Topics we are currently exploring</h3>
+      <ul class="compact-list">
+        <li>Data-centric computer architecture and systems</li>
+        <li>Processing-in-Memory (PIM) and In-Storage Processing (ISP)</li>
+        <li>Software-hardware co-design for AI and bioinformatics</li>
+        <li>Reliable and secure memory and storage systems</li>
+      </ul>
+    </article>
+    <article class="bullet-panel">
+      <h3>What strengthens an enquiry</h3>
+      <ul class="compact-list">
+        <li>Strong fundamentals in architecture, systems, or related fields</li>
+        <li>Hands-on programming in C/C++ and/or Python</li>
+        <li>Specific research interests rather than broad topic labels</li>
+        <li>Evidence of research potential: projects, papers, artifacts, or open-source work</li>
+      </ul>
+    </article>
+  </div>
+</section>
 
-- Strong background in **computer architecture, systems, or related fields**
-- Solid programming skills in **C/C++ and/or Python**
-- Interest in **research** and **writing** (papers, artifacts, open-source code)
-- Ability to work both **independently** and **collaboratively** in a team
-
-### How to apply
-
-1. Check the **official PhD application instructions** on the  
-   [KCL postgraduate pages](https://www.kcl.ac.uk/study/postgraduate-research/areas/engineering-phd).
-2. Prepare:
-   - CV (with GPA, publications if any, and projects)
-   - Brief research statement (1–2 pages)
-   - Transcripts (and English test scores if required)
-3. **Before applying**, you are welcome to email  
-   **haiyu.mao@kcl.ac.uk** with:
-   - Your CV
-   - A short paragraph about your research interests
-   - Any relevant publications / project links
-
-Please use the email subject line:  
-**[PhD Application] Your Name – SAIL Research Group**
-
-<p><a href="{{ '/phd-application/' | relative_url }}" class="apply-button">Apply Here</a></p>
-
----
-## 2. Home-Fee PhD Studentship (Safe AI, Software-Hardware Co-Design)
-
-A **home-fee PhD studentship** is currently available in **software-hardware co-designed safe AI** (shared by Haiyu Mao and collaborators at King's College London).
-
-This opportunity is part of King's **Prize Doctoral Programme in Safe, Trusted & Responsible AI (STaR-AI)** and connects to the wider Safe and Trusted AI doctoral training environment.
-
-### Highlights
-
-- **Four fully-funded studentships** available for **October 2026** start
-- Applicants must qualify for **home fees**
-- Research areas include:
-  - Safe and trustworthy AI methods
-  - Human and social impacts of AI
-  - Legal, ethical and regulatory frameworks
-- **Application deadline: 2 March 2026**
-
-How to apply and full eligibility details are provided on the programme page below.
-
-If you have questions, please email **haiyu.mao@kcl.ac.uk**.
-
-<p><a href="https://lnkd.in/eqa7Sssn" class="apply-button">Find Out More & Apply</a></p>
-
----
-
-## 3. Visiting Students & Scholars
-
-We are happy to host **visiting PhD students or scholars** when there is a good research fit and a clear joint plan.
-
-Typical duration: **3–12 months**.
-
-If you are interested in visiting SAIL:
-
-- Make sure you have a **clear funding source** (scholarship, home institution, etc.).
-- Email **haiyu.mao@kcl.ac.uk** with:
-  - CV
-  - Short research statement (1–2 pages)
-  - Proposed visit dates and funding source
-
-Please use the email subject line:  
-**[Visit Inquiry] Your Name – SAIL Research Group**
-
-<p><a href="{{ '/internship-application/' | relative_url }}" class="apply-button">Apply Here</a></p>
-
-
-<!-- ## 2. Postdoctoral Positions (Research Fellows)
-
-We are interested in hosting **postdoctoral researchers** in areas aligned with SAIL, such as:
-
-- High-performance and energy-efficient architectures
-- PIM/ISP and heterogeneous memory systems
-- System-level support for AI and bioinformatics
-
-**Current status:**  
-We do not have a permanently open postdoc position, but we are **very happy to discuss**:
-
-- Joint fellowship applications (e.g., UK or EU fellowships)
-- Co-supervised projects with collaborators
-
-If you are interested, please email **haiyu.mao@kcl.ac.uk** with:
-
-- CV
-- 1–2 page research summary / proposal
-- Preferred timeline and possible funding schemes
-
----
-
-## 3. MSc / BSc Thesis Projects & Internships (KCL Students)
-
-We offer **MSc and BSc thesis projects** and research internships for KCL students on topics such as:
-
-- Implementing simplified **PIM-friendly kernels** (e.g., GEMV, KV caches)
-- Building **prototypes and tools** for memory/storage profiling
-- Small-scale **AI/bioinformatics accelerators** using CPU/GPU/FPGA
-
-If you are a current **KCL student**:
-
-- Check the official project allocation system (when available).
-- Or send an email with:
-  - Your programme and year
-  - Transcript or list of relevant modules
-  - A short description of what you’d like to work on
-
-Email subject line:  
-**[Student Project] Your Name – MSc/BSc at KCL**
-
----
-
-## 4. Visiting Students & Scholars
-
-We are happy to host **visiting PhD students or scholars** when there is a good research fit and a clear joint plan.
-
-Typical duration: **3–12 months**.
-
-If you are interested in visiting SAIL:
-
-- Make sure you have a **clear funding source** (scholarship, home institution, etc.).
-- Email **haiyu.mao@kcl.ac.uk** with:
-  - CV
-  - Short research statement (1–2 pages)
-  - Proposed visit dates and funding source
-
-Please use the email subject line:  
-**[Visit Inquiry] Your Name – SAIL Research Group**
-
----
-
-## 5. General Advice
-
-- Please **be specific** about your interests (e.g., “PIM for LLM serving”, “memory reliability”, “edge genome analysis”), rather than just “AI” or “systems”.
-- Feel free to include **links** to GitHub, personal webpage, and papers.
-- Due to email volume, short and clear messages are appreciated 🙂 -->
+<section class="recruit-section">
+  <h2>Frequently asked questions</h2>
+  <div class="faq-list">
+    <details>
+      <summary>Do I need to apply on KCL as well?</summary>
+      <p>Yes. The SAIL form is an enquiry and fit-check route. Formal admissions decisions only happen through the official KCL application process.</p>
+    </details>
+    <details>
+      <summary>What should I include in my enquiry?</summary>
+      <p>Share your CV, your current stage (degree or role), 2 to 3 research interests, relevant project links, and why SAIL is a fit.</p>
+    </details>
+    <details>
+      <summary>Can you review my CV before I apply?</summary>
+      <p>Yes, we can give brief fit-oriented feedback when capacity allows, but this does not replace the KCL admissions review.</p>
+    </details>
+    <details>
+      <summary>What funding routes are possible?</summary>
+      <p>Funding can include self-funded routes, scholarships, or occasional funded calls. Eligibility depends on the scheme and your profile.</p>
+    </details>
+    <details>
+      <summary>How long does it take to hear back?</summary>
+      <p>Enquiries are reviewed on a rolling basis. Response time varies with volume, but we aim to reply as promptly as possible for strong fits.</p>
+    </details>
+  </div>
+</section>

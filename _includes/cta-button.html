@@ -1,0 +1,28 @@
+{%- assign btn_classes = "btn" -%}
+{%- if include.external == true -%}
+  {%- assign link_url = include.url -%}
+  {%- assign external_attrs = ' target="_blank" rel="noopener noreferrer"' -%}
+{%- elsif include.url | slice: 0, 1 == "#" -%}
+  {%- assign link_url = include.url -%}
+  {%- assign external_attrs = "" -%}
+{%- else -%}
+  {%- assign link_url = include.url | relative_url -%}
+  {%- assign external_attrs = "" -%}
+{%- endif -%}
+{%- if include.variant == "secondary" -%}
+  {%- assign btn_classes = btn_classes | append: " btn-secondary" -%}
+{%- elsif include.variant == "ghost" -%}
+  {%- assign btn_classes = btn_classes | append: " btn-ghost" -%}
+{%- else -%}
+  {%- assign btn_classes = btn_classes | append: " btn-primary" -%}
+{%- endif -%}
+{%- if include.full_width == true -%}
+  {%- assign btn_classes = btn_classes | append: " btn-block" -%}
+{%- endif -%}
+{%- if include.class -%}
+  {%- assign btn_classes = btn_classes | append: " " | append: include.class -%}
+{%- endif -%}
+
+<a href="{{ link_url }}" class="{{ btn_classes }}"{{ external_attrs }}>
+  {{ include.label }}
+</a>
