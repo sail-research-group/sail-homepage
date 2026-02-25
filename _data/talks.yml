@@ -18,3 +18,13 @@
   video: "https://youtu.be/4a6D7fwtctE"
   year: 2026
   type: "teaching"
+
+- title: "FPGA Debug and Datapath Design"
+  date: "February 19, 2026"
+  location: "London, United Kingdom"
+  venue: "6CCE3HAD Labs"
+  presenter: "Stefan Johannesson and Zihao Pu"
+  presenter_link: "/people/#zihao-pu"
+  video: "https://youtu.be/HB1yorOfAMc"
+  year: 2026
+  type: "teaching"
