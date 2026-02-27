@@ -826,11 +826,28 @@ h1 {
   color: #7a2731;
 }
 
+.recruit-page > .info-banner-warning {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
+.recruit-page > .info-banner-warning p {
+  font-weight: 700;
+  font-size: 1.1rem;
+  line-height: 1.35;
+}
+
 .recruit-hero {
   padding: 1.8rem 1.5rem;
   border: 1px solid #dce4ec;
   border-radius: 0.9rem;
   background: linear-gradient(180deg, #f8fbff 0%, #ffffff 100%);
+}
+
+.recruit-page {
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .recruit-hero h1 {
@@ -848,9 +865,14 @@ h1 {
 }
 
 .lead {
-  max-width: 70ch;
+  max-width: none;
   color: #334a60;
   margin: 0.5rem 0;
+  text-wrap: pretty;
+}
+
+.recruit-page p {
+  text-wrap: pretty;
 }
 
 .hero-actions,
@@ -872,30 +894,52 @@ h1 {
 .steps-grid {
   display: grid;
   gap: 0.9rem;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .step-card {
-  border: 1px solid #e3e8ee;
+  border: 1px solid #d9e3ec;
   border-radius: 0.75rem;
-  background: #ffffff;
-  padding: 1rem;
+  background: linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
+  padding: 1.3rem 1.05rem 1.05rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  box-shadow: 0 1px 0 rgba(12, 64, 115, 0.05);
+}
+
+.step-icon {
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 999px;
+  border: 2px solid #ffffff;
+  background: linear-gradient(180deg, #2c79bf 0%, #0f5fa6 100%);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -0.58rem;
+  left: 0.85rem;
+  font-size: 0.76rem;
+  font-weight: 700;
+  line-height: 1;
+  box-shadow: 0 0 0 1px #a9c3dd, 0 3px 8px rgba(15, 95, 166, 0.25);
 }
 
 .step-card h3 {
   margin: 0 0 0.45rem;
   font-size: 1.05rem;
+  min-height: 2.6em;
+  text-wrap: balance;
 }
 
 .step-card p {
   margin: 0;
   color: #4c6277;
-}
-
-.step-number {
-  color: #0f5fa6;
-  font-weight: 700;
-  margin-bottom: 0.35rem !important;
+  text-wrap: pretty;
+  min-height: 3.95em;
 }
 
 .recruit-grid {
@@ -1189,6 +1233,18 @@ h1 {
   .hero-actions .btn,
   .inline-actions .btn {
     width: 100%;
+  }
+
+  .steps-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .step-card h3 {
+    min-height: 0;
+  }
+
+  .step-card p {
+    min-height: 0;
   }
 
   .recruit-card-actions {

@@ -7,10 +7,12 @@ permalink: /positions/
 {% assign kcl_phd_url = "https://www.kcl.ac.uk/study/postgraduate-research/areas/engineering-phd" %}
 {% assign star_ai_url = "https://www.kcl.ac.uk/research/star-ai" %}
 
+<div class="recruit-page">
+
 <section class="recruit-hero">
   <p class="eyebrow">SAIL Recruitment</p>
   <h1>Join SAIL</h1>
-  <p class="lead">We welcome enquiries from researchers and students who are excited about computer architecture and systems for AI and data-intensive applications.</p>
+  <p class="lead">We welcome enquiries from researchers and students who are excited about computer architecture and systems for AI and data-intensive applications. This includes data-intensive applications, such as AI and bioinformatics applications.</p>
   <p class="lead">SAIL enquiries help us assess fit. Formal applications are submitted through King's College London.</p>
   <div class="hero-actions">
     {% include cta-button.html url="#paths-to-join" label="Make an enquiry" variant="primary" %}
@@ -24,19 +26,19 @@ permalink: /positions/
   <h2>How joining works</h2>
   <div class="steps-grid">
     <article class="step-card">
-      <p class="step-number">Step 1</p>
-      <h3>Enquire via SAIL form</h3>
-      <p>Share your background, interests, and evidence of research fit.</p>
+      <div class="step-icon" aria-hidden="true">1</div>
+      <h3>Enquire with SAIL</h3>
+      <p>Share your background, interests, and evidence of strong research alignment.</p>
     </article>
     <article class="step-card">
-      <p class="step-number">Step 2</p>
-      <h3>We reply if there is a match</h3>
-      <p>We review enquiries on a rolling basis and follow up when supervision fit is strong.</p>
+      <div class="step-icon" aria-hidden="true">2</div>
+      <h3>We review and respond</h3>
+      <p>We review enquiries promptly and respond when your profile aligns well.</p>
     </article>
     <article class="step-card">
-      <p class="step-number">Step 3</p>
-      <h3>Submit the formal KCL application</h3>
-      <p>If invited to proceed, apply through the official KCL route.</p>
+      <div class="step-icon" aria-hidden="true">3</div>
+      <h3>Apply through KCL</h3>
+      <p>If invited, complete the formal KCL application to move forward.</p>
     </article>
   </div>
 </section>
@@ -137,3 +139,5 @@ permalink: /positions/
     </details>
   </div>
 </section>
+
+</div>
