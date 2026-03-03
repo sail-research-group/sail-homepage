@@ -12,7 +12,7 @@ permalink: /positions/
 <section class="recruit-hero">
   <p class="eyebrow">SAIL Recruitment</p>
   <h1>Join SAIL</h1>
-  <p class="lead">We welcome enquiries from researchers and students who are excited about computer architecture and systems for AI and data-intensive applications. This includes data-intensive applications, such as AI and bioinformatics applications.</p>
+  <p class="lead">We welcome enquiries from researchers and students who are excited about computer architecture and systems for data-intensive applications, such as AI and bioinformatics applications.</p>
   <p class="lead">SAIL enquiries help us assess fit. Formal applications are submitted through King's College London.</p>
   <div class="hero-actions">
     {% include cta-button.html url="#paths-to-join" label="Make an enquiry" variant="primary" %}
@@ -119,11 +119,11 @@ permalink: /positions/
   <div class="faq-list">
     <details>
       <summary>Do I need to apply on KCL as well?</summary>
-      <p>Yes. The SAIL form is an enquiry and fit-check route. Formal admissions decisions only happen through the official KCL application process.</p>
+      <p>Yes. The SAIL form is for enquiries and fit checks. Formal admissions decisions only happen through the official KCL application process.</p>
     </details>
     <details>
       <summary>What should I include in my enquiry?</summary>
-      <p>Share your CV, your current stage (degree or role), 2 to 3 research interests, relevant project links, and why SAIL is a fit.</p>
+      <p>Share your CV, your current stage (degree or role), two to three research interests, relevant project links, and why SAIL is a good fit.</p>
     </details>
     <details>
       <summary>Can you review my CV before I apply?</summary>
@@ -131,11 +131,11 @@ permalink: /positions/
     </details>
     <details>
       <summary>What funding routes are possible?</summary>
-      <p>Funding can include self-funded routes, scholarships, or occasional funded calls. Eligibility depends on the scheme and your profile.</p>
+      <p>Funding can include self-funded study, scholarships, and occasional funded calls. Eligibility depends on the scheme and your profile.</p>
     </details>
     <details>
       <summary>How long does it take to hear back?</summary>
-      <p>Enquiries are reviewed on a rolling basis. Response time varies with volume, but we aim to reply as promptly as possible for strong fits.</p>
+      <p>Enquiries are reviewed on a rolling basis. Response time varies with volume, but we aim to reply as promptly as possible for strong matches.</p>
     </details>
   </div>
 </section>
