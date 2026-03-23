@@ -1,0 +1,9 @@
+# Each entry: semester, title, code (optional), level, url (leave blank until course page exists)
+# Semesters are listed newest-first; group_by preserves insertion order in Jekyll 3.x.
+
+- semester: "Spring 2026"
+  title: "Hardware Design"
+  code: "6CCE3HAD"
+  level: "Undergraduate"
+  url: ""
+
