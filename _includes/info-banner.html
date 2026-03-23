@@ -1,4 +1,9 @@
 {%- assign banner_kind = include.kind | default: "info" -%}
 <aside class="info-banner info-banner-{{ banner_kind }}" role="note">
-  <p>{{ include.text }}</p>
+  <div class="info-banner-content">
+    <p>{{ include.text }}</p>
+    {%- if include.button_url -%}
+      {% include cta-button.html url=include.button_url label=include.button_label variant=include.button_variant external=include.button_external %}
+    {%- endif -%}
+  </div>
 </aside>

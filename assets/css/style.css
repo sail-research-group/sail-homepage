@@ -838,6 +838,18 @@ h1 {
   line-height: 1.35;
 }
 
+.info-banner-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.info-banner-content p {
+  margin: 0;
+  flex: 1;
+}
+
 .recruit-hero {
   padding: 1.8rem 1.5rem;
   border: 1px solid #dce4ec;
