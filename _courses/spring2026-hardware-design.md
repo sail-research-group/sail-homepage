@@ -100,33 +100,60 @@ staff:
 ---
 ## Schedule
 
-| Week | Topic | Slides |
-|---|---|---|
-|Week 1|von Neumann Model & Instruction Set Architectures| [Lecture 1](/assets/slides/spring2026-hardware-design/lecture/Lecture 1 - vonneumann-isa.pdf) |
-|Week 2|Instruction Set Architectures II|[Lecture 2](/assets/slides/spring2026-hardware-design/lecture/Lecture 2 - instruction-set-architecture-ii.pdf)|
-|Week 3|ISA, Microarchitecture, and Assembly|[Lecture 3](/assets/slides/spring2026-hardware-design/lecture/Lecture 3 - ISA-Microarchitecture-Assembly.pdf)|
-|Week 4| Single-Cycle Microarchitecture: build the whole CPU once|[Lecture 4](/assets/slides/spring2026-hardware-design/lecture/Lecture 4 - Single-Cycle-Microarchitecture.pdf)|
-|Week 5|Multi-Cycle Microarchitecture and Pipelining|[Lecture 5](/assets/slides/spring2026-hardware-design/lecture/Lecture 5 - Mutli-Cycle-Microarchitecture-and-Pipelining.pdf)|
-|Week 6| Pipelined Processor Design | [Lecture 6](/assets/slides/spring2026-hardware-design/lecture/Lecture 6 - Pipelining.pdf)|
-|Week 7|Memory|[Lecture 7](/assets/slides/spring2026-hardware-design/lecture/Lecture 7 - memory.pdf)|
-|Week 8|Cache|[Lecture 8](/assets/slides/spring2026-hardware-design/lecture/Lecture 8 - cache.pdf)|
-|Week 9|Cache II and Storage|[Lecture 9](/assets/slides/spring2026-hardware-design/lecture/Lecture 9 - cache 2 and storage .pdf)|
+| Week   | Topic                                                    | Slides                                                                                                                      |
+| ------ | -------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| Week 1 | von Neumann Model & Instruction Set Architectures        | [Lecture 1](/assets/slides/spring2026-hardware-design/lecture/Lecture 1 - vonneumann-isa.pdf)                               |
+| Week 2 | Instruction Set Architectures II                         | [Lecture 2](/assets/slides/spring2026-hardware-design/lecture/Lecture 2 - instruction-set-architecture-ii.pdf)              |
+| Week 3 | ISA, Microarchitecture, and Assembly                     | [Lecture 3](/assets/slides/spring2026-hardware-design/lecture/Lecture 3 - ISA-Microarchitecture-Assembly.pdf)               |
+| Week 4 | Single-Cycle Microarchitecture: build the whole CPU once | [Lecture 4](/assets/slides/spring2026-hardware-design/lecture/Lecture 4 - Single-Cycle-Microarchitecture.pdf)               |
+| Week 5 | Multi-Cycle Microarchitecture and Pipelining             | [Lecture 5](/assets/slides/spring2026-hardware-design/lecture/Lecture 5 - Mutli-Cycle-Microarchitecture-and-Pipelining.pdf) |
+| Week 6 | Pipelined Processor Design                               | [Lecture 6](/assets/slides/spring2026-hardware-design/lecture/Lecture 6 - Pipelining.pdf)                                   |
+| Week 7 | Memory                                                   | [Lecture 7](/assets/slides/spring2026-hardware-design/lecture/Lecture 7 - memory.pdf)                                       |
+| Week 8 | Cache                                                    | [Lecture 8](/assets/slides/spring2026-hardware-design/lecture/Lecture 8 - cache.pdf)                                        |
+| Week 9 | Cache II and Storage                                     | [Lecture 9](/assets/slides/spring2026-hardware-design/lecture/Lecture 9 - cache 2 and storage .pdf)                         |
 
-## Assessment
+## Coursework Project
 
-| Component | Weight | Details |
-|---|---|---|
-| Lab Assignment 1 | 10% | Combinational logic design in VHDL |
-| Lab Assignment 2 | 15% | FSM implementation on FPGA |
-| Lab Assignment 3 | 15% | Simple ALU design |
-| Written Exam | 60% | 2-hour closed-book exam |
+### RISKing 16: A 16-bit RISC CPU
+
+The RISKing16 is a custom 16-bit Reduced Instruction Set Computer (RISC) processor designed specifically for the HAD26 (Hardware Architecture and Design) course at King's College London. It serves as a pedagogical "playground," allowing students to transition from theoretical concepts to practical engineering by building a fully functional CPU from the ground up.
+
+**Core Design Philosophy**
+
+- Unlike complex industry standards like x86 or ARM, RISKing16 focuses on architectural clarity:
+- 16-bit Architecture: Features a compact 16-bit datapath and instruction format, optimized for FPGA implementation (like the Basys3 board).
+- Load-Store Architecture: Memory is accessed only via explicit LDR and STR instructions, simplifying the internal datapath.
+- Full-Stack Development: Students don't just write Verilog; they develop the entire ecosystem, including the Instruction Set Architecture (ISA) and a custom Assembler.
+
+**Modular Learning**: The project is structured to master individual components—such as the ALU, Register File, and Control Unit—before integrating them into a multi-cycle or pipelined processor.
+
+| Component | Weight | Details                         | Supporting Materials                                                                                        |
+| --------- | ------ | ------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| Task 1    | 20%    | Building 16-bit ALU and Shifter | [Task 1 Slides](/assets/slides/spring2026-hardware-design/lab/CW%20Task%201.pdf)                               |
+| Task 2    | 20%    | Building CPU Datapath           | [Task 2 Slides](/assets/slides/spring2026-hardware-design/lab/CW%20Task%202.pdf)                               |
+| Task 3    | 20%    | Building CPU FSM                | [Task 3 Slides](/assets/slides/spring2026-hardware-design/lab/CW%20Task%203.pdf)                               |
+| Task 4    | 20%    | Supporting Memory               | [Task 4 Slides](/assets/slides/spring2026-hardware-design/lab/CW%20Task%204.pdf)                               |
+| Task 5    | 20%    | Supporting Branching and IO     | [Task 4 Slides](/assets/slides/spring2026-hardware-design/lab/CW%20Task%204.pdf) Task 5 contents are also here |
+| Bonus     | 20%    | Pipelining                      | NA                                                                                                          |
+
+## Practical Skills
+
+To complement the coursework project and facilitate practical FPGA experience, we have developed three introductory lab demonstrations.
+
+| Component | Topic                                        | Slides                                                              | Supporting Materials                                                     |
+| --------- | -------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| Lab 1     | Getting started with FPGA and VIVADO         | [Lab 1](/assets/slides/spring2026-hardware-design/lab/Lab1%20Demo.pdf) | [Lab 1 Code](/assets/slides/spring2026-hardware-design/lab/Lab1%20Demo.zip) |
+| Lab 2     | FPGA Debugging: USING VIO AND ILA IN VIVADO | [Lab 2](/assets/slides/spring2026-hardware-design/lab/Lab2%20Demo.pdf) | NA                                                                       |
+| Lab 3     | Writing FSM using SystemVerilog              | [Lab 3](/assets/slides/spring2026-hardware-design/lab/Lab3%20Demo.pdf) | [Lab 3 Code](/assets/slides/spring2026-hardware-design/lab/Lab3_Demo.zip)   |
 
 ## Prerequisites
 
-- Basic programming experience (Python or C)
-- Boolean algebra (covered in first-year mathematics)
+- Basic programming experience (Python, Verilog)
+- Boolean algebra (covered in LOD Logic Design)
 
 ## Resources
 
-- [King's e-Learning (KEATS)](https://keats.kcl.ac.uk) — lecture recordings, lab sheets, and submission portal
 - Recommended text: *Digital Design and Computer Architecture* — Harris & Harris (available in library)
+- Lab recordings:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=0y5L76wey1tG5l5z&list=PLSxjD_JEbzkwLRZu8DoWHlJN2zbyclPGS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
