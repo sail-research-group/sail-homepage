@@ -6,7 +6,7 @@ level: "Undergraduate"
 description: "Introduces digital logic, combinational and sequential circuits, hardware description languages, and simple processor design."
 
 staff:
-  - name: "Haiyu Mao"
+  - name: "Dr. Haiyu Mao"
     role: "Module Leader"
     # email: "haiyu.mao@kcl.ac.uk"
     url: "https://hybol1993.github.io/"
@@ -140,11 +140,11 @@ The RISKing16 is a custom 16-bit Reduced Instruction Set Computer (RISC) process
 
 To complement the coursework project and facilitate practical FPGA experience, we have developed three introductory lab demonstrations.
 
-| Component | Topic                                        | Slides                                                              | Supporting Materials                                                     |
-| --------- | -------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------------ |
-| Lab 1     | Getting started with FPGA and VIVADO         | [Lab 1](/assets/slides/spring2026-hardware-design/lab/Lab1%20Demo.pdf) | [Lab 1 Code](/assets/slides/spring2026-hardware-design/lab/Lab1%20Demo.zip) |
-| Lab 2     | FPGA Debugging: USING VIO AND ILA IN VIVADO | [Lab 2](/assets/slides/spring2026-hardware-design/lab/Lab2%20Demo.pdf) | NA                                                                       |
-| Lab 3     | Writing FSM using SystemVerilog              | [Lab 3](/assets/slides/spring2026-hardware-design/lab/Lab3%20Demo.pdf) | [Lab 3 Code](/assets/slides/spring2026-hardware-design/lab/Lab3_Demo.zip)   |
+| Component | Topic                                        | Slides                                                              | Supporting Materials                                                     | Instructor         |
+| --------- | -------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------------ | ------------------ |
+| Lab 1     | Getting started with FPGA and VIVADO         | [Lab 1](/assets/slides/spring2026-hardware-design/lab/Lab1%20Demo.pdf) | [Lab 1 Code](/assets/slides/spring2026-hardware-design/lab/Lab1%20Demo.zip) | Zihao Pu           |
+| Lab 2     | FPGA Debugging: USING VIO AND ILA IN VIVADO | [Lab 2](/assets/slides/spring2026-hardware-design/lab/Lab2%20Demo.pdf) | NA                                                                       | Stefan Johannesson |
+| Lab 3     | Writing FSM using SystemVerilog              | [Lab 3](/assets/slides/spring2026-hardware-design/lab/Lab3%20Demo.pdf) | [Lab 3 Code](/assets/slides/spring2026-hardware-design/lab/Lab3_Demo.zip)   | Ali Alsarraf       |
 
 ## Prerequisites
 
