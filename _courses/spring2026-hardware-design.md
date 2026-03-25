@@ -151,7 +151,7 @@ To complement the coursework project and facilitate practical FPGA experience, w
 | Tool               | Description                                                    | Source                                                                                       |
 | ------------------ | -------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
 | Verilog Autograder | The online simulation platform for the project                 | https://had26lab.zihaopu.cn                                                                  |
-| openFPGAloader     | Download bitstream to FPGA using any platform, including macOS | [openFPGAloader-Document](https://trabucayre.github.io/openFPGALoader/compatibility/board.html) |
+| openFPGALoader     | Download bitstream to FPGA using any platform, including macOS | [openFPGALoader-Document](https://trabucayre.github.io/openFPGALoader/compatibility/board.html) |
 
 ## Prerequisites
 
