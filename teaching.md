@@ -32,6 +32,19 @@ We are a strong advocate for free and open sharing of teaching and research arti
             {%- if c.description -%}
               <p class="course-card-desc">{{ c.description }}</p>
             {%- endif -%}
+            {%- if c.highlights -%}
+              <div class="course-card-highlights">
+                {%- for h in c.highlights -%}
+                  {%- assign label = h -%}
+                  {%- if h == "slides" -%}{%- assign label = "Slides" -%}
+                  {%- elsif h == "project" -%}{%- assign label = "Project" -%}
+                  {%- elsif h == "tools" -%}{%- assign label = "Tools" -%}
+                  {%- elsif h == "videos" -%}{%- assign label = "Demo Videos" -%}
+                  {%- endif -%}
+                  <span class="course-highlight-tag {{ h }}">{{ label }}</span>
+                {%- endfor -%}
+              </div>
+            {%- endif -%}
             {%- if c.url and c.url != "" -%}
               <span class="course-card-arrow">View course →</span>
             {%- endif -%}

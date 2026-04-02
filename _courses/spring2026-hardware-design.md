@@ -3,13 +3,20 @@ title: "Hardware Design"
 code: "6CCE3HAD"
 semester: "Spring 2026"
 level: "Undergraduate"
-description: "Introduces digital logic, combinational and sequential circuits, hardware description languages, and simple processor design."
+description: "The module provides a foundational, ISA‑to‑hardware understanding that enables students to design and reason about basic processors, pipelines, and memory systems, and to clearly communicate hardware design decisions."
 
 staff:
   - name: "Dr. Haiyu Mao"
     role: "Module Leader"
     # email: "haiyu.mao@kcl.ac.uk"
     url: "https://hybol1993.github.io/"
+    # office: "Bush House, S2.07"
+    # office_hours: "Tue 14:00–15:00 or by appointment"
+
+  - name: "Zihao Pu"
+    role: "Teaching Assistant"
+    # email: ""
+    url: "https://sail.kcl.ac.uk/people/"
     # office: "Bush House, S2.07"
     # office_hours: "Tue 14:00–15:00 or by appointment"
 
@@ -28,12 +35,7 @@ staff:
     # office_hours: "Tue 14:00–15:00 or by appointment"
 
 
-  - name: "Zihao Pu"
-    role: "Teaching Assistant"
-    # email: ""
-    url: "https://sail.kcl.ac.uk/people/"
-    # office: "Bush House, S2.07"
-    # office_hours: "Tue 14:00–15:00 or by appointment"
+
 
 
 # schedule:
@@ -98,7 +100,41 @@ staff:
 #     slides: ""
 #     reading: ""
 ---
-## Schedule
+
+# Aims
+This module introduces hardware design from the Instruction Set Architecture (ISA) upward, connecting the programmer-visible machine model (instructions, registers, and memory abstraction) to the underlying hardware structures (datapath, control, pipelines, caches, and the memory hierarchy). Building on prior knowledge of combinational and sequential logic, you will learn how these components compose into a complete processor–memory system, and how to reason about correctness and performance using simple engineering models.
+
+By the end of the module, you should be able to explain and trace basic processor microarchitectures, analyze pipelined execution, and evaluate memory-system trade-offs in caches and virtual memory.
+
+## Learning Outcomes
+On successful completion of this module, students will be able to:
+
+### ISA and machine-level interface (conceptual)
+1.Explain the role of an Instruction Set Architecture (ISA) as a contract between software and hardware.  
+2.Describe key ISA concepts at a high level (e.g., instruction classes, registers, load/store interface, control flow, memory addressing).
+
+### Processor design and control
+3.Construct and explain a single-cycle CPU datapath for a small instruction subset (ALU, load/store, branch).  
+4.Derive the control signals required to execute instructions (e.g., register write, ALU operation select, memory read/write, PC update).  
+5.Compare single-cycle vs multi-cycle processor organizations and reason about CPI and clock period trade-offs.
+
+### Pipelining and performance
+6.Explain a classic 5-stage pipeline and identify structural, data, and control hazards.  
+7.Apply basic hazard mitigation techniques (e.g., forwarding, stalling, basic branch handling) to predict pipeline behavior.  
+8.Use simple performance models (e.g., CPI, pipeline penalties) to assess design decisions.  
+
+### Memory hierarchy, virtual memory, and storage
+9.Explain locality and analyze cache behavior using tag/index/offset, mapping, and policies.  
+10.Compute performance metrics such as AMAT and explain the impact of cache design parameters and miss behavior.  
+11.Describe the purpose and mechanics of virtual memory (paging, TLB, page faults) at a conceptual and practical level.  
+12.Explain (at a high level) how main memory (DRAM) and storage/I/O fit into the system, including the motivation for concepts like DMA and memory-mapped I/O.  
+
+### Professional/engineering skills
+13.Communicate design reasoning clearly using block diagrams, timing sketches, and quantitative calculations.  
+
+---
+
+# Lecture Schedule
 
 | Week   | Topic                                                    | Slides                                                                                                                      |
 | ------ | -------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
@@ -112,9 +148,13 @@ staff:
 | Week 8 | Cache                                                    | [Lecture 8](/assets/slides/spring2026-hardware-design/lecture/Lecture 8 - cache.pdf)                                        |
 | Week 9 | Cache II and Storage                                     | [Lecture 9](/assets/slides/spring2026-hardware-design/lecture/Lecture 9 - cache 2 and storage .pdf)                         |
 
-## Coursework Project
+
+---
+
+# FPGA-based Lab
 
 ### RISKing 16: A 16-bit RISC CPU
+Project Author: [Zihao Pu](https://sail.kcl.ac.uk/people/)
 
 The RISKing16 is a custom 16-bit Reduced Instruction Set Computer (RISC) processor designed specifically for the HAD26 (Hardware Architecture and Design) course at King's College London. It serves as a pedagogical "playground," allowing students to transition from theoretical concepts to practical engineering by building a fully functional CPU from the ground up.
 
@@ -136,31 +176,33 @@ The RISKing16 is a custom 16-bit Reduced Instruction Set Computer (RISC) process
 | Task 5    | 20%    | Supporting Branching and IO     | [Task 5 Slides](/assets/slides/spring2026-hardware-design/lab/CW%20Task%205.pdf)                            |
 | Bonus     | 20%    | Pipelining                      | NA                                                                                                          |
 
-## Practical Skills
+### Practical Skills
 
 To complement the coursework project and facilitate practical FPGA experience, we have developed three introductory lab demonstrations.
 
-| Component | Topic                                        | Slides                                                              | Supporting Materials                                                     | Instructor            | Lab Video |
+| Component | Topic                                        | Slides                                                              |  Materials                                                               | Instructor            | Lab Video |
 | --------- | -------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------------ | ------------------    |-----------|
 | Lab 1     | Getting started with FPGA and VIVADO         | [Lab 1](/assets/slides/spring2026-hardware-design/lab/Lab1%20Demo.pdf) | [Lab 1 Code](/assets/slides/spring2026-hardware-design/lab/Lab1%20Demo.zip) | Zihao Pu        |[Lab 1](https://youtu.be/4a6D7fwtctE?si=NV7YZWoOJYyxeGOi)  |
-| Lab 2     | FPGA Debugging: USING VIO AND ILA IN VIVADO | [Lab 2](/assets/slides/spring2026-hardware-design/lab/Lab2%20Demo.pdf) | NA                                                                       | Stefan Johannesson  |[Lab 2](https://youtu.be/HB1yorOfAMc?si=WJUBYZgnefTBGNAs)  |
+| Lab 2     | FPGA Debugging: USING VIO AND ILA | [Lab 2](/assets/slides/spring2026-hardware-design/lab/Lab2%20Demo.pdf) | NA                                                                       | Stefan Johannesson  |[Lab 2](https://youtu.be/HB1yorOfAMc?si=WJUBYZgnefTBGNAs)  |
 | Lab 3     | Writing FSM using SystemVerilog              | [Lab 3](/assets/slides/spring2026-hardware-design/lab/Lab3%20Demo.pdf) | [Lab 3 Code](/assets/slides/spring2026-hardware-design/lab/Lab3_Demo.zip)   | Ali Alsarraf    |[Lab 3](https://youtu.be/hCTE4qvoWRk?si=5nXZ-25UH6331x1E)  |
 
-## Useful Tools
+### Useful Tools
 
 | Tool               | Description                                                    | Source                                                                                       |
 | ------------------ | -------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
 | Verilog Autograder | The online simulation platform for the project                 | [Verilog Autograder](https://had26lab.zihaopu.cn)                                            |
 | openFPGALoader     | Download bitstream to FPGA using any platform, including macOS | [openFPGALoader-Document](https://trabucayre.github.io/openFPGALoader/compatibility/board.html) |
 
-## Prerequisites
+### Prerequisites
 
 - Basic programming experience (Python, Verilog)
 - Boolean algebra (covered in LOD Logic Design)
 
-## Resources
+---
 
-- Recommended text: *Digital Design and Computer Architecture* — Harris & Harris (available in library)
+# Resources
+
+- Recommended text: *Digital Design and Computer Architecture* — Harris & Harris
 - Lab recordings:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=0y5L76wey1tG5l5z&list=PLSxjD_JEbzkwLRZu8DoWHlJN2zbyclPGS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
