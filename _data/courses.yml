@@ -7,7 +7,7 @@
   level: "Undergraduate"
   url: "/teaching/spring2026-hardware-design/"
   image: "/assets/img/course-thumbnails/hardware-design.png"
-  description: "The module provides a foundational, ISA‑to‑hardware understanding that enables students to design and reason about basic processors, pipelines, and memory systems, and to clearly communicate hardware design decisions."
+  description: "This module covers the fundamentals of computer architecture, including instruction set architecture, CPU datapath and control design, pipelining, and memory hierarchy. Students learn how processors execute instructions and how architectural choices affect performance and efficiency. In the labs, students design and implement key components of RISKing16, a custom 16-bit RISC processor, and integrate them into a working FPGA-based CPU. The module combines architectural foundations with hands-on hardware design and testing."
   highlights:
     - slides
     - project

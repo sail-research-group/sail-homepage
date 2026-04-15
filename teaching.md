@@ -24,11 +24,7 @@ We are a strong advocate for free and open sharing of teaching and research arti
             </div>
           {%- endif -%}
           <div class="course-card-content">
-            <div class="course-card-meta">
-              {%- if c.code -%}<span class="course-code">{{ c.code }}</span>{%- endif -%}
-              <span class="course-level">{{ c.level }}</span>
-            </div>
-            <h3 class="course-card-title">{{ c.title }}</h3>
+            <h3 class="course-card-title">{{ c.title }}{%- if c.code %} ({{ c.code }}){% endif %} - {{ c.level }}</h3>
             {%- if c.description -%}
               <p class="course-card-desc">{{ c.description }}</p>
             {%- endif -%}
@@ -45,8 +41,9 @@ We are a strong advocate for free and open sharing of teaching and research arti
                 {%- endfor -%}
               </div>
             {%- endif -%}
+            <br>
             {%- if c.url and c.url != "" -%}
-              <span class="course-card-arrow">View course →</span>
+              <span class="course-card-arrow">View course details and resources →</span>
             {%- endif -%}
           </div>
           {%- if c.url and c.url != "" -%}
