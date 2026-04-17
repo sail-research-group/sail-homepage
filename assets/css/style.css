@@ -74,10 +74,15 @@ h1, h2, h3 { line-height: 1.2; }
 
 @media (max-width: 768px) {
   .card img {
-    object-fit: contain;
     height: auto;
-    max-height: 280px;
-    background: #f5f5f5;
+    object-fit: unset;
+    max-width: 60%;
+    margin: 0 auto 0.75rem;
+    display: block;
+  }
+
+  .card {
+    text-align: center;
   }
 }
 .card {
@@ -1195,6 +1200,10 @@ h1 {
   }
 
   .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card-grid-4 {
     grid-template-columns: 1fr;
   }
 
