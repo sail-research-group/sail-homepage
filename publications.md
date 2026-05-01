@@ -4,50 +4,17 @@ title: Publications
 permalink: /publications/
 ---
 
+{%- assign all_people = site.data.leader -%}
+{%- if site.data.phds.size > 0 -%}{%- assign all_people = all_people | concat: site.data.phds -%}{%- endif -%}
+{%- if site.data.masters.size > 0 -%}{%- assign all_people = all_people | concat: site.data.masters -%}{%- endif -%}
+{%- if site.data.interns.size > 0 -%}{%- assign all_people = all_people | concat: site.data.interns -%}{%- endif -%}
+{%- if site.data.visitings.size > 0 -%}{%- assign all_people = all_people | concat: site.data.visitings -%}{%- endif -%}
+
 # Publications
 
 <section class="pub-filters" aria-label="Publication filters">
-  <div class="pub-filter-row">
-    <div class="pub-filter-group">
-      <span class="pub-filter-label">Author</span>
-      <div class="pub-filter-chips">
-        {%- for n in site.data.namelist -%}
-          <button type="button" class="pub-filter-chip" data-filter="author" data-value="{{ n.name | escape }}">{{ n.name }}</button>
-        {%- endfor -%}
-      </div>
-    </div>
-
-    <div class="pub-filter-group">
-      <span class="pub-filter-label">Year</span>
-      <div class="pub-filter-chips">
-        {%- assign years = site.data.publications | map: "year" | uniq | sort | reverse -%}
-        {%- for y in years -%}
-          <button type="button" class="pub-filter-chip" data-filter="year" data-value="{{ y }}">{{ y }}</button>
-        {%- endfor -%}
-      </div>
-    </div>
-
-    <div class="pub-filter-group">
-      <span class="pub-filter-label">Venue</span>
-      <div class="pub-filter-chips">
-        {%- assign venues = site.data.publications | map: "venue" | uniq | sort -%}
-        {%- for v in venues -%}
-          <button type="button" class="pub-filter-chip" data-filter="venue" data-value="{{ v | escape }}">{{ v }}</button>
-        {%- endfor -%}
-      </div>
-    </div>
-
-    <div class="pub-filter-group">
-      <span class="pub-filter-label">Type</span>
-      <div class="pub-filter-chips">
-        <button type="button" class="pub-filter-chip" data-filter="type" data-value="conference">Conference</button>
-        <button type="button" class="pub-filter-chip" data-filter="type" data-value="journal">Journal</button>
-      </div>
-    </div>
-  </div>
-
   <div class="pub-filter-controls">
-    <input type="search" id="pub-search" class="pub-search" placeholder="Search title or authors…" autocomplete="off">
+    <input type="search" id="pub-search" class="pub-search" placeholder="Search by keyword, title, or author…" autocomplete="off">
     <label class="pub-sort-label">
       Sort
       <select id="pub-sort" class="pub-sort">
@@ -56,8 +23,23 @@ permalink: /publications/
         <option value="venue">Venue A–Z</option>
       </select>
     </label>
-    <button type="button" id="pub-clear" class="pub-clear">Clear filters</button>
+    <button type="button" id="pub-topic-toggle" class="pub-topic-toggle" aria-expanded="true">
+      Keywords <span class="pub-topic-toggle-icon">&#9662;</span>
+    </button>
+    <button type="button" id="pub-clear" class="pub-clear">Clear</button>
   </div>
+
+  {%- assign keyword_list = site.data.keywords -%}
+  {%- if keyword_list.size > 0 -%}
+  <div class="pub-keyword-row">
+    <span class="pub-keyword-label">Keywords</span>
+    <div class="pub-keyword-chips">
+      {%- for kw in keyword_list -%}
+        <button type="button" class="pub-keyword-chip" data-keyword="{{ kw | downcase }}">{{ kw }}</button>
+      {%- endfor -%}
+    </div>
+  </div>
+  {%- endif -%}
 </section>
 
 <section class="pubs">
@@ -72,50 +54,67 @@ permalink: /publications/
                  data-venue="{{ p.venue | escape }}"
                  data-type="{{ p.type }}"
                  data-authors="{{ p.authors | escape }}"
-                 data-title="{{ p.title | escape }}">
-          <div class="pub-venue">
-            {{ p.venue }}
-          </div>
-          <h3 class="pub-title">
-            {{ p.title }}
-          </h3>
+                 data-title="{{ p.title | escape }}"
+                 data-keywords="{{ p.keywords | join: ',' | downcase }}">
+          <h3 class="pub-title"><span class="pub-venue">{{ p.venue }}</span> {{ p.title }}</h3>
           <div class="pub-authors">
             {%- assign authors = p.authors | split: ", " -%}
             {%- for author in authors -%}
-              {%- assign person = site.data.leader | concat: site.data.phds | concat: site.data.interns | where: "name", author | first -%}
+              {%- assign person = all_people | where: "name", author | first -%}
               {%- if person -%}
-                <a href="/people/#{{ author | slugify }}" class="sail-link">{{ author }}</a>
+                {%- if person.web -%}
+                  <a href="{{ person.web }}" class="sail-link">{{ author }}</a>
+                {%- elsif person.url -%}
+                  <a href="{{ person.url }}" class="sail-link">{{ author }}</a>
+                {%- else -%}
+                  <a href="/people/#{{ author | slugify }}" class="sail-link">{{ author }}</a>
+                {%- endif -%}
               {%- else -%}
                 <span class="external-author">{{ author }}</span>
               {%- endif -%}
               {%- unless forloop.last -%}, {% endunless -%}
             {%- endfor -%}
           </div>
-          <div class="pub-links">
-            {%- if p.pdf -%}
-              <a class="pub-btn" href="{{ p.pdf | relative_url }}" target="_blank" rel="noopener">PDF</a>
+          <div class="pub-actions-row">
+            {%- if p.keywords -%}
+            <div class="pub-keywords">
+              {%- for kw in p.keywords -%}
+                <span class="pub-kw-tag">{{ kw }}</span>
+              {%- endfor -%}
+            </div>
             {%- endif -%}
-
-            {%- if p.slides -%}
-              <a class="pub-btn" href="{{ p.slides | relative_url }}" target="_blank" rel="noopener">Slides</a>
-            {%- endif -%}
-
-            {%- if p.poster -%}
-              <a class="pub-btn" href="{{ p.poster | relative_url }}" target="_blank" rel="noopener">Poster</a>
-            {%- endif -%}
-
-            {%- if p.video -%}
-              <a class="pub-btn" href="{{ p.video }}" target="_blank" rel="noopener">Talk</a>
-            {%- endif -%}
-
-            {%- if p.code -%}
-              <a class="pub-btn" href="{{ p.code }}" target="_blank" rel="noopener">Code</a>
-            {%- endif -%}
-
-            {%- if p.doi -%}
-              <a class="pub-btn" href="https://doi.org/{{ p.doi }}" target="_blank" rel="noopener">DOI</a>
-            {%- endif -%}
+            <div class="pub-actions">
+              {%- if p.abstract -%}
+                <button type="button" class="pub-btn pub-abstract-toggle" aria-expanded="false">Abstract <span class="pub-abstract-arrow">&#9662;</span></button>
+              {%- endif -%}
+              {%- if p.pdf -%}
+                <a class="pub-btn" href="{{ p.pdf | relative_url }}" target="_blank" rel="noopener">PDF</a>
+              {%- endif -%}
+              {%- if p.slides -%}
+                <a class="pub-btn" href="{{ p.slides | relative_url }}" target="_blank" rel="noopener">Slides</a>
+              {%- endif -%}
+              {%- if p.poster -%}
+                <a class="pub-btn" href="{{ p.poster | relative_url }}" target="_blank" rel="noopener">Poster</a>
+              {%- endif -%}
+              {%- if p.video -%}
+                <a class="pub-btn" href="{{ p.video }}" target="_blank" rel="noopener">Talk</a>
+              {%- endif -%}
+              {%- if p.code -%}
+                <a class="pub-btn" href="{{ p.code }}" target="_blank" rel="noopener">Code</a>
+              {%- endif -%}
+              {%- if p.doi -%}
+                <a class="pub-btn" href="https://doi.org/{{ p.doi }}" target="_blank" rel="noopener">DOI</a>
+              {%- endif -%}
+              {%- if p.bibtex -%}
+                <button type="button" class="pub-btn pub-btn-bibtex" data-bibtex="{{ p.bibtex | escape }}">BibTeX</button>
+              {%- endif -%}
+            </div>
           </div>
+          {%- if p.abstract -%}
+          <div class="pub-abstract-body">
+            <p>{{ p.abstract }}</p>
+          </div>
+          {%- endif -%}
         </article>
       {%- endfor -%}
     </div>
