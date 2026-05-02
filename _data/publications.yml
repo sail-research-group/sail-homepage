@@ -2,6 +2,7 @@
 #   title: "AttenP: Bit-serial Attention for Efficient LLM Inference"
 #   authors: "A. Student, B. Researcher, H. Mao"
 #   venue: "MICRO 2025"
+#   type: conference                    # or: journal
 #   doi: "10.0000/example-doi"
 #   pdf: "https://arxiv.org/abs/0000.00000"
 #   code: "https://github.com/your-org/attenp"
@@ -10,137 +11,256 @@
 #   title: "MegIS: High-Performance, Energy-Efficient, and Low-Cost Metagenomic Analysis with In-Storage Processing"
 #   authors: "Nika Mansouri Ghiasi, Mohammad Sadrosadati, Harun Mustafa, ..."
 #   venue: "ISCA 2024"
+#   type: conference
 #   pdf: "https://hybol1993.github.io/assets/pdf/megis.pdf"
 #   slides: "https://example.com/megis-slides.pdf"
 #   poster: "https://example.com/megis-poster.pdf"
 #   video: "https://youtu.be/..."
 #   code: "https://github.com/something/megis"
 #   doi: "10.1145/XXXXXXX.YYYYYYY"
-
 - year: 2026
   title: "SAGe: A Lightweight Algorithm-Architecture Co-Design for Mitigating the Data Preparation Bottleneck in Large-Scale Genome Sequence Analysis"
-  authors: "Nika Mansouri Ghiasi, Talu Güloglu, Harun Mustafa, Can Firtina, Konstantina Koliogeorgi, Konstantinos Kanellopoulos, Haiyu Mao, Rakesh Nadig, Mohammad Sadrosadati, Jisung Park, and Onur Mutlu"
-  venue: "HPCA 2026"
+  authors: "Nika Mansouri Ghiasi, Talu Güloglu, Harun Mustafa, Can Firtina, Konstantina Koliogeorgi, Konstantinos Kanellopoulos, <a href='https://hybol1993.github.io/'><u>Haiyu Mao</u></a>, Rakesh Nadig, Mohammad Sadrosadati, Jisung Park, and Onur Mutlu"
+  venue: HPCA 2026
+  type: conference
   pdf: "https://hybol1993.github.io/assets/pdf/sage.pdf"
-
+  doi: 10.1109/hpca68181.2026.11408512
+  bibtex: "@inproceedings{Ghiasi_2026, title={SAGe: A Lightweight Algorithm-Architecture Co-Design for Mitigating the Data Preparation Bottleneck in Large-Scale Genome Sequence Analysis}, url={http://dx.doi.org/10.1109/hpca68181.2026.11408512}, DOI={10.1109/hpca68181.2026.11408512}, booktitle={2026 IEEE International Symposium on High Performance Computer Architecture (HPCA)}, publisher={IEEE}, author={Ghiasi, Nika Mansouri and Güloglu, Talu and Mustafa, Harun and Firtina, Can and Koliogeorgi, Konstantina and Kanellopoulos, Konstantinos and Mao, Haiyu and Nadig, Rakesh and Sadrosadati, Mohammad and Park, Jisung and Mutlu, Onur}, year={2026}, month=jan, pages={1–23} }"
+  abstract: "Genome sequence analysis, which examines the DNA sequences of organisms, drives advances in many critical medical and biotechnological fields. Given its importance and the exponentially growing volumes of genomic sequence data, there are extensive efforts to accelerate genome sequence analysis. In this work, we demonstrate a major bottleneck that greatly limits and diminishes the benefits of state-of-the-art genome sequence analysis accelerators: the data preparation bottleneck, where genomic sequence data is stored in compressed form and needs to be first decompressed and formatted before an accelerator can operate on it. To mitigate this bottleneck, we propose SAGe, an algorithm-architecture co-design for highly-compressed storage and high-performance a ccess of large-scale genomic sequence data. The key challenge is to improve data preparation performance while maintaining high compression ratios (comparable to genomic-specific compression algorithms) at low hardware cost. We address this challenge by leveraging key properties of genomic datasets to co-design (i) a lossless (de)compression algorithm, (ii) hardware that decompresses data with lightweight operations and efficient streaming accesses, (iii) storage data layout, and (iv) interface commands to access data. SAGe is highly versatile, as it supports datasets from different sequencing technologies and species. Due to its lightweight design, SAGe can be seamlessly integrated with a broad range of hardware accelerators for genome sequence analysis to mitigate their data preparation bottlenecks. Our results demonstrate that SAGe improves the average end-to-end performance and energy efficiency of two state-of-the-art genome sequence analysis accelerators by 3.0×-32.1× and 13.0×-34.0×, respectively, compared to when the accelerators rely on state-of-the-art software and hardware decompression tools."
+  keywords:
+  - Genome Analysis
 - year: 2026
   title: "GenPairX: A Hardware-Algorithm Co-Designed Accelerator for Paired-End Read Mapping"
-  authors: "Julien Eudine, Chu Li, Zhuo Cheng, Renzo Andri, Can Firtina, Mohammad Sadrosadati, Nika Mansouri Ghiasi, Konstantina Koliogeorgi, Anirban Nag, Arash Tavakkol, Haiyu Mao, and Onur Mutlu, Shai Bergman, and Ji Zhang"
-  venue: "HPCA 2026"
+  authors: "Julien Eudine, Chu Li, Zhuo Cheng, Renzo Andri, Can Firtina, Mohammad Sadrosadati, Nika Mansouri Ghiasi, Konstantina Koliogeorgi, Anirban Nag, Arash Tavakkol, <a href='https://hybol1993.github.io/'><u>Haiyu Mao</u></a>, and Onur Mutlu, Shai Bergman, and Ji Zhang"
+  venue: HPCA 2026
+  type: conference
   pdf: "https://hybol1993.github.io/assets/pdf/genpairx.pdf"
-
+  doi: 10.1109/hpca68181.2026.11408446
+  bibtex: "@inproceedings{Eudine_2026, title={GenPairX: A Hardware-Algorithm Co-Designed Accelerator for Paired-End Read Mapping}, url={http://dx.doi.org/10.1109/hpca68181.2026.11408446}, DOI={10.1109/hpca68181.2026.11408446}, booktitle={2026 IEEE International Symposium on High Performance Computer Architecture (HPCA)}, publisher={IEEE}, author={Eudine, Julien and Li, Chu and Cheng, Zhuo and Andri, Renzo and Firtina, Can and Sadrosadati, Mohammad and Ghiasi, Nika Mansouri and Koliogeorgi, Konstantina and Nag, Anirban and Tavakkol, Arash and Mao, Haiyu and Mutlu, Onur and Bergman, Shai and Zhang, Ji}, year={2026}, month=jan, pages={1–16} }"
+  abstract: "Genome sequencing has become a central focus in computational biology due to its critical role in applications such as personalized medicine, disease outbreak tracking, and evolutionary research. A genome study typically begins with sequencing, which produces millions to billions of short DNA fragments known as reads. Extracting meaningful biological insights from these reads requires a computationally intensive step called read mapping, where each read is aligned to a reference genome. Read mapping for short reads comes in two forms: single-end and paired-end, with the latter being more prevalent due to its higher accuracy and support for advanced analysis. Read mapping remains a major performance bottleneck in genome analysis as a result of the extensive use of computationally intensive dynamic programming. Prior efforts have attempted to mitigate this cost by employing filters to identify and potentially discard computationally expensive matches and leveraging hardware accelerators to speed up the computations. While partially effective, these approaches have limitations. In particular, existing filters are often ineffective for paired-end reads, as they evaluate each read independently and exhibit relatively low filtering ratios. In this work, we propose GenPairX, a hardware-algorithm codesigned accelerator that efficiently minimizes the computational load of paired-end read mapping while enhancing the throughput of memory-intensive operations. GenPairX introduces: (1) a novel filtering algorithm that jointly considers both reads in a pair to improve filtering effectiveness, and a lightweight alignment algorithm to replace most of the computationally expensive dynamic programming operations, and (2) two specialized hardware mechanisms to support the proposed algorithms. The proposed hardware addresses the high memory bandwidth demands of the read filtering process via orchestration of memory accesses over high-bandwidth memory channels, and accelerates the alignment of candidate reads via simple vectorized logical XOR operators. Our evaluations show that GenPairX delivers substantial performance improvements over state-of-the-art solutions, achieving $1575 \\times$ and $1.43 \\times$ higher throughput per watt compared to leading CPU-based and accelerator-based read mappers, respectively, all without compromising accuracy."
+  keywords:
+  - Genome Analysis
 - year: 2025
   title: "REIS: A High-Performance and Energy-Efficient Retrieval System with In-Storage Processing"
-  authors: "Kangqi Chen, Rakesh Nadig, Andreas Kosmas Kakolyris, Manos Frouzakis, Nika Mansouri Ghiasi, Yu Liang, Haiyu Mao, Jisung Park, Mohammad Sadrosadati, and Onur Mutlu"
-  venue: "ISCA 2025"
+  authors: "Kangqi Chen, Rakesh Nadig, Andreas Kosmas Kakolyris, Manos Frouzakis, Nika Mansouri Ghiasi, Yu Liang, <a href='https://hybol1993.github.io/'><u>Haiyu Mao</u></a>, Jisung Park, Mohammad Sadrosadati, and Onur Mutlu"
+  venue: ISCA 2025
+  type: conference
   pdf: "https://hybol1993.github.io/assets/pdf/reis.pdf"
-
+  doi: 10.1145/3695053.3731116
+  bibtex: "@inproceedings{Chen_2025, series={SIGARCH ’25}, title={REIS: A High-Performance and Energy-Efficient Retrieval System with In-Storage Processing}, url={http://dx.doi.org/10.1145/3695053.3731116}, DOI={10.1145/3695053.3731116}, booktitle={Proceedings of the 52nd Annual International Symposium on Computer Architecture}, publisher={ACM}, author={Chen, Kangqi and Nadig, Rakesh and Frouzakis, Manos and Ghiasi, Nika Mansouri and Liang, Yu and Mao, Haiyu and Park, Jisung and Sadrosadati, Mohammad and Mutlu, Onur}, year={2025}, month=june, pages={1171–1192}, collection={SIGARCH ’25} }"
+  abstract: "Large Language Models (LLMs) face an inherent challenge: their knowledge is confined to the data that they have been trained on. This limitation, combined with the significant cost of retraining renders them incapable of providing up-to-date responses. To overcome these issues, Retrieval-Augmented Generation (RAG) complements the static training-derived knowledge of LLMs with an external knowledge repository. RAG consists of three stages: (i) indexing, which creates a database that facilitates similarity search on text embeddings, (ii) retrieval, which, given a user query, searches and retrieves relevant data from the database and (iii) generation, which uses the user query and the retrieved data to generate a response. The retrieval stage of RAG in particular becomes a significant performance bottleneck in inference pipelines. In this stage, (i) a given user query is mapped to an embedding vector and (ii) an Approximate Nearest Neighbor Search (ANNS) algorithm searches for the most semantically similar embedding vectors in the database to identify relevant items. Due to the large database sizes, ANNS incurs significant data movement overheads between the host and the storage system. To alleviate these overheads, prior works propose In-Storage Processing (ISP) techniques that accelerate ANNS workloads by performing computations inside the storage system. However, existing works that leverage ISP for ANNS (i) employ algorithms that are not tailored to ISP systems, (ii) do not accelerate data retrieval operations for data selected by ANNS, and (iii) introduce significant hardware modifications to the storage system, limiting performance and hindering their adoption. We propose REIS, the first Retrieval system tailored for RAG with In-Storage processing that addresses the limitations of existing implementations with three key mechanisms. First, REIS employs a database layout that links database embedding vectors to their associated documents, enabling efficient retrieval. Second, it enables efficient ANNS by introducing an ISP-tailored algorithm and data placement technique that: (i) distributes embeddings across all planes of the storage system to exploit parallelism, and (ii) employs a lightweight Flash Translation Layer (FTL) to improve performance. Third, REIS leverages an ANNS engine that uses the existing computational resources inside the storage system, without requiring hardware modifications. The three key mechanisms form a cohesive framework that largely enhances both the performance and energy efficiency of RAG pipelines. Compared to a high-end server-grade system, REIS improves the performance (energy efficiency) of the retrieval stage by an average of 13 × (55 ×). REIS offers improved performance against existing ISP-based ANNS accelerators, without introducing any hardware modifications, enabling easier adoption for RAG pipelines."
+  keywords:
+  - In-Storage Computing (ISC)
+  - LLM
+  - Retrieval-Augmented Generation
 - year: 2025
   title: "MARS: Processing-In-Memory Acceleration of Raw Signal Genome Analysis Inside the Storage Subsystem"
-  authors: "Melina Soysal, Konstantina Koliogeorgi, Can Firtina, Nika Mansouri Ghiasi, Rakesh Nadig, Haiyu Mao, Geraldo Francisco, Yu Liang, Klea Zambaku, Mohammad Sadrosadati, and Onur Mutlu"
-  venue: "ICS 2025"
+  authors: "Melina Soysal, Konstantina Koliogeorgi, Can Firtina, Nika Mansouri Ghiasi, Rakesh Nadig, <a href='https://hybol1993.github.io/'><u>Haiyu Mao</u></a>, Geraldo Francisco, Yu Liang, Klea Zambaku, Mohammad Sadrosadati, and Onur Mutlu"
+  venue: ICS 2025
+  type: conference
   pdf: "https://hybol1993.github.io/assets/pdf/mars.pdf"
-
+  doi: 10.1145/3721145.3730428
+  bibtex: "@inproceedings{Soysal_2025, series={ICS ’25}, title={MARS: Processing-In-Memory Acceleration of Raw Signal Genome Analysis Inside the Storage Subsystem}, url={http://dx.doi.org/10.1145/3721145.3730428}, DOI={10.1145/3721145.3730428}, booktitle={Proceedings of the 39th ACM International Conference on Supercomputing}, publisher={ACM}, author={Soysal, Melina and Koliogeorgi, Konstantina and Firtina, Can and Ghiasi, Nika Mansouri and Nadig, Rakesh and Mao, Haiyu and de Oliveira Junior, Geraldo Francisco and Liang, Yu and Zambaku, Klea and Sadrosadati, Mohammad and Mutlu, Onur}, year={2025}, month=june, pages={513–534}, collection={ICS ’25} }"
+  abstract: "Conventional genome analysis relies on translating the noisy raw electrical signals generated by DNA sequencing technologies into nucleotide bases (i.e., A, C, G, and T) through a computationally-intensive process called basecalling. Raw signal genome analysis (RSGA) has emerged as a promising approach towards enabling real-time genome analysis by directly analyzing raw electrical signals without the need for basecalling. However, rapid advancements in sequencing technologies make it increasingly difficult for software-based RSGA to match the throughput of raw signal generation. Hardware-based RSGA acceleration has the potential to bridge the gap between software-based RSGA and sequencing throughput. This paper demonstrates that while (i) conventional hardware acceleration techniques (e.g., specialized ASICs) in tandem with (ii) memory-centric approaches (e.g., Processing-In-Memory) can significantly accelerate RSGA, the high volume of genomic data greatly shifts the performance and energy bottleneck from computation to I/O data movement. As sequencing throughput increases, I/O overhead becomes the dominant contributor to both runtime and energy consumption, limiting the scalability of both processor-centric and main-memory-centric accelerators. Therefore, there is a pressing need to design a high-performance, energy-efficient system for RSGA that can both alleviate the data movement bottleneck and provide large acceleration capabilities. We propose MARS, a storage-centric system that leverages the heterogeneous resources available within modern storage systems (e.g., storage-internal DRAM, storage controller, flash chips) alongside their large storage capacity to tackle both data movement and computational overheads of RSGA in an area-efficient and low-cost manner. MARS accelerates RSGA through a novel hardware/software co-design approach using three major techniques. First, MARS modifies the RSGA pipeline via a previously unexplored combination of two filtering mechanisms and a quantization scheme, reducing hardware demands and optimizing for in-storage execution. Second, MARS accelerates the modified RSGA steps directly within the storage device by leveraging both Processing-Near-Memory and Processing-Using-Memory paradigms, tailored to the internal architecture of the storage system. Third, MARS orchestrates the execution of all steps via a streamlined control and data flow to fully exploit in-storage parallelism and minimize data movement. Our evaluation shows that MARS outperforms basecalling-based software and hardware-accelerated state-of-the-art read mapping pipelines by 93 × and 40 × , on average across different datasets, while reducing their energy consumption by 427 × and 72 ×. MARS improves the performance of state-of-the-art RSGA-based read mapping pipeline by 28 × while reducing its energy consumption by 180 × on average across different datasets."
+  keywords:
+  - Processing In Memory (PIM)
+  - In-Storage Computing (ISC)
+  - Genome Analysis
 - year: 2025
   title: "PAPI: Exploiting Dynamic Parallelism in Large Language Model Decoding with a Processing-In-Memory-Enabled Computing System"
-  authors: "Yintao He, Haiyu Mao, Christina Giannoula, Mohammad Sadrosadati, Juan Gomez-Luna, Huawei Li, Xiaowei Li, Ying Wang, and Onur Mutlu"
-  venue: "ASPLOS 2025"
+  authors: "Yintao He, <a href='https://hybol1993.github.io/'><u>Haiyu Mao</u></a>, Christina Giannoula, Mohammad Sadrosadati, Juan Gomez-Luna, Huawei Li, Xiaowei Li, Ying Wang, and Onur Mutlu"
+  venue: ASPLOS 2025
+  type: conference
   pdf: "https://hybol1993.github.io/assets/pdf/papi.pdf"
-  slides: "/assets/slides/PAPI_asplos25-talk.pptx"
-
+  slides: /assets/slides/PAPI_asplos25-talk.pptx
+  doi: 10.1145/3676641.3716009
+  bibtex: "@inproceedings{He_2025, series={ASPLOS ’25}, title={PAPI: Exploiting Dynamic Parallelism in Large Language Model Decoding with a Processing-In-Memory-Enabled Computing System}, url={http://dx.doi.org/10.1145/3676641.3716009}, DOI={10.1145/3676641.3716009}, booktitle={Proceedings of the 30th ACM International Conference on Architectural Support for Programming Languages and Operating Systems, Volume 2}, publisher={ACM}, author={He, Yintao and Mao, Haiyu and Giannoula, Christina and Sadrosadati, Mohammad and Gómez-Luna, Juan and Li, Huawei and Li, Xiaowei and Wang, Ying and Mutlu, Onur}, year={2025}, month=mar, pages={766–782}, collection={ASPLOS ’25} }"
+  abstract: "Large language models (LLMs) are widely used for natural language understanding and text generation. An LLM model relies on a time-consuming step called LLM decoding to generate output tokens. Several prior works focus on improving the performance of LLM decoding using parallelism techniques, such as batching and speculative decoding. State-of-the-art LLM decoding has both compute-bound and memory-bound kernels. Some prior works statically identify and map these different kernels to a heterogeneous architecture consisting of both processing-in-memory (PIM) units and computation-centric accelerators (e.g., GPUs). We observe that characteristics of LLM decoding kernels (e.g., whether or not a kernel is memory-bound) can change dynamically due to parameter changes to meet user and/or system demands, making (1) static kernel mapping to PIM units and computation-centric accelerators suboptimal, and (2) one-size-fits-all approach of designing PIM units inefficient due to a large degree of heterogeneity even in memory-bound kernels. In this paper, we aim to accelerate LLM decoding while considering the dynamically changing characteristics of the kernels involved. We propose PAPI (PA rallel Decoding with PI M), a PIM-enabled heterogeneous architecture that exploits dynamic scheduling of compute-bound or memory-bound kernels to suitable hardware units. PAPI has two key mechanisms: (1) online kernel characterization to dynamically schedule kernels to the most suitable hardware units at runtime and (2) a PIM-enabled heterogeneous computing system that harmoniously orchestrates both computation-centric processing units (GPU) and hybrid PIM units with different computing capabilities. Our experimental results on three broadly-used LLMs (i.e., LLaMA-65B, GPT-3 66B, and GPT-3 175B) show that PAPI achieves 1.8× and 11.1× speedups over a state-of-the-art heterogeneous LLM accelerator (i.e., GPU and PIM) and a state-of-the-art PIM-only LLM accelerator, respectively."
+  keywords:
+  - Processing In Memory (PIM)
+  - LLM
 - year: 2025
   title: "CIPHERMATCH: Accelerating Homomorphic Encryption based String Matching via Memory-Efficient Data Packing and In-Flash Processing"
-  authors: "Mayank Kabra, Rakesh Nadig, Harshita Gupta, Rahul Bera, Manos Frouzakis, Vamanan Arulchelvan, Yu Liang, Haiyu Mao, Mohammad Sadrosadati, and Onur Mutlu"
-  venue: "ASPLOS 2025"
+  authors: "Mayank Kabra, Rakesh Nadig, Harshita Gupta, Rahul Bera, Manos Frouzakis, Vamanan Arulchelvan, Yu Liang, <a href='https://hybol1993.github.io/'><u>Haiyu Mao</u></a>, Mohammad Sadrosadati, and Onur Mutlu"
+  venue: ASPLOS 2025
+  type: conference
   pdf: "https://hybol1993.github.io/assets/pdf/ciphermatch.pdf"
-
+  doi: 10.1145/3676641.3716251
+  bibtex: "@inproceedings{Kabra_2025, series={ASPLOS ’25}, title={CIPHERMATCH: Accelerating Homomorphic Encryption-Based String Matching via Memory-Efficient Data Packing and In-Flash Processing}, url={http://dx.doi.org/10.1145/3676641.3716251}, DOI={10.1145/3676641.3716251}, booktitle={Proceedings of the 30th ACM International Conference on Architectural Support for Programming Languages and Operating Systems, Volume 2}, publisher={ACM}, author={Kabra, Mayank and Nadig, Rakesh and Gupta, Harshita and Bera, Rahul and Frouzakis, Manos and Arulchelvan, Vamanan and Liang, Yu and Mao, Haiyu and Sadrosadati, Mohammad and Mutlu, Onur}, year={2025}, month=mar, pages={111–130}, collection={ASPLOS ’25} }"
+  abstract: "Homomorphic encryption (HE) allows secure computation on encrypted data without revealing the original data, providing significant benefits for privacy-sensitive applications. Many cloud computing applications (e.g., DNA read mapping, biometric matching, web search) use exact string matching as a key operation. However, prior string matching algorithms that use homomorphic encryption are limited by high computational latency caused by the use of complex operations and data movement bottlenecks due to the large encrypted data size. In this work, we provide an efficient algorithm-hardware codesign to accelerate HE-based secure exact string matching. We propose CIPHERMATCH, which (i) reduces the increase in memory footprint after encryption using an optimized software-based data packing scheme, (ii) eliminates the use of costly homomorphic operations (e.g., multiplication and rotation), and (iii) reduces data movement by designing a new in-flash processing (IFP) architecture. CIPHERMATCH improves the software-based data packing scheme of an existing HE scheme and performs secure string matching using only homomorphic addition. This packing method reduces the memory footprint after encryption and improves the performance of the algorithm. To reduce the data movement overhead, we design an IFP architecture to accelerate homomorphic addition by leveraging the array-level and bit-level parallelism of NAND-flash-based solid-state drives (SSDs). We demonstrate the benefits of CIPHERMATCH using two case studies: (1) Exact DNA string matching and (2) encrypted database search. Our pure software-based CIPHERMATCH implementation that uses our memory-efficient data packing scheme improves performance and reduces energy consumption by 42.9× and 17.6×, respectively, compared to the state-of-the-art software baseline. Integrating CIPHERMATCH with IFP improves performance and reduces energy consumption by 136.9× and 256.4×, respectively, compared to the software-based CIPHERMATCH implementation."
+  keywords:
+  - In-Storage Computing (ISC)
+  - Security
 - year: 2025
   title: "Ariadne: A Hotness-Aware and Size-Adaptive Compressed Swap Technique for Fast Application Relaunch and Reduced CPU Usage on Mobile Devices"
-  authors: "Yu Liang, Aofeng Shen, Chun Jason Xue, Riwei Pan, Haiyu Mao, Nika Mansouri Ghiasi, Qingcai Jiang, Rakesh Nadig, Lei Li, Rachata Ausavarungnirun, Mohammad Sadrosadati, and Onur Mutlu"
-  venue: "HPCA 2025"
+  authors: "Yu Liang, Aofeng Shen, Chun Jason Xue, Riwei Pan, <a href='https://hybol1993.github.io/'><u>Haiyu Mao</u></a>, Nika Mansouri Ghiasi, Qingcai Jiang, Rakesh Nadig, Lei Li, Rachata Ausavarungnirun, Mohammad Sadrosadati, and Onur Mutlu"
+  venue: HPCA 2025
+  type: conference
   pdf: "https://hybol1993.github.io/assets/pdf/ariadne.pdf"
-
+  doi: 10.1109/hpca61900.2025.00118
+  bibtex: "@inproceedings{Liang_2025, title={Ariadne: A Hotness-Aware and Size-Adaptive Compressed Swap Technique for Fast Application Relaunch and Reduced CPU Usage on Mobile Devices}, url={http://dx.doi.org/10.1109/hpca61900.2025.00118}, DOI={10.1109/hpca61900.2025.00118}, booktitle={2025 IEEE International Symposium on High Performance Computer Architecture (HPCA)}, publisher={IEEE}, author={Liang, Yu and Shen, Aofeng and Xue, Chun Jason and Pan, Riwei and Mao, Haiyu and Ghiasi, Nika Mansouri and Jiang, Qingcai and Nadig, Rakesh and Li, Lei and Ausavarungnirun, Rachata and Sadrosadati, Mohammad and Mutlu, Onur}, year={2025}, month=mar, pages={1588–1602} }"
+  abstract: "As the memory demands of individual mobile applications continue to grow and the number of concurrently running applications increases, available memory on mobile devices is becoming increasingly scarce. When memory pressure is high, current mobile systems use a RAM-based compressed swap scheme (called ZRAM) to compress unused execution-related data (called anonymous data in Linux) in main memory. This approach avoids swapping data to secondary storage (NAND flash memory) or terminating applications, thereby achieving shorter application relaunch latency.In this paper, we observe that the state-of-the-art ZRAM scheme prolongs relaunch latency and wastes CPU time because it does not differentiate between hot and cold data or leverage different compression chunk sizes and data locality. We make three new observations. First, anonymous data has different levels of hotness. Hot data, used during application relaunch, is usually similar between consecutive relaunches. Second, when compressing the same amount of anonymous data, small-size compression is very fast, while large-size compression achieves a better compression ratio. Third, there is locality in data access during application relaunch.Based on these observations, we propose a hotness-aware and size-adaptive compressed swap scheme, Ariadne, for mobile devices to mitigate relaunch latency and reduce CPU usage. Ariadne incorporates three key techniques. First, a low-overhead hotness-aware data organization scheme aims to quickly identify the hotness of anonymous data without significant overhead. Second, a size-adaptive compression scheme uses different compression chunk sizes based on the data’s hotness level to ensure fast decompression of hot and warm data. Third, a proactive decompression scheme predicts the next set of data to be used and decompresses it in advance, reducing the impact of data swapping back into main memory during application relaunch.We implement and evaluate Ariadne on a commercial smartphone, Google Pixel 7 with the latest Android 14. Our experimental evaluation results show that, on average, Ariadne reduces application relaunch latency by 50% and decreases the CPU usage of compression and decompression procedures by 15% compared to the state-of-the-art compressed swap scheme for mobile devices."
+  keywords:
+  - Memory System
+  - Mobile Systems
 - year: 2024
   title: "MegIS: High-Performance, Energy-Efficient, and Low-Cost Metagenomic Analysis with In-Storage Processing"
-  authors: "Nika Mansouri Ghiasi, Mohammad Sadrosadati, Harun Mustafa, Arvid Gollwitzer, Can Firtina, Julien Eudine, Haiyu Mao, Joel Lindegger, Meryem Banu Cavlak, Alser Mohammed, Jisung Park, and Onur Mutlu"
-  venue: "ISCA 2024"
+  authors: "Nika Mansouri Ghiasi, Mohammad Sadrosadati, Harun Mustafa, Arvid Gollwitzer, Can Firtina, Julien Eudine, <a href='https://hybol1993.github.io/'><u>Haiyu Mao</u></a>, Joel Lindegger, Meryem Banu Cavlak, Alser Mohammed, Jisung Park, and Onur Mutlu"
+  venue: ISCA 2024
+  type: conference
   pdf: "https://hybol1993.github.io/assets/pdf/megis.pdf"
-
+  doi: 10.1109/isca59077.2024.00054
+  bibtex: "@inproceedings{Ghiasi_2024, title={MegIS: High-Performance, Energy-Efficient, and Low-Cost Metagenomic Analysis with In-Storage Processing}, url={http://dx.doi.org/10.1109/isca59077.2024.00054}, DOI={10.1109/isca59077.2024.00054}, booktitle={2024 ACM/IEEE 51st Annual International Symposium on Computer Architecture (ISCA)}, publisher={IEEE}, author={Ghiasi, Nika Mansouri and Sadrosadati, Mohammad and Mustafa, Harun and Gollwitzer, Arvid and Firtina, Can and Eudine, Julien and Mao, Haiyu and Lindegger, Joël and Cavlak, Meryem Banu and Alser, Mohammed and Park, Jisung and Mutlu, Onur}, year={2024}, month=june, pages={660–677} }"
+  abstract: "Metagenomics, the study of the genome sequences of diverse organisms in a common environment, has led to significant advances in many fields. Since the species present in a metagenomic sample are not known in advance, metagenomic analysis commonly involves the key tasks of determining the species present in a sample and their relative abundances. These tasks require searching large metagenomic databases containing information on different species’ genomes. Metagenomic analysis suffers from significant data movement overhead due to moving large amounts of low-reuse data from the storage system to the rest of the system. In-storage processing can be a fundamental solution for reducing this overhead. However, designing an in-storage processing system for metagenomics is challenging because existing approaches to metagenomic analysis cannot be directly implemented in storage effectively due to the hardware limitations of modern SSDs.We propose MegIS, the first in-storage processing system designed to significantly reduce the data movement overhead of the end-to-end metagenomic analysis pipeline. MegIS is enabled by our lightweight design that effectively leverages and orchestrates processing inside and outside the storage system. Through our detailed analysis of the end-to-end metagenomic analysis pipeline and careful hardware/software co-design, we address in-storage processing challenges for metagenomics via specialized and efficient 1) task partitioning, 2) data/computation flow coordination, 3) storage technology-aware algorithmic optimizations, 4) data mapping, and 5) lightweight in-storage accelerators. MegIS’s design is flexible, capable of supporting different types of metagenomic input datasets, and can be integrated into various metagenomic analysis pipelines. Our evaluation shows that MegIS outperforms the state-of-the-art performance- and accuracy-optimized software metagenomic tools by 2.7× – 37.2× and 6.9×–100.2×, respectively, while matching the accuracy of the accuracy-optimized tool. MegIS achieves 1.5×–5.1× speedup compared to the state-of-the-art metagenomic hardware-accelerated (using processing-in-memory) tool, while achieving significantly higher accuracy."
+  keywords:
+  - In-Storage Computing (ISC)
+  - Genome Analysis
 - year: 2023
   title: "Swordfish: A Framework for Evaluating Deep Neural Network-based Basecalling using Computation-In-Memory with Non-Ideal Memristors"
-  authors: "Taha Shahroodi, Gagandeep Singh, Mahdi Zahedi, Haiyu Mao, Joel Lindegger, Can Firtina, Stephan Wong, Onur Mutlu, and Said Hamdioui"
-  venue: "MICRO 2023"
+  authors: "Taha Shahroodi, Gagandeep Singh, Mahdi Zahedi, <a href='https://hybol1993.github.io/'><u>Haiyu Mao</u></a>, Joel Lindegger, Can Firtina, Stephan Wong, Onur Mutlu, and Said Hamdioui"
+  venue: MICRO 2023
+  type: conference
   pdf: "https://hybol1993.github.io/assets/pdf/swordfish.pdf"
-
+  doi: 10.1145/3613424.3614252
+  bibtex: "@inproceedings{Shahroodi_2023, series={MICRO ’23}, title={Swordfish: A Framework for Evaluating Deep Neural Network-based Basecalling using Computation-In-Memory with Non-Ideal Memristors}, url={http://dx.doi.org/10.1145/3613424.3614252}, DOI={10.1145/3613424.3614252}, booktitle={56th Annual IEEE/ACM International Symposium on Microarchitecture}, publisher={ACM}, author={Shahroodi, Taha and Singh, Gagandeep and Zahedi, Mahdi and Mao, Haiyu and Lindegger, Joel and Firtina, Can and Wong, Stephan and Mutlu, Onur and Hamdioui, Said}, year={2023}, month=oct, pages={1437–1452}, collection={MICRO ’23} }"
+  abstract: "Basecalling, an essential step in many genome analysis studies, relies on large Deep Neural Networks (DNNs) to achieve high accuracy. Unfortunately, these DNNs are computationally slow and inefficient, leading to considerable delays and resource constraints in the sequence analysis process. A Computation-In-Memory (CIM) architecture using memristors can significantly accelerate the performance of DNNs. However, inherent device non-idealities and architectural limitations of such designs can greatly degrade the basecalling accuracy, which is critical for accurate genome analysis. To facilitate the adoption of memristor-based CIM designs for basecalling, it is important to (1) conduct a comprehensive analysis of potential CIM architectures and (2) develop effective strategies for mitigating the possible adverse effects of inherent device non-idealities and architectural limitations.This paper proposes Swordfish, a novel hardware/software co-design framework that can effectively address the two aforementioned issues. Swordfish incorporates seven circuit and device restrictions or non-idealities from characterized real memristor-based chips. Swordfish leverages various hardware/software co-design solutions to mitigate the basecalling accuracy loss due to such non-idealities. To demonstrate the effectiveness of Swordfish, we take Bonito, the state-of-the-art (i.e., accurate and fast), open-source basecaller as a case study. Our experimental results using Swordfish show that a CIM architecture can realistically accelerate Bonito for a wide range of real datasets by an average of 25.7×, with an accuracy loss of 6.01%.CCS CONCEPTS• Hardware → Analysis and design of emerging devices and systems; Memory and dense storage; Biology-related information processing."
+  keywords:
+  - Processing In Memory (PIM)
+  - Genome Analysis
+  - Machine Learning
+  - Non-Volatile Memories (NVM)
 - year: 2023
   title: "Venice: Improving Solid-State Drive Parallelism at Low Cost via Conflict-Free Accesses"
-  authors: "Rakesh Nadig, Mohammad Sadrosadati, Haiyu Mao, Nika Mansouri Ghiasi, Arash Tavakkol, Jisung Park, Hamid Sarbazi-Azad, Juan Gómez Luna, and Onur Mutlu"
-  venue: "ISCA 2023"
+  authors: "Rakesh Nadig, Mohammad Sadrosadati, <a href='https://hybol1993.github.io/'><u>Haiyu Mao</u></a>, Nika Mansouri Ghiasi, Arash Tavakkol, Jisung Park, Hamid Sarbazi-Azad, Juan Gómez Luna, and Onur Mutlu"
+  venue: ISCA 2023
+  type: conference
   pdf: "https://hybol1993.github.io/assets/pdf/venice.pdf"
-
+  doi: 10.1145/3579371.3589071
+  bibtex: "@inproceedings{Nadig_2023, series={ISCA ’23}, title={Venice: Improving Solid-State Drive Parallelism at Low Cost via Conflict-Free Accesses}, url={http://dx.doi.org/10.1145/3579371.3589071}, DOI={10.1145/3579371.3589071}, booktitle={Proceedings of the 50th Annual International Symposium on Computer Architecture}, publisher={ACM}, author={Nadig, Rakesh and Sadrosadati, Mohammad and Mao, Haiyu and Ghiasi, Nika Mansouri and Tavakkol, Arash and Park, Jisung and Sarbazi-Azad, Hamid and Luna, Juan Gómez and Mutlu, Onur}, year={2023}, month=june, pages={1–16}, collection={ISCA ’23} }"
+  abstract: "The performance and capacity of solid-state drives (SSDs) are continuously improving to meet the increasing demands of modern data-intensive applications. Unfortunately, communication between the SSD controller and memory chips (e.g., 2D/3D NAND flash chips) is a critical performance bottleneck for many applications. SSDs use a multi-channel shared bus architecture where multiple memory chips connected to the same channel communicate to the SSD controller with only one path. As a result, path conflicts often occur during the servicing of multiple I/O requests, which significantly limits SSD parallelism. It is critical to handle path conflicts well to improve SSD parallelism and performance. Our goal is to fundamentally tackle the path conflict problem by increasing the number of paths between the SSD controller and memory chips at low cost. To this end, we build on the idea of using an interconnection network to increase the path diversity between the SSD controller and memory chips. We propose Venice, a new mechanism that introduces a low-cost interconnection network between the SSD controller and memory chips and utilizes the path diversity to intelligently resolve path conflicts. Venice employs three key techniques: 1) a simple router chip added next to each memory chip without modifying the memory chip design, 2) a path reservation technique that reserves a path from the SSD controller to the target memory chip before initiating a transfer, and 3) a fully-adaptive routing algorithm that effectively utilizes the path diversity to resolve path conflicts. Our experimental results show that Venice 1) improves performance by an average of 2.65×/1.67× over a baseline performance-optimized/cost-optimized SSD design across a wide range of workloads, 2) reduces energy consumption by an average of 61% compared to a baseline performance-optimized SSD design. Venice's benefits come at a relatively low area overhead."
+  keywords:
+  - SSD
 - year: 2023
   title: "RawHash: enabling fast and accurate real-time analysis of raw nanopore signals for large genomes"
-  authors: "Can Firtina, Nika Mansouri Ghiasi, Joel Lindegger, Gagandeep Singh, Meryem Banu Cavlak, Haiyu Mao, and Onur Mutlu"
-  venue: "Bioinformatics 2023"
+  authors: "Can Firtina, Nika Mansouri Ghiasi, Joel Lindegger, Gagandeep Singh, Meryem Banu Cavlak, <a href='https://hybol1993.github.io/'><u>Haiyu Mao</u></a>, and Onur Mutlu"
+  venue: Bioinformatics 2023
+  type: journal
   pdf: "https://hybol1993.github.io/assets/pdf/rawhash.pdf"
-
+  doi: 10.1101/2023.01.22.525080
+  abstract: "Abstract\n                Nanopore sequencers generate electrical raw signals in real-time while sequencing long genomic strands. These raw signals can be analyzed as they are generated, providing an opportunity for real-time genome analysis. An important feature of nanopore sequencing, Read Until, can eject strands from sequencers without fully sequencing them, which provides opportunities to computationally reduce the sequencing time and cost. However, existing works utilizing Read Until either 1) require powerful computational resources that may not be available for portable sequencers or 2) lack scalability for large genomes, rendering them inaccurate or ineffective.\n                We propose RawHash, the first mechanism that can accurately and efficiently perform real-time analysis of nanopore raw signals for large genomes using a hash-based similarity search. To enable this, RawHash ensures the signals corresponding to the same DNA content lead to the same hash value, regardless of the slight variations in these signals. RawHash achieves an accurate hash-based similarity search via an effective quantization of the raw signals such that signals corresponding to the same DNA content have the same quantized value and, subsequently, the same hash value.\n                \n                  We evaluate RawHash on three applications: 1) read mapping, 2) relative abundance estimation, and 3) contamination analysis. Our evaluations show that RawHash is the only tool that can provide high accuracy and high throughput for analyzing large genomes in real-time. When compared to the state-of-the-art techniques, UNCALLED and Sigmap, RawHash provides 1) 25.8× and 3.4× better average throughput and 2) significantly better accuracy for large genomes, respectively. Source code is available at\n                  https://github.com/CMU-SAFARI/RawHash\n                  ."
+  bibtex: "@article{Firtina_2023, title={RawHash: Enabling Fast and Accurate Real-Time Analysis of Raw Nanopore Signals for Large Genomes}, url={http://dx.doi.org/10.1101/2023.01.22.525080}, DOI={10.1101/2023.01.22.525080}, publisher={openRxiv}, author={Firtina, Can and Ghiasi, Nika Mansouri and Lindegger, Joel and Singh, Gagandeep and Cavlak, Meryem Banu and Mao, Haiyu and Mutlu, Onur}, year={2023}, month=jan }"
+  keywords:
+  - Genome Analysis
+  - Nanopore Sequencing
+  - Real-Time Analysis
 - year: 2022
   title: "GenPIP: In-Memory Acceleration of Genome Analysis via Tight Integration of Basecalling and Read Mapping"
-  authors: "Haiyu Mao, Mohammed Alser, Mohammad Sadrosadati, Can Firtina, Akanksha Baranwal, Damla Senol Cali, Aditya Manglik, Nour Almadhoun Alserr, and Onur Mutlu"
-  venue: "MICRO 2022"
+  authors: "<a href='https://hybol1993.github.io/'><u>Haiyu Mao</u></a>, Mohammed Alser, Mohammad Sadrosadati, Can Firtina, Akanksha Baranwal, Damla Senol Cali, Aditya Manglik, Nour Almadhoun Alserr, and Onur Mutlu"
+  venue: MICRO 2022
+  type: conference
   pdf: "https://hybol1993.github.io/assets/pdf/genpip.pdf"
-
+  doi: 10.1109/micro56248.2022.00056
+  bibtex: "@inproceedings{Mao_2022, title={GenPIP: In-Memory Acceleration of Genome Analysis via Tight Integration of Basecalling and Read Mapping}, url={http://dx.doi.org/10.1109/micro56248.2022.00056}, DOI={10.1109/micro56248.2022.00056}, booktitle={2022 55th IEEE/ACM International Symposium on Microarchitecture (MICRO)}, publisher={IEEE}, author={Mao, Haiyu and Alser, Mohammed and Sadrosadati, Mohammad and Firtina, Can and Baranwal, Akanksha and Cali, Damla Senol and Manglik, Aditya and Alserr, Nour Almadhoun and Mutlu, Onur}, year={2022}, month=oct, pages={710–726} }"
+  abstract: "Nanopore sequencing is a widely-used high-throughput genome sequencing technology that can sequence long fragments of a genome into raw electrical signals at low cost. Nanopore sequencing requires two computationally-costly processing steps for accurate downstream genome analysis. The first step, basecalling, translates the raw electrical signals into nucleotide bases (i.e., A, C, G, T). The second step, read mapping, finds the correct location of a read in a reference genome. In existing genome analysis pipelines, basecalling and read mapping are executed separately. We observe in this work that such separate execution of the two most time-consuming steps inherently leads to ❨1❩ significant data movement and ❨2❩ redundant computations on the data, slowing down the genome analysis pipeline. This paper proposes GenPIP, an in-memory genome analysis accelerator that tightly integrates basecalling and read mapping. GenPIP improves the petformance of the genome analysis pipeline with two key mechanisms: ❨1❩ in-memory fine-grained collaborative execution of the major genome analysis steps in parallel}; ❨2❩ a new technique for early-rejection of low-quality and unmapped reads to timely stop the execution of genome analysis for such reads, reducing inefficient computation. Our experiments show that, for the execution of the genome analysis pipeline, GenPIP provides 41.6$\\times$ (8.4$\\times$) speedup and 32.8$\\times$ (20.8$\\times$) energy savings with negligible accuracy loss compared to the state-of-the-art software genome analysis tools executed on a state-of-the-art CPU (GPU). Compared to a design that combines state-of-the-art in-memory basecalling and read mapping accelerators, GenPIP provides 1.39$\\times$ speedup and 1.37$\\times$ energy savings."
+  keywords:
+  - Processing In Memory (PIM)
+  - Genome Analysis
 - year: 2022
   title: "From molecules to genomic variations: Accelerating genome analysis via intelligent algorithms and architectures"
-  authors: "Mohammed Alser, Joel Lindegger, Can Firtina, Nour Almadhoun, Haiyu Mao, Gagandeep Singh, Juan Gomez-Luna, and Onur Mutlu"
-  venue: "Computational and Structural Biotechnology Journal 2022"
+  authors: "Mohammed Alser, Joel Lindegger, Can Firtina, Nour Almadhoun, <a href='https://hybol1993.github.io/'><u>Haiyu Mao</u></a>, Gagandeep Singh, Juan Gomez-Luna, and Onur Mutlu"
+  venue: Computational and Structural Biotechnology Journal 2022
+  type: journal
   pdf: "https://hybol1993.github.io/assets/pdf/genanalysis.pdf"
-
+  doi: 10.1016/j.csbj.2022.08.019
+  bibtex: "@article{Alser_2022, title={From molecules to genomic variations: Accelerating genome analysis via intelligent algorithms and architectures}, volume={20}, ISSN={2001-0370}, url={http://dx.doi.org/10.1016/j.csbj.2022.08.019}, DOI={10.1016/j.csbj.2022.08.019}, journal={Computational and Structural Biotechnology Journal}, publisher={American Association for the Advancement of Science (AAAS)}, author={Alser, Mohammed and Lindegger, Joel and Firtina, Can and Almadhoun, Nour and Mao, Haiyu and Singh, Gagandeep and Gomez-Luna, Juan and Mutlu, Onur}, year={2022}, pages={4579–4599} }"
+  abstract: "We now need more than ever to make genome analysis more intelligent. We need to read, analyze, and interpret our genomes not only quickly, but also accurately and efficiently enough to scale the analysis to population level. There currently exist major computational bottlenecks and inefficiencies throughout the entire genome analysis pipeline, because state-of-the-art genome sequencing technologies are still not able to read a genome in its entirety. We describe the ongoing journey in significantly improving the performance, accuracy, and efficiency of genome analysis using intelligent algorithms and hardware architectures. We explain state-of-the-art algorithmic methods and hardware-based acceleration approaches for each step of the genome analysis pipeline and provide experimental evaluations. Algorithmic approaches exploit the structure of the genome as well as the structure of the underlying hardware. Hardware-based acceleration approaches exploit specialized microarchitectures or various execution paradigms (e.g., processing inside or near memory) along with algorithmic changes, leading to new hardware/software co-designed systems. We conclude with a foreshadowing of future challenges, benefits, and research directions triggered by the development of both very low cost yet highly error prone new sequencing technologies and specialized hardware chips for genomics. We hope that these efforts and the challenges we discuss provide a foundation for future work in making genome analysis more intelligent."
+  keywords:
+  - Genome Analysis
 - year: 2022
   title: "GenStore: a high-performance in-storage processing system for genome sequence analysis"
-  authors: "Nika Mansouri Ghiasi, Jisung Park, Harun Mustafa, Jeremie Kim, Ataberk Olgun, Arvid Gollwitzer, Damla Senol Cali, Can Firtina, Haiyu Mao, Nour Almadhoun Alserr, and others"
-  venue: "ASPLOS 2022"
+  authors: "Nika Mansouri Ghiasi, Jisung Park, Harun Mustafa, Jeremie Kim, Ataberk Olgun, Arvid Gollwitzer, Damla Senol Cali, Can Firtina, <a href='https://hybol1993.github.io/'><u>Haiyu Mao</u></a>, Nour Almadhoun Alserr, and others"
+  venue: ASPLOS 2022
+  type: conference
   pdf: "https://hybol1993.github.io/assets/pdf/genstore.pdf"
-
+  doi: 10.1145/3503222.3507702
+  bibtex: "@inproceedings{Mansouri_Ghiasi_2022, series={ASPLOS ’22}, title={GenStore: a high-performance in-storage processing system for genome sequence analysis}, url={http://dx.doi.org/10.1145/3503222.3507702}, DOI={10.1145/3503222.3507702}, booktitle={Proceedings of the 27th ACM International Conference on Architectural Support for Programming Languages and Operating Systems}, publisher={ACM}, author={Mansouri Ghiasi, Nika and Park, Jisung and Mustafa, Harun and Kim, Jeremie and Olgun, Ataberk and Gollwitzer, Arvid and Senol Cali, Damla and Firtina, Can and Mao, Haiyu and Almadhoun Alserr, Nour and Ausavarungnirun, Rachata and Vijaykumar, Nandita and Alser, Mohammed and Mutlu, Onur}, year={2022}, month=feb, pages={635–654}, collection={ASPLOS ’22} }"
+  keywords:
+  - In-Storage Computing (ISC)
+  - Genome Analysis
 - year: 2021
-  title: "Development of processing-in-memory"
-  authors: "Haiyu Mao, Jiwu Shu, Fei Li, and Zhe Liu"
-  venue: "SCIENTIA SINICA Informationis 2021"
+  title: Development of processing-in-memory
+  authors: "<a href='https://hybol1993.github.io/'><u>Haiyu Mao</u></a>, Jiwu Shu, Fei Li, and Zhe Liu"
+  venue: SCIENTIA SINICA Informationis 2021
+  type: journal
   pdf: "https://hybol1993.github.io/assets/pdf/pimsurvey.pdf"
-
+  doi: 10.1360/ssi-2020-0037
+  bibtex: "@article{SHU_2021, title={Development of processing-in-memory}, volume={51}, ISSN={1674-7267}, url={http://dx.doi.org/10.1360/ssi-2020-0037}, DOI={10.1360/ssi-2020-0037}, number={2}, journal={SCIENTIA SINICA Informationis}, publisher={Science China Press., Co. Ltd.}, author={SHU, Jiwu and MAO, Haiyu and LI, Fei and LIU, Zhe}, year={2021}, month=jan, pages={173} }"
+  keywords:
+  - Processing In Memory (PIM)
 - year: 2020
   title: "LrGAN: A Compact and Energy Efficient PIM-Based Architecture for GAN Training"
-  authors: "Haiyu Mao, Jiwu Shu, Mingcong Song, and Tao Li"
-  venue: "IEEE Transactions on Computers 2020"
+  authors: "<a href='https://hybol1993.github.io/'><u>Haiyu Mao</u></a>, Jiwu Shu, Mingcong Song, and Tao Li"
+  venue: IEEE Transactions on Computers 2020
+  type: journal
   pdf: "https://hybol1993.github.io/assets/pdf/LrGAN.pdf"
-
+  doi: 10.1109/tc.2020.3011122
+  bibtex: "@article{Mao_2021, title={LrGAN: A Compact and Energy Efficient PIM-Based Architecture for GAN Training}, volume={70}, ISSN={2326-3814}, url={http://dx.doi.org/10.1109/tc.2020.3011122}, DOI={10.1109/tc.2020.3011122}, number={9}, journal={IEEE Transactions on Computers}, publisher={Institute of Electrical and Electronics Engineers (IEEE)}, author={Mao, Haiyu and Shu, Jiwu and Song, Mingcong and Li, Tao}, year={2021}, month=sept, pages={1427–1442} }"
+  keywords:
+  - Processing In Memory (PIM)
+  - Generative Adversarial Network
+  - Machine Learning
 - year: 2020
   title: "ShieldNVM: An efficient and fast recoverable system for secure non-volatile memory"
-  authors: "Fan Yang, Youmin Chen, Haiyu Mao, Youyou Lu, and Jiwu Shu"
-  venue: "ACM Transactions on Storage 2020"
+  authors: "Fan Yang, Youmin Chen, <a href='https://hybol1993.github.io/'><u>Haiyu Mao</u></a>, Youyou Lu, and Jiwu Shu"
+  venue: ACM Transactions on Storage 2020
+  type: journal
   pdf: "https://hybol1993.github.io/assets/pdf/Libra.pdf"
-
+  keywords:
+  - Non-Volatile Memories (NVM)
+  - Security
 - year: 2019
   title: "No compromises: Secure NVM with crash consistency, write-efficiency and high-performance"
-  authors: "Fan Yang, Youyou Lu, Youmin Chen, Haiyu Mao, and Jiwu Shu"
-  venue: "DAC 2019"
+  authors: "Fan Yang, Youyou Lu, Youmin Chen, <a href='https://hybol1993.github.io/'><u>Haiyu Mao</u></a>, and Jiwu Shu"
+  venue: DAC 2019
+  type: conference
   pdf: "https://hybol1993.github.io/assets/pdf/SecureNVM.pdf"
-
+  keywords:
+  - Non-Volatile Memories (NVM)
+  - Security
 - year: 2018
   title: "Lergan: A zero-free, low data movement and pim-based gan architecture"
-  authors: "Haiyu Mao, Mingcong Song, Tao Li, Yuting Dai, and Jiwu Shu"
-  venue: "MICRO 2018"
+  authors: "<a href='https://hybol1993.github.io/'><u>Haiyu Mao</u></a>, Mingcong Song, Tao Li, Yuting Dai, and Jiwu Shu"
+  venue: MICRO 2018
+  type: conference
   pdf: "https://hybol1993.github.io/assets/pdf/LrGAN.pdf"
-
+  doi: 10.1109/micro.2018.00060
+  bibtex: "@inproceedings{Mao_2018, title={LerGAN: A Zero-Free, Low Data Movement and PIM-Based GAN Architecture}, url={http://dx.doi.org/10.1109/micro.2018.00060}, DOI={10.1109/micro.2018.00060}, booktitle={2018 51st Annual IEEE/ACM International Symposium on Microarchitecture (MICRO)}, publisher={IEEE}, author={Mao, Haiyu and Song, Mingcong and Li, Tao and Dai, Yuting and Shu, Jiwu}, year={2018}, month=oct, pages={669–681} }"
+  abstract: "As a powerful unsupervised learning method, Generative Adversarial Network (GAN) plays an important role in many domains such as video prediction and autonomous driving. It is one of the ten breakthrough technologies in 2018 reported in MIT Technology Review. However, training a GAN imposes three more challenges: (1) intensive communication caused by complex train phases of GAN, (2) much more ineffectual computations caused by special convolutions, and (3) more frequent off-chip memory accesses for exchanging inter-mediate data between the generator and the discriminator. In this paper, we propose LerGAN, a PIM-based GAN accelerator to address the challenges of training GAN. We first propose a zero-free data reshaping scheme for ReRAM-based PIM, which removes the zero-related computations. We then propose a 3D-connected PIM, which can reconfigure connections inside PIM dynamically according to dataflows of propagation and updating. Our proposed techniques reduce data movement to a great extent, avoiding I/O to become a bottleneck of training GANs. Finally, we propose LerGAN based on these two techniques, providing different levels of accelerating GAN for programmers. Experiments shows that LerGAN achieves 47.2X, 21.42X and 7.46X speedup over FPGA-based GAN accelerator, GPU platform, and ReRAM-based neural network accelerator respectively. Moreover, LerGAN achieves 9.75X, 7.68X energy saving on average over GPU platform, ReRAM-based neural network accelerator respectively, and has 1.04X energy consuming over FPGA-based GAN accelerator."
+  keywords:
+  - Processing In Memory (PIM)
+  - Generative Adversarial Network
+  - Machine Learning
+  - Non-Volatile Memories (NVM)
 - year: 2017
   title: "Protect non-volatile memory from wear-out attack based on timing difference of row buffer hit/miss"
-  authors: "Haiyu Mao, Xian Zhang, Guangyu Sun, and Jiwu Shu"
-  venue: "DATE 2017"
+  authors: "<a href='https://hybol1993.github.io/'><u>Haiyu Mao</u></a>, Xian Zhang, Guangyu Sun, and Jiwu Shu"
+  venue: DATE 2017
+  type: conference
   pdf: "https://hybol1993.github.io/assets/pdf/wearout.pdf"
-
+  doi: 10.23919/date.2017.7927251
+  bibtex: "@inproceedings{Mao_2017, title={Protect non-volatile memory from wear-out attack based on timing difference of row buffer hit/miss}, url={http://dx.doi.org/10.23919/date.2017.7927251}, DOI={10.23919/date.2017.7927251}, booktitle={Design, Automation &amp; Test in Europe Conference &amp; Exhibition (DATE), 2017}, publisher={IEEE}, author={Mao, Haiyu and Zhang, Xian and Sun, Guangyu and Shu, Jiwu}, year={2017}, month=mar, pages={1623–1626} }"
+  keywords:
+  - Non-Volatile Memories (NVM)
+  - Security
+  - Memory System
 - year: 2015
-  title: "Exploring data placement in racetrack memory based scratchpad memory"
-  authors: "Haiyu Mao, Chao Zhang, Guangyu Sun, and Jiwu Shu"
-  venue: "NVMSA 2015"
+  title: Exploring data placement in racetrack memory based scratchpad memory
+  authors: "<a href='https://hybol1993.github.io/'><u>Haiyu Mao</u></a>, Chao Zhang, Guangyu Sun, and Jiwu Shu"
+  venue: NVMSA 2015
+  type: conference
   pdf: "https://hybol1993.github.io/assets/pdf/racetrack.pdf"
-
+  doi: 10.1109/nvmsa.2015.7304358
+  bibtex: "@inproceedings{Mao_2015, title={Exploring data placement in racetrack memory based scratchpad memory}, url={http://dx.doi.org/10.1109/nvmsa.2015.7304358}, DOI={10.1109/nvmsa.2015.7304358}, booktitle={2015 IEEE Non-Volatile Memory System and Applications Symposium (NVMSA)}, publisher={IEEE}, author={Mao, Haiyu and Zhang, Chao and Sun, Guangyu and Shu, Jiwu}, year={2015}, month=aug, pages={1–5} }"
+  keywords:
+  - Non-Volatile Memories (NVM)
+  - Memory System

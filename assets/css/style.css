@@ -137,7 +137,10 @@ h1 {
 }
 
 
-/* Publication stytles */
+/* ============================================
+   Publication styles
+   ============================================ */
+
 .pubs {
   margin-top: 2rem;
 }
@@ -154,39 +157,153 @@ h1 {
 .pub-list {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 0.6rem;
 }
 
 .pub-item {
-  padding: 1rem 1.25rem;
-  border-radius: 0.75rem;
+  padding: 0.7rem 1rem;
+  border-radius: 0.6rem;
   border: 1px solid rgba(0, 0, 0, 0.06);
   background: #ffffff;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+}
+
+/* -- Per-paper keyword tags -- */
+.pub-keywords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+
+.pub-kw-tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  padding: 0.08rem 0.45rem;
+  border-radius: 9999px;
+  background: #eef3ff;
+  color: #3f6280;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+/* -- Actions row (keywords + buttons on one line) -- */
+.pub-actions-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 0.3rem;
+}
+
+.pub-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+}
+
+/* -- Abstract toggle (looks like other pill buttons) -- */
+.pub-abstract-toggle {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.pub-abstract-arrow {
+  font-size: 0.6rem;
+  transition: transform 0.3s ease;
+  display: inline-block;
+  margin-left: 0.15rem;
+}
+
+.pub-abstract-toggle[aria-expanded="true"] .pub-abstract-arrow {
+  transform: rotate(180deg);
+}
+
+.pub-abstract-body {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.3s ease, margin-top 0.3s ease, padding 0.3s ease;
+  margin-top: 0;
+  padding: 0 0.75rem;
+  background: rgba(0, 0, 0, 0.02);
+  border-radius: 6px;
+}
+
+.pub-abstract-body.expanded {
+  max-height: 600px;
+  opacity: 1;
+  margin-top: 0.4rem;
+  padding: 0.5rem 0.75rem;
+}
+
+.pub-abstract-body p {
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: #555;
+  margin: 0;
+}
+
+/* -- BibTeX button -- */
+.pub-btn-bibtex {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* -- Copy toast notification -- */
+.pub-toast {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  background: #1d1d1f;
+  color: #fff;
+  padding: 0.6rem 1.25rem;
+  border-radius: 10px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 200;
+}
+
+.pub-toast.visible {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
 }
 
 .pub-venue {
-  font-size: 0.85rem;
+  display: inline-block;
+  font-size: 0.72rem;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   font-weight: 600;
-  color: #666;
-  margin-bottom: 0.25rem;
+  color: #007aff;
+  background: rgba(0, 122, 255, 0.1);
+  padding: 0.08rem 0.5rem;
+  border-radius: 9999px;
+  white-space: nowrap;
+  vertical-align: 0.12em;
+  margin-right: 0.35rem;
 }
 
 .pub-title {
-  font-size: 1.05rem;
-  margin: 0.1rem 0 0.4rem;
+  font-size: 1.02rem;
+  margin: 0;
+  line-height: 1.4;
 }
 
 .pub-authors {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: #555;
-  margin-bottom: 0.4rem;
+  margin: 0.2rem 0 0;
 }
 
 .sail-link {
-  color: #007bff; /* blue for SAIL members */
+  color: #007aff;
 }
 
 .external-link {
@@ -197,42 +314,21 @@ h1 {
   color: #808080; /* grey for unlinkable external authors */
 }
 
-.pub-links {
-  font-size: 0.9rem;
-  color: #444;
-}
-
-.pub-links a {
-  text-decoration: none;
-  border-bottom: 1px dotted transparent;
-}
-
-.pub-links a:hover {
-  border-bottom-color: currentColor;
-}
-
-.pub-links {
-  margin-top: 0.4rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem; /* space between buttons */
-}
-
 .pub-btn {
   display: inline-block;
-  padding: 0.25rem 0.7rem;
-  border-radius: 9999px;          /* pill shape */
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  font-size: 0.85rem;
+  padding: 0.22rem 0.7rem;
+  border-radius: 9999px;
+  border: none;
+  font-size: 0.82rem;
+  font-weight: 500;
   text-decoration: none;
-  background: #f7f7f9;
-  color: #333;
-  transition: background 0.15s ease, border-color 0.15s ease, transform 0.1s ease;
+  background: rgba(0, 122, 255, 0.1);
+  color: #007aff;
+  transition: background 0.2s ease, transform 0.15s ease;
 }
 
 .pub-btn:hover {
-  background: #e5e7eb;           /* slightly darker on hover */
-  border-color: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 122, 255, 0.18);
   transform: translateY(-1px);
 }
 
@@ -1560,4 +1656,211 @@ h1 {
   border: none;
   border-top: 1px solid var(--border);
   margin: 2rem 0;
+}
+
+/* Publication filter bar */
+.pub-filters {
+  margin: 1.5rem 0 1.5rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 12px;
+  background: rgba(250, 250, 252, 0.8);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+}
+
+/* Controls row: search, sort, filter toggle, clear — always visible */
+.pub-filter-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.pub-search {
+  flex: 1 1 10rem;
+  min-width: 0;
+  padding: 0.45rem 0.75rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background: #ffffff;
+  font-size: 0.95rem;
+}
+
+.pub-search:focus {
+  outline: none;
+  border-color: #007aff;
+  box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.15);
+}
+
+.pub-sort-label {
+  font-size: 0.9rem;
+  color: #86868b;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.pub-sort {
+  padding: 0.4rem 0.55rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background: #ffffff;
+  font-size: 0.9rem;
+}
+
+.pub-clear {
+  padding: 0.4rem 0.75rem;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  background: #ffffff;
+  color: #86868b;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.pub-clear:hover {
+  background: #f0f0f0;
+  color: #1d1d1f;
+}
+
+/* -- Topics toggle button (mobile only) -- */
+.pub-topic-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.4rem 0.75rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  background: #ffffff;
+  color: #333;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.pub-topic-toggle:hover {
+  background: #eef4fb;
+  border-color: var(--accent);
+}
+
+.pub-topic-toggle[aria-expanded="true"] {
+  background: rgba(52, 152, 219, 0.08);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.pub-topic-toggle-icon {
+  font-size: 0.6rem;
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.pub-topic-toggle[aria-expanded="true"] .pub-topic-toggle-icon {
+  transform: rotate(180deg);
+}
+
+/* -- Keyword filter chips -- */
+.pub-keyword-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.4rem 0.6rem;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+  transition: max-height 0.4s ease, opacity 0.3s ease, margin-top 0.3s ease, padding-top 0.3s ease;
+}
+
+.pub-keyword-row.expanded {
+  max-height: 500px;
+  opacity: 1;
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.pub-keyword-label {
+  flex: 0 0 auto;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.pub-keyword-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+
+.pub-keyword-chip {
+  display: inline-block;
+  padding: 0.2rem 0.65rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  color: #333;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.pub-keyword-chip:hover {
+  background: #eef4fb;
+  border-color: var(--accent);
+}
+
+.pub-keyword-chip.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #ffffff;
+}
+
+.pub-empty {
+  margin-top: 2rem;
+  color: #86868b;
+  font-style: italic;
+  text-align: center;
+}
+
+/* ---- Mobile publication filter ---- */
+@media (max-width: 768px) {
+  .pub-filters { padding: 0.65rem 0.75rem; }
+  .pub-filter-controls { flex-wrap: wrap; gap: 0.4rem; }
+
+  /* Show all keyword chips by wrapping; shrink them so they take less vertical space */
+  .pub-keyword-row { gap: 0.3rem 0.4rem; }
+  .pub-keyword-label { display: none; }
+  .pub-keyword-chips { gap: 0.3rem; }
+  .pub-keyword-chip {
+    padding: 0.15rem 0.5rem;
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .pub-filter-controls {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.4rem;
+  }
+  .pub-search {
+    flex: 1 1 100%;
+    order: 1;
+    padding: 0.35rem 0.6rem;
+    font-size: 0.9rem;
+  }
+  .pub-sort-label { order: 2; font-size: 0.82rem; }
+  .pub-sort { padding: 0.3rem 0.45rem; font-size: 0.82rem; }
+  .pub-topic-toggle { order: 3; padding: 0.3rem 0.6rem; font-size: 0.82rem; }
+  .pub-clear { order: 4; padding: 0.3rem 0.6rem; font-size: 0.82rem; margin-left: auto; }
 }

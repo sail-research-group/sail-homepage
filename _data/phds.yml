@@ -1,6 +1,7 @@
 
 - name: Zihao Pu
   role: PhD Student
+  url: /people/#zihao-pu
   email: zihao.pu@kcl.ac.uk
   topics: [PIM, LLMs]
   photo: /assets/img/zihao.png
@@ -9,6 +10,7 @@
 
 - name: Ali Alsarraf
   role: PhD Student
+  url: /people/#ali-alsarraf
   email: ali.alsarraf@kcl.ac.uk
   topics: [PIM, LLMs]
   photo: /assets/img/ali.png
@@ -17,6 +19,7 @@
 
 - name: Mengyun Zhang
   role: Cooperator
+  url: /people/#mengyun-zhang
   comment: PhD Student at Tsinghua University
   email: zhangmen24@mails.tsinghua.edu.cn
   topics: [3D memory, Embodied AI, Robotics]
@@ -34,6 +37,7 @@
 
 - name: Jingyuan Qu
   role: Visiting PhD Student
+  url: /people/#jingyuan-qu
   comment: PhD Student at Harbin Institute of Technology
   email: jingyuan.qu@kcl.ac.uk
   topics: [PIM, RRAM Reliability]
