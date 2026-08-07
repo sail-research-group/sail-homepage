@@ -30,6 +30,7 @@
   keywords:
   - Genome Analysis
   - In-Storage Computing (ISC)
+  - Solid State Drive (SSD)
 - year: 2026
   title: "GenPairX: A Hardware-Algorithm Co-Designed Accelerator for Paired-End Read Mapping"
   authors: "Julien Eudine, Chu Li, Zhuo Cheng, Renzo Andri, Can Firtina, Mohammad Sadrosadati, Nika Mansouri Ghiasi, Konstantina Koliogeorgi, Anirban Nag, Arash Tavakkol, <a href='https://hybol1993.github.io/'><u>Haiyu Mao</u></a>, and Onur Mutlu, Shai Bergman, and Ji Zhang"
@@ -54,7 +55,8 @@
   keywords:
   - In-Storage Computing (ISC)
   - Large Language Model (LLM)
-  - Retrieval-Augmented Generation
+  - Retrieval-Augmented Generation (RAG)
+  - Solid State Drive (SSD)
 - year: 2025
   title: "MARS: Processing-In-Memory Acceleration of Raw Signal Genome Analysis Inside the Storage Subsystem"
   authors: "Melina Soysal, Konstantina Koliogeorgi, Can Firtina, Nika Mansouri Ghiasi, Rakesh Nadig, <a href='https://hybol1993.github.io/'><u>Haiyu Mao</u></a>, Geraldo Francisco, Yu Liang, Klea Zambaku, Mohammad Sadrosadati, and Onur Mutlu"
@@ -67,6 +69,8 @@
   keywords:
   - In-Storage Computing (ISC)
   - Genome Analysis
+  - Software-Hardware Co-Design
+  - Solid State Drive (SSD)
 - year: 2025
   title: "PAPI: Exploiting Dynamic Parallelism in Large Language Model Decoding with a Processing-In-Memory-Enabled Computing System"
   authors: "Yintao He, <a href='https://hybol1993.github.io/'><u>Haiyu Mao</u></a>, Christina Giannoula, Mohammad Sadrosadati, Juan Gomez-Luna, Huawei Li, Xiaowei Li, Ying Wang, and Onur Mutlu"
@@ -92,6 +96,7 @@
   keywords:
   - In-Storage Computing (ISC)
   - Security
+  - Solid State Drive (SSD)
 - year: 2025
   title: "Ariadne: A Hotness-Aware and Size-Adaptive Compressed Swap Technique for Fast Application Relaunch and Reduced CPU Usage on Mobile Devices"
   authors: "Yu Liang, Aofeng Shen, Chun Jason Xue, Riwei Pan, <a href='https://hybol1993.github.io/'><u>Haiyu Mao</u></a>, Nika Mansouri Ghiasi, Qingcai Jiang, Rakesh Nadig, Lei Li, Rachata Ausavarungnirun, Mohammad Sadrosadati, and Onur Mutlu"
@@ -116,6 +121,7 @@
   keywords:
   - In-Storage Computing (ISC)
   - Genome Analysis
+  - Solid State Drive (SSD)
 - year: 2023
   title: "Swordfish: A Framework for Evaluating Deep Neural Network-based Basecalling using Computation-In-Memory with Non-Ideal Memristors"
   authors: "Taha Shahroodi, Gagandeep Singh, Mahdi Zahedi, <a href='https://hybol1993.github.io/'><u>Haiyu Mao</u></a>, Joel Lindegger, Can Firtina, Stephan Wong, Onur Mutlu, and Said Hamdioui"
@@ -130,6 +136,7 @@
   - Genome Analysis
   - Artifical Intelligence (AI)
   - Non-Volatile Memories (NVM)
+  - Software-Hardware Co-Design
 - year: 2023
   title: "Venice: Improving Solid-State Drive Parallelism at Low Cost via Conflict-Free Accesses"
   authors: "Rakesh Nadig, Mohammad Sadrosadati, <a href='https://hybol1993.github.io/'><u>Haiyu Mao</u></a>, Nika Mansouri Ghiasi, Arash Tavakkol, Jisung Park, Hamid Sarbazi-Azad, Juan Gómez Luna, and Onur Mutlu"
@@ -140,7 +147,7 @@
   bibtex: "@inproceedings{Nadig_2023, series={ISCA ’23}, title={Venice: Improving Solid-State Drive Parallelism at Low Cost via Conflict-Free Accesses}, url={http://dx.doi.org/10.1145/3579371.3589071}, DOI={10.1145/3579371.3589071}, booktitle={Proceedings of the 50th Annual International Symposium on Computer Architecture}, publisher={ACM}, author={Nadig, Rakesh and Sadrosadati, Mohammad and Mao, Haiyu and Ghiasi, Nika Mansouri and Tavakkol, Arash and Park, Jisung and Sarbazi-Azad, Hamid and Luna, Juan Gómez and Mutlu, Onur}, year={2023}, month=june, pages={1–16}, collection={ISCA ’23} }"
   abstract: "The performance and capacity of solid-state drives (SSDs) are continuously improving to meet the increasing demands of modern data-intensive applications. Unfortunately, communication between the SSD controller and memory chips (e.g., 2D/3D NAND flash chips) is a critical performance bottleneck for many applications. SSDs use a multi-channel shared bus architecture where multiple memory chips connected to the same channel communicate to the SSD controller with only one path. As a result, path conflicts often occur during the servicing of multiple I/O requests, which significantly limits SSD parallelism. It is critical to handle path conflicts well to improve SSD parallelism and performance. Our goal is to fundamentally tackle the path conflict problem by increasing the number of paths between the SSD controller and memory chips at low cost. To this end, we build on the idea of using an interconnection network to increase the path diversity between the SSD controller and memory chips. We propose Venice, a new mechanism that introduces a low-cost interconnection network between the SSD controller and memory chips and utilizes the path diversity to intelligently resolve path conflicts. Venice employs three key techniques: 1) a simple router chip added next to each memory chip without modifying the memory chip design, 2) a path reservation technique that reserves a path from the SSD controller to the target memory chip before initiating a transfer, and 3) a fully-adaptive routing algorithm that effectively utilizes the path diversity to resolve path conflicts. Our experimental results show that Venice 1) improves performance by an average of 2.65×/1.67× over a baseline performance-optimized/cost-optimized SSD design across a wide range of workloads, 2) reduces energy consumption by an average of 61% compared to a baseline performance-optimized SSD design. Venice's benefits come at a relatively low area overhead."
   keywords:
-  - Solid-State Drive (SSD)
+  - Solid State Drive (SSD)
   - Storage System
   - Interconnection
 - year: 2023
@@ -166,6 +173,7 @@
   keywords:
   - Processing In Memory (PIM)
   - Genome Analysis
+  - Software-Hardware Co-Design
 - year: 2022
   title: "From molecules to genomic variations: Accelerating genome analysis via intelligent algorithms and architectures"
   authors: "Mohammed Alser, Joel Lindegger, Can Firtina, Nour Almadhoun, <a href='https://hybol1993.github.io/'><u>Haiyu Mao</u></a>, Gagandeep Singh, Juan Gomez-Luna, and Onur Mutlu"
@@ -188,6 +196,7 @@
   keywords:
   - In-Storage Computing (ISC)
   - Genome Analysis
+  - Solid State Drive (SSD)
 - year: 2021
   title: Development of processing-in-memory
   authors: "<a href='https://hybol1993.github.io/'><u>Haiyu Mao</u></a>, Jiwu Shu, Fei Li, and Zhe Liu"
