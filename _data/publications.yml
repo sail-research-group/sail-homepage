@@ -161,6 +161,7 @@
   bibtex: "@article{Firtina_2023, title={RawHash: Enabling Fast and Accurate Real-Time Analysis of Raw Nanopore Signals for Large Genomes}, url={http://dx.doi.org/10.1101/2023.01.22.525080}, DOI={10.1101/2023.01.22.525080}, publisher={openRxiv}, author={Firtina, Can and Ghiasi, Nika Mansouri and Lindegger, Joel and Singh, Gagandeep and Cavlak, Meryem Banu and Mao, Haiyu and Mutlu, Onur}, year={2023}, month=jan }"
   keywords:
   - Genome Analysis
+  - Health-related Applications
 - year: 2022
   title: "GenPIP: In-Memory Acceleration of Genome Analysis via Tight Integration of Basecalling and Read Mapping"
   authors: "<a href='https://hybol1993.github.io/'><u>Haiyu Mao</u></a>, Mohammed Alser, Mohammad Sadrosadati, Can Firtina, Akanksha Baranwal, Damla Senol Cali, Aditya Manglik, Nour Almadhoun Alserr, and Onur Mutlu"
@@ -174,6 +175,7 @@
   - Processing In Memory (PIM)
   - Genome Analysis
   - Software-Hardware Co-Design
+  - Health-related Applications
 - year: 2022
   title: "From molecules to genomic variations: Accelerating genome analysis via intelligent algorithms and architectures"
   authors: "Mohammed Alser, Joel Lindegger, Can Firtina, Nour Almadhoun, <a href='https://hybol1993.github.io/'><u>Haiyu Mao</u></a>, Gagandeep Singh, Juan Gomez-Luna, and Onur Mutlu"
@@ -185,6 +187,7 @@
   abstract: "We now need more than ever to make genome analysis more intelligent. We need to read, analyze, and interpret our genomes not only quickly, but also accurately and efficiently enough to scale the analysis to population level. There currently exist major computational bottlenecks and inefficiencies throughout the entire genome analysis pipeline, because state-of-the-art genome sequencing technologies are still not able to read a genome in its entirety. We describe the ongoing journey in significantly improving the performance, accuracy, and efficiency of genome analysis using intelligent algorithms and hardware architectures. We explain state-of-the-art algorithmic methods and hardware-based acceleration approaches for each step of the genome analysis pipeline and provide experimental evaluations. Algorithmic approaches exploit the structure of the genome as well as the structure of the underlying hardware. Hardware-based acceleration approaches exploit specialized microarchitectures or various execution paradigms (e.g., processing inside or near memory) along with algorithmic changes, leading to new hardware/software co-designed systems. We conclude with a foreshadowing of future challenges, benefits, and research directions triggered by the development of both very low cost yet highly error prone new sequencing technologies and specialized hardware chips for genomics. We hope that these efforts and the challenges we discuss provide a foundation for future work in making genome analysis more intelligent."
   keywords:
   - Genome Analysis
+  - Health-related Applications
 - year: 2022
   title: "GenStore: a high-performance in-storage processing system for genome sequence analysis"
   authors: "Nika Mansouri Ghiasi, Jisung Park, Harun Mustafa, Jeremie Kim, Ataberk Olgun, Arvid Gollwitzer, Damla Senol Cali, Can Firtina, <a href='https://hybol1993.github.io/'><u>Haiyu Mao</u></a>, Nour Almadhoun Alserr, and others"
@@ -217,8 +220,9 @@
   bibtex: "@article{Mao_2021, title={LrGAN: A Compact and Energy Efficient PIM-Based Architecture for GAN Training}, volume={70}, ISSN={2326-3814}, url={http://dx.doi.org/10.1109/tc.2020.3011122}, DOI={10.1109/tc.2020.3011122}, number={9}, journal={IEEE Transactions on Computers}, publisher={Institute of Electrical and Electronics Engineers (IEEE)}, author={Mao, Haiyu and Shu, Jiwu and Song, Mingcong and Li, Tao}, year={2021}, month=sept, pages={1427–1442} }"
   keywords:
   - Processing In Memory (PIM)
-  - Generative Adversarial Network
+  - Generative Adversarial Network (GAN)
   - Artifical Intelligence (AI)
+  - Non-Volatile Memories (NVM)
 - year: 2020
   title: "ShieldNVM: An efficient and fast recoverable system for secure non-volatile memory"
   authors: "Fan Yang, Youmin Chen, <a href='https://hybol1993.github.io/'><u>Haiyu Mao</u></a>, Youyou Lu, and Jiwu Shu"
@@ -248,7 +252,7 @@
   abstract: "As a powerful unsupervised learning method, Generative Adversarial Network (GAN) plays an important role in many domains such as video prediction and autonomous driving. It is one of the ten breakthrough technologies in 2018 reported in MIT Technology Review. However, training a GAN imposes three more challenges: (1) intensive communication caused by complex train phases of GAN, (2) much more ineffectual computations caused by special convolutions, and (3) more frequent off-chip memory accesses for exchanging inter-mediate data between the generator and the discriminator. In this paper, we propose LerGAN, a PIM-based GAN accelerator to address the challenges of training GAN. We first propose a zero-free data reshaping scheme for ReRAM-based PIM, which removes the zero-related computations. We then propose a 3D-connected PIM, which can reconfigure connections inside PIM dynamically according to dataflows of propagation and updating. Our proposed techniques reduce data movement to a great extent, avoiding I/O to become a bottleneck of training GANs. Finally, we propose LerGAN based on these two techniques, providing different levels of accelerating GAN for programmers. Experiments shows that LerGAN achieves 47.2X, 21.42X and 7.46X speedup over FPGA-based GAN accelerator, GPU platform, and ReRAM-based neural network accelerator respectively. Moreover, LerGAN achieves 9.75X, 7.68X energy saving on average over GPU platform, ReRAM-based neural network accelerator respectively, and has 1.04X energy consuming over FPGA-based GAN accelerator."
   keywords:
   - Processing In Memory (PIM)
-  - Generative Adversarial Network
+  - Generative Adversarial Network (GAN)
   - Artifical Intelligence (AI)
   - Non-Volatile Memories (NVM)
 - year: 2017
