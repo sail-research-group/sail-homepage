@@ -342,6 +342,7 @@ h1 {
 /* Talk styles */
 .talks {
   margin-top: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .talk-year {
