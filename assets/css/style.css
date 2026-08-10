@@ -348,9 +348,10 @@ h1 {
 .talk-year {
   margin-top: 2.5rem;
   margin-bottom: 1rem;
-  font-size: 1.6rem;
+  font-size: 1.1rem;
   font-weight: 600;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.08);
+  color: #666666;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.06);
   padding-bottom: 0.25rem;
 }
 
