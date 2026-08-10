@@ -817,7 +817,7 @@ h1 {
 
 .form-note {
   margin-top: 3rem;
-  padding: 1.5rem;
+  margin-top: 0.6rem;
   background: #f8f9fa;
   border-radius: 0.5rem;
   border-left: 4px solid var(--accent);
@@ -1509,7 +1509,7 @@ h1 {
   flex-wrap: wrap;
   gap: 0.4rem;
   margin-top: 0.5rem;
-}
+  margin-top: 0.6rem;
 
 .course-highlight-tag {
   font-size: 0.7rem;
