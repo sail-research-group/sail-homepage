@@ -146,7 +146,7 @@ h1 {
 }
 
 .pub-year {
-  margin-top: 1.2rem;
+  margin-top: 2.5rem;
   margin-bottom: 1rem;
   font-size: 1.6rem;
   font-weight: 600;
@@ -341,12 +341,12 @@ h1 {
 
 /* Talk styles */
 .talks {
-  margin-top: 2rem;
+  margin-top: 0.6rem;
   margin-bottom: 2.5rem;
 }
 
 .talk-year {
-  margin-top: 2.5rem;
+  margin-top: 0.6rem;
   margin-bottom: 1rem;
   font-size: 1.1rem;
   font-weight: 600;
