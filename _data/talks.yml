@@ -38,3 +38,13 @@
   video: "https://youtu.be/hCTE4qvoWRk"
   year: 2026
   type: "teaching"
+
+- title: "Architecting Efficient and Scalable Systems for Physical Intelligence and Visual Computing"
+  date: "August 6, 2026"
+  location: "London, United Kingdom"
+  venue: "KCL Engineering Seminar Series"
+  presenter: "Nandita Vijaykumar"
+  video: "https://youtu.be/o9fGYoLFO5I"
+  year: 2026
+  type: "seminar"
+  
