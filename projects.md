@@ -9,11 +9,9 @@ permalink: /projects/
 <div class="projects">
   {% for pr in site.data.projects %}
     <article class="project-card">
-      {% if pr.image %}
-        <div class="project-image">
-          <img src="{{ pr.image | relative_url }}" alt="{{ pr.title }} image">
-        </div>
-      {% endif %}
+      <div class="project-image">
+        <img src="{{ pr.image | default: '/assets/img/gallery/20260806.png' | relative_url }}" alt="{{ pr.title }} image">
+      </div>
 
       <div class="project-content">
         <h3>
