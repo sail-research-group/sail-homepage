@@ -1,37 +1,22 @@
-# - title: PIM for LLM Inference on Mobile
-#   status: Active
-#   summary: Co-design bit-serial kernels and memory layouts for KV-cache heavy workloads.
-#   links:
-#     - label: Paper
-#       url: https://example.com/paper.pdf
-#     - label: Code
-#       url: https://github.com/your-org/mobile-pim-llm
 
-# - title: Fast Epistasis on AI Hardware
-#   status: Planned
-#   summary: Transformer-assisted exhaustive high-order searches on modern accelerators.
-
-
-- title: Large Language Model Inference on Mobile Phones - Solve the Resource Shortage via Processing-in-Memory
+- title: "TetrisWorld: Learning a Neural Simulator for Tetris"
   status: Active
-  summary: Large language models (LLMs) on mobile phones are a promising area in industry and academia. LLMs on-device enhance data privacy and security, and sensitive data never leaves the device. Running LLMs locally means they can deliver real-time responses more quickly with lower latency, which will improve performance and give users a better experience. However, LLMs require enormous memory and power resources, making them difficult to implement on mobile devices. In this proposal, Processing in memory (PIM) techniques are used to cut down the energy cost and improve processing speed by reducing the computing and storage resources of LLMs. 
-  #image: "/assets/img/projects/rawhash.png"
-  # links:
-  #   - label: Paper
-  #     url: https://example.com/isca-paper
+  summary: |
+    World models are neural networks that learn environment dynamics from observed state transitions, predicting the next state from the current state and an action. This project explores world models using Tetris as a compact and deterministic testbed, where the true game dynamics are exactly known and predictions can be evaluated precisely. The student will implement a simplified Tetris simulator and use it to generate state-action-next-state training data, including important events such as line clears, wall interactions and near top-out states. 
   level: Undergraduate
-  image: /assets/img/gallery/20260806.png
-  pdf: /assets/pdf/large-llm.pdf
+  image: /assets/img/projects/tetrisug.png
+  pdf: /assets/pdf/tetrisug.pdf
   keywords:
-    - Large Language Model (LLM)
-    - Processing In Memory (PIM)
+    - World Models
+    - Simulation
 
-- title: Processing-in-Memory for Genome Analysis on Portable Devices
-  status: Active
-  summary: Portable genome analysis enables rapid diagnostics in clinics and low-resource settings, but current pipelines strain device budgets for power, memory, and bandwidth. Many steps in the genome analysis are dominated by data movement, random accesses to large reference databases, streaming signals, and heavy state (e.g., hash tables, DP matrices). On portable devices, thermal limits and memory bandwidth throttle throughput and drain batteries. This project explores Processing-in-Memory (PIM) to co-locate compute with data, reducing processing time and energy. We will co-design PIM-friendly kernels, compress references and intermediates in memory, and build an efficient runtime that meets accuracy, latency, energy, and reliability targets. 
-  level: Master
-  image: /assets/img/gallery/20260806.png
-  pdf: /assets/pdf/genome-proposal.pdf
-  keywords:
-    - Genome Analysis
-    - Processing In Memory (PIM)
+  # - title: [keep in one row if possible]
+  # status: Active
+  # summary: [around 80 words]
+  # level: Undergraduate
+  # image: /assets/img/projects/XXX.png [use AI to generate a project image if you don't have one, portrait orientation, 4:5, no watermark, no logo, no border]
+  # pdf: /assets/pdf/XXX.pdf [template in overleaf]
+  # keywords:
+  #   - World Models
+  #   - Simulation
+

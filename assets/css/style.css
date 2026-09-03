@@ -599,6 +599,7 @@ h1 {
   gap: 1.25rem;
 }
 
+
 .project-card {
   display: flex;
   gap: 1rem;
@@ -613,9 +614,10 @@ h1 {
 
 /* Left-side image */
 .project-card-image {
-  flex: 0 0 40%;
-  max-width: 45%;
-  min-width: 220px;
+  /* reduce image to roughly half the previous visual width */
+  flex: 0 0 20%;
+  max-width: 22%;
+  min-width: 120px;
   overflow: hidden;
 }
 
@@ -624,11 +626,11 @@ h1 {
   height: 100%;
   object-fit: cover;
   display: block;
-  transition: transform 0.28s ease;
+  transition: transform 0.22s ease;
 }
 
 .project-card:hover .project-card-image img {
-  transform: scale(1.04);
+  transform: scale(1.02);
 }
 
 /* Right-side text */
@@ -636,6 +638,7 @@ h1 {
   flex: 1;
   padding: 1rem 1.25rem;
 }
+
 
 .project-content h3 {
   margin: 0 0 0.25rem;
@@ -651,22 +654,57 @@ h1 {
   margin-bottom: 0.4rem;
 }
 
+.project-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.35rem;
+}
+
 .project-links {
-  margin-top: 0.4rem;
+  margin: 0;
   font-size: 0.9rem;
 }
 
 .project-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
   text-decoration: none;
-  color: var(--accent);
+  background: #D2232A; /* King's red */
+  color: #ffffff;
+  padding: 0.28rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid rgba(0,0,0,0.06);
+  font-weight: 600;
+  transition: transform 0.12s ease, background 0.12s ease;
 }
 
 .project-links a:hover {
-  color: #1c4292;
+  background: #bb1a23;
+  transform: translateY(-1px);
+}
+
+/* Ensure the Download PDF button stays red and does not turn blue on hover.
+   Target the course-highlight-tag videos when placed inside project-links. */
+.project-links a.course-highlight-tag.videos,
+.project-links .course-highlight-tag.videos {
+  background: #D2232A !important; /* primary red */
+  color: #ffffff !important;
+}
+.project-links a.course-highlight-tag.videos:hover,
+.project-links .course-highlight-tag.videos:hover {
+  background: #bb1a23 !important; /* slightly darker red */
+  color: #ffffff !important;
+  transform: translateY(-1px);
 }
 
 .project-keywords {
-  margin-top: 0.5rem;
+  margin: 0;
+  display: flex;
+  gap: 0.35rem;
+  align-items: center;
 }
 
 .keyword-tag {
@@ -679,6 +717,17 @@ h1 {
   margin-right: 0.4rem;
 }
 
+/* Stronger selector to ensure project keyword pills keep their style when
+   displayed inline with the Download PDF button */
+.project-keywords .keyword-tag {
+  background: #f0f4f8;
+  color: #024e76;
+  padding: 0.18rem 0.5rem;
+  font-weight: 500;
+  border-radius: 9999px;
+  border: 1px solid rgba(2,78,118,0.06);
+}
+
 /* Project-specific styles matching teaching */
 .project-level {
   font-size: 0.75rem;
@@ -686,9 +735,23 @@ h1 {
   letter-spacing: 0.06em;
   font-weight: 600;
   padding: 0.2rem 0.5rem;
-  border-radius: 4px;
+  border-radius: 6px;
   background: #eef3ff;
   color: #3f6280;
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+}
+
+/* Ensure the badge and the title text vertically align */
+.project-card-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.25;
 }
 
 .project-card-desc {

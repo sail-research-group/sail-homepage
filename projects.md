@@ -24,10 +24,6 @@ permalink: /projects/
           {%- endif -%}
           {{ pr.title }}
         </h3>
-        {%- if pr.summary -%}
-          <p class="project-card-desc">{{ pr.summary }}</p>
-        {%- endif -%}
-
         {%- assign pdf_url = nil -%}
         {%- if pr.pdf -%}
           {%- assign pdf_url = pr.pdf -%}
@@ -39,10 +35,15 @@ permalink: /projects/
           {%- endfor -%}
         {%- endif -%}
 
-        {%- if pdf_url -%}
-          <p class="project-links"><a class="course-highlight-tag project" href="{{ pdf_url }}" download>Download PDF</a></p>
+        {%- if pr.summary -%}
+          <p class="project-card-desc">{{ pr.summary }}</p>
         {%- endif -%}
 
+        <div class="project-actions">
+        {%- if pdf_url -%}
+          <div class="project-links"><a class="course-highlight-tag videos" href="{{ pdf_url }}" download>Download PDF</a></div>
+        {%- endif -%}
+        <span class="action-spacer">&nbsp;&nbsp;&nbsp;&nbsp;</span>
         <div class="project-keywords">
         {%- if pr.keywords -%}
           {%- for kw in pr.keywords -%}
@@ -58,6 +59,7 @@ permalink: /projects/
             {%- endif -%}
           {%- endfor -%}
         {%- endif -%}
+        </div>
         </div>
       </div>
     </article>
