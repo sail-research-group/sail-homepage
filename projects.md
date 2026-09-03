@@ -8,26 +8,26 @@ permalink: /projects/
 
 <div class="projects">
   {% for pr in site.data.projects %}
+    {%- if pr.url and pr.url != "" -%}
+      <a href="{{ pr.url }}" class="project-card-link">
+    {%- endif -%}
+
     <article class="project-card">
-      <div class="project-image">
-        <img src="{{ pr.image | default: '/assets/img/gallery/20260806.png' | relative_url }}" alt="{{ pr.title }} image">
+      <div class="project-card-image">
+        <img src="{{ pr.image | default: '/assets/img/gallery/20260806.png' | relative_url }}" alt="{{ pr.title }}">
       </div>
 
-      <div class="project-content">
-        <h3>
-          {{ pr.title }}
+      <div class="project-card-content">
+        <h3 class="project-card-title">
           {%- if pr.level -%}
-            <span class="badge">{{ pr.level }}</span>
+            <span class="project-level">{{ pr.level }}</span>&nbsp;&nbsp;
           {%- endif -%}
+          {{ pr.title }}
         </h3>
-
         {%- if pr.summary -%}
-          <p>{{ pr.summary }}</p>
+          <p class="project-card-desc">{{ pr.summary }}</p>
         {%- endif -%}
 
-        {%- comment -%}
-        Find a PDF URL: prefer `pr.pdf`, otherwise check `pr.links` for a PDF.
-        {%- endcomment -%}
         {%- assign pdf_url = nil -%}
         {%- if pr.pdf -%}
           {%- assign pdf_url = pr.pdf -%}
@@ -40,10 +40,9 @@ permalink: /projects/
         {%- endif -%}
 
         {%- if pdf_url -%}
-          <p class="project-links"><a href="{{ pdf_url }}" download>Download PDF</a></p>
+          <p class="project-links"><a class="course-highlight-tag project" href="{{ pdf_url }}" download>Download PDF</a></p>
         {%- endif -%}
 
-        {%- comment -%} Render explicit keywords if provided, otherwise try to match from site.data.keywords {%- endcomment -%}
         <div class="project-keywords">
         {%- if pr.keywords -%}
           {%- for kw in pr.keywords -%}
@@ -62,5 +61,9 @@ permalink: /projects/
         </div>
       </div>
     </article>
+
+    {%- if pr.url and pr.url != "" -%}
+      </a>
+    {%- endif -%}
   {% endfor %}
 </div>

@@ -602,32 +602,39 @@ h1 {
 .project-card {
   display: flex;
   gap: 1rem;
-  padding: 1rem 1.25rem;
+  padding: 0;
   border-radius: 0.75rem;
   border: 1px solid var(--border);
   background: #ffffff;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
   align-items: stretch;
+  overflow: hidden;
 }
 
 /* Left-side image */
-.project-image {
-  flex: 0 0 200px;     /* fixed-ish width */
-  max-width: 220px;
+.project-card-image {
+  flex: 0 0 40%;
+  max-width: 45%;
+  min-width: 220px;
+  overflow: hidden;
 }
 
-.project-image img {
+.project-card-image img {
   width: 100%;
   height: 100%;
-  max-height: 140px;
   object-fit: cover;
-  border-radius: 0.6rem;
   display: block;
+  transition: transform 0.28s ease;
+}
+
+.project-card:hover .project-card-image img {
+  transform: scale(1.04);
 }
 
 /* Right-side text */
-.project-content {
+.project-card-content {
   flex: 1;
+  padding: 1rem 1.25rem;
 }
 
 .project-content h3 {
@@ -672,18 +679,37 @@ h1 {
   margin-right: 0.4rem;
 }
 
+/* Project-specific styles matching teaching */
+.project-level {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 600;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  background: #eef3ff;
+  color: #3f6280;
+}
+
+.project-card-desc {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin: 0 0 0.75rem;
+  line-height: 1.5;
+}
+
 /* Responsive: stack on small screens */
 @media (max-width: 768px) {
   .project-card {
     flex-direction: column;
   }
 
-  .project-image {
+  .project-card-image {
     flex: 0 0 auto;
     max-width: 100%;
   }
 
-  .project-image img {
+  .project-card-image img {
     max-height: 220px;
   }
 }
