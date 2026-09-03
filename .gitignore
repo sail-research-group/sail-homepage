@@ -2,6 +2,7 @@
 .bundle/
 vendor/
 Gemfile.lock  # uncomment to treat lock file as local-only
+.rbenv/
 
 # Jekyll build output — GitHub Pages builds _site/ automatically from source
 _site/

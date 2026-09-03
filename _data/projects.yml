@@ -19,7 +19,19 @@
   # links:
   #   - label: Paper
   #     url: https://example.com/isca-paper
+  level: Undergraduate
+  image: /assets/img/gallery/20260806.png
+  pdf: /assets/pdf/large-llm.pdf
+  keywords:
+    - Large Language Model (LLM)
+    - Processing In Memory (PIM)
 
 - title: Processing-in-Memory for Genome Analysis on Portable Devices
   status: Active
   summary: Portable genome analysis enables rapid diagnostics in clinics and low-resource settings, but current pipelines strain device budgets for power, memory, and bandwidth. Many steps in the genome analysis are dominated by data movement, random accesses to large reference databases, streaming signals, and heavy state (e.g., hash tables, DP matrices). On portable devices, thermal limits and memory bandwidth throttle throughput and drain batteries. This project explores Processing-in-Memory (PIM) to co-locate compute with data, reducing processing time and energy. We will co-design PIM-friendly kernels, compress references and intermediates in memory, and build an efficient runtime that meets accuracy, latency, energy, and reliability targets. 
+  level: Master
+  image: /assets/img/gallery/20260806.png
+  pdf: /assets/pdf/genome-proposal.pdf
+  keywords:
+    - Genome Analysis
+    - Processing In Memory (PIM)

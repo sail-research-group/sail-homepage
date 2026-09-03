@@ -658,6 +658,20 @@ h1 {
   color: #1c4292;
 }
 
+.project-keywords {
+  margin-top: 0.5rem;
+}
+
+.keyword-tag {
+  display: inline-block;
+  font-size: 0.8rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 9999px;
+  background: #f0f4f8;
+  color: #024e76;
+  margin-right: 0.4rem;
+}
+
 /* Responsive: stack on small screens */
 @media (max-width: 768px) {
   .project-card {
