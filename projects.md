@@ -20,7 +20,7 @@ permalink: /projects/
       <div class="project-card-content">
         <h3 class="project-card-title">
           {%- if pr.level -%}
-            <span class="project-level">{{ pr.level }}</span>&nbsp;&nbsp;
+            <span class="project-level project-level-{{ pr.level | slugify }}">{{ pr.level }}</span>&nbsp;&nbsp;
           {%- endif -%}
           {{ pr.title }}
         </h3>

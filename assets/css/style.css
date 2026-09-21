@@ -743,6 +743,11 @@ h1 {
   vertical-align: middle;
 }
 
+.project-level-postgraduate {
+  background: #f1edff;
+  color: #654398;
+}
+
 /* Ensure the badge and the title text vertically align */
 .project-card-title {
   display: inline-flex;

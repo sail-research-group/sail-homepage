@@ -10,6 +10,18 @@
     - World Models
     - Simulation
 
+- title: "TetrisWorld: From World Models to Action Planning"
+  status: Active
+  summary: |
+    This advanced postgraduate project extends TetrisWorld from learning game dynamics to planning actions with a frozen world model. The student will train and systematically evaluate a neural Tetris simulator, then investigate whether it can reliably plan towards goals such as clearing a line without retraining its dynamics. Planning methods may include model-predictive control or beam search. Experiments will compare predicted plans with execution in the exact simulator, measuring planning success, search cost and robustness, and analysing how prediction errors affect decision-making.
+  level: Postgraduate
+  image: /assets/img/projects/tetrispg.png
+  pdf: /assets/pdf/tetrispg.pdf
+  keywords:
+    - World Action Models
+    - Simulation
+    - Action Planning
+
   # - title: [keep in one row if possible]
   # status: Active
   # summary: [around 80 words]
