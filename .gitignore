@@ -32,3 +32,4 @@ CNAME.save
 Gemfile.lock
 CLAUDE.md
 mise.toml
+.ruby-version

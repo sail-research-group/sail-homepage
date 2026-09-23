@@ -22,6 +22,31 @@
     - Simulation
     - Action Planning
 
+
+- title: "AWC: Agent Workload Characterization Tool"
+  status: Active
+  summary: |
+    This project studies how coding and research agents use LLMs, tools, and system resources during complete tasks. The student will collect execution traces, examine variation across runs, and build a tool that turns selected traces into repeatable workloads. Comparing those replays with the original runs will show how faithfully they reproduce performance demands and where bottlenecks arise.
+  level: Undergraduate
+  image: /assets/img/projects/awc.png
+  pdf: /assets/pdf/awc_ug.pdf
+  keywords:
+    - AI Agents
+    - AI Infra
+    - Simulation
+
+- title: "Near-Memory KV Attention for Multi-Agent Inference"
+  status: Active
+  summary: |
+    This project asks when near-memory processing of the KV cache improves local multi-agent LLM inference compared with execution on a GPU or NPU. The student will extend a simulator to study how agent concurrency, context length, tool pauses, attention design, and memory bandwidth affect performance. They will then develop a policy that chooses where to run KV attention and identify the conditions under which near-memory execution helps or hurts.
+  level: Postgraduate
+  image: /assets/img/projects/nearmem_kv.png
+  pdf: /assets/pdf/nearmemkv_ms.pdf
+  keywords:
+    - AI Agents
+    - Processing-in-Memory
+    - Simulation
+
   # - title: [keep in one row if possible]
   # status: Active
   # summary: [around 80 words]
